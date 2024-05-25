@@ -14,44 +14,25 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="411dp"
-        android:layout_height="664dp"
-        android:layout_marginTop="264dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="517dp"
+        android:layout_height="651dp"
+        android:layout_marginTop="352dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/_575a196_3b0d_4d62_aa9d_59fec22b5f1c" />
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="380dp"
-        android:layout_height="343dp"
+        android:layout_width="386dp"
+        android:layout_height="398dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.033"
+        app:layout_constraintVertical_bias="0.015"
         app:srcCompat="@drawable/af29897af4cd833d34ee0ac8bd7c2ca8_removebg_preview" />
-
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/lexend_black"
-        android:text="REGISTRARSE"
-        android:textColor="#454545"
-        android:textSize="30sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.209"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/textView4"
@@ -67,7 +48,7 @@
         app:layout_constraintHorizontal_bias="0.114"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.543" />
+        app:layout_constraintVertical_bias="0.523" />
 
     <TextView
         android:id="@+id/textView5"
@@ -82,7 +63,7 @@
         app:layout_constraintHorizontal_bias="0.113"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.666" />
+        app:layout_constraintVertical_bias="0.621" />
 
     <TextView
         android:id="@+id/textView6"
@@ -94,13 +75,13 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintHorizontal_bias="0.136"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.795" />
+        app:layout_constraintVertical_bias="0.728" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txtNombre"
         android:layout_width="332dp"
         android:layout_height="51dp"
         android:background="@drawable/edittext_background"
@@ -112,10 +93,116 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.606" />
+        app:layout_constraintVertical_bias="0.572" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="332dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/lexend"
+        android:imeOptions="actionDone"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.676" />
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="332dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/lexend"
+        android:imeOptions="actionDone"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.785" />
+
+    <Button
+        android:id="@+id/btnGoogle"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="258dp"
+        android:layout_height="51dp"
+
+        android:text="     Iniciar con Google"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        app:backgroundTint="#80D2CBEC"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.871" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="21dp"
+        android:layout_height="19dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.259"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.857"
+        app:srcCompat="@drawable/google" />
+
+    <Button
+        android:id="@+id/btnCrearCuenta"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+
+        android:text="CREAR CUENTA"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.948" />
+
+    <ImageView
+        android:id="@+id/imgVer"
+        android:layout_width="31dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781"
+        app:srcCompat="@drawable/ver" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="275dp"
+        android:layout_height="44dp"
+        android:fontFamily="@font/lexend_semibold"
+        android:text="REGISTRATE"
+        android:textColor="#454545"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.248"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.46" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
