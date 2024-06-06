@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryNight">#4637A6</color> <!-- Color principal en la paleta oscura -->
+    <color name="colorPrimaryVariantNight">#2E3440</color> <!-- Variante del color principal -->
+    <color name="colorOnPrimaryNight">#FEFFFF</color> <!-- Texto sobre el color principal -->
+    <color name="colorSecondaryNight">#1C2023</color> <!-- Color secundario -->
+    <color name="colorSecondaryVariantNight">#2E3440</color> <!-- Variante del color secundario -->
+    <color name="colorOnSecondaryNight">#FEFFFF</color> <!-- Texto sobre el color secundario -->
+</resources>

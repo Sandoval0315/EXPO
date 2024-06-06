@@ -87,6 +87,7 @@
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionDone"
+        android:maxLength="50"
         android:padding="12dp"
         android:singleLine="true"
         android:textColor="#454545"
@@ -104,7 +105,9 @@
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
         android:padding="12dp"
+        android:maxLength="50"
         android:singleLine="true"
         android:textColor="#454545"
         android:textSize="16sp"
@@ -120,7 +123,9 @@
         android:layout_height="51dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
-        android:imeOptions="actionDone"
+        android:maxLength="50"
+    android:imeOptions="actionDone"
+        android:inputType="textPassword"
         android:padding="12dp"
         android:singleLine="true"
         android:textColor="#454545"
@@ -132,11 +137,10 @@
         app:layout_constraintVertical_bias="0.785" />
 
     <Button
-        android:id="@+id/btnGoogle"
+        android:id="@+id/btnInicioSesionGoogle"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="258dp"
         android:layout_height="51dp"
-
         android:text="     Iniciar con Google"
         android:textColor="#000000"
         android:textSize="12sp"
@@ -161,7 +165,24 @@
         app:srcCompat="@drawable/google" />
 
     <Button
-        android:id="@+id/btnCrearCuenta"
+        android:id="@+id/btnIrAlLogin"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+
+        android:text="Iniciar Sesion"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.954" />
+
+    <Button
+        android:id="@+id/btnAcceder"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="202dp"
         android:layout_height="58dp"
@@ -175,7 +196,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.948" />
+        app:layout_constraintVertical_bias="0.954" />
 
     <ImageView
         android:id="@+id/imgVer"
@@ -203,6 +224,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.46" />
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="306dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.038"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

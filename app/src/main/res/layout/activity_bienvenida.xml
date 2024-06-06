@@ -21,7 +21,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_semibold"
         android:text="BIENVENIDO A"
         android:textColor="#454545"
         android:textSize="45sp"
@@ -38,7 +38,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="48dp"
         android:layout_marginEnd="29dp"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_semibold"
         android:text="HEALTHSYNC"
         android:textColor="#454545"
         android:textSize="60sp"
@@ -52,7 +52,7 @@
     <Button
         android:id="@+id/btnRegistrarse"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="144dp"
+        android:layout_width="150dp"
         android:layout_height="70dp"
 
         android:layout_marginTop="28dp"
@@ -70,7 +70,7 @@
     <Button
         android:id="@+id/btnAcceder"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="144dp"
+        android:layout_width="150dp"
         android:layout_height="70dp"
 
         android:layout_marginTop="28dp"

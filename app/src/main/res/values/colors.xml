@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="colorPrimary">#7663F2</color> <!-- El color principal en la paleta clara -->
+    <color name="colorPrimaryVariant">#D2CBEC</color> <!-- Variante del color principal -->
+    <color name="colorOnPrimary">#FEFFFF</color> <!-- Texto sobre el color principal -->
+    <color name="colorSecondary">#454545</color> <!-- Color secundario -->
+    <color name="colorSecondaryVariant">#D2CBEC</color> <!-- Variante del color secundario -->
+    <color name="colorOnSecondary">#FFFFFF</color> <!-- Texto sobre el color secundario -->
+
+
 </resources>
+

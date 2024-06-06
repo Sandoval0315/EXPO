@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "332101570209",
+    "project_id": "acceder-con-679e4",
+    "storage_bucket": "acceder-con-679e4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332101570209:android:0ef5fe2ce9f0dd8c492ae0",
+        "android_client_info": {
+          "package_name": "com.conexion_google"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332101570209-a2hkvqvjkmmhad4arspt6ks1f08vp5gb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFcSchfr00n7ib6rykTJ8fj_8VUN1NXgE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332101570209-a2hkvqvjkmmhad4arspt6ks1f08vp5gb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

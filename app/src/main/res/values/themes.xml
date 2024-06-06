@@ -1,9 +1,24 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.HealthSync" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+
+    <style name="Base.Theme.HealthSync" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>
+        <item name="colorOnPrimary">@color/colorOnPrimary</item>
+
+        <item name="colorSecondary">@color/colorSecondary</item>
+        <item name="colorSecondaryVariant">@color/colorSecondaryVariant</item>
+        <item name="colorOnSecondary">@color/colorOnSecondary</item>
     </style>
 
-    <style name="Theme.HealthSync" parent="Base.Theme.HealthSync" />
+
+    <style name="Theme.HealthSync" parent="Base.Theme.HealthSync">
+
+    </style>
+
+    <style name="SeekBarCustomStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="colorControlNormal">#7663F2</item>
+        <item name="colorControlActivated">#D2CBEC</item>
+        <item name="android:thumb">@drawable/custom_thumb</item>
+    </style>
 </resources>
