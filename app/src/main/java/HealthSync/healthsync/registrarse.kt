@@ -70,6 +70,8 @@ class registrarse : AppCompatActivity() {
         txtCorreo.setOnFocusChangeListener(textWatcher)
         txtContraseña.setOnFocusChangeListener(textWatcher)
 
+
+        //Escriptacion de la contraseña
         fun hashPassword(password: String): String {
             val bytes = password.toByteArray()
             val md = MessageDigest.getInstance("SHA-256")
@@ -82,6 +84,7 @@ class registrarse : AppCompatActivity() {
         btnCrearCuenta.setOnClickListener {
             val nombre = txtNombre.text.toString()
             val correo = txtCorreo.text.toString()
+            //contraseña ya encriptada
             val contraseña = hashPassword(txtContraseña.text.toString())
 
 
