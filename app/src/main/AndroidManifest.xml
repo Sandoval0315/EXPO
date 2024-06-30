@@ -15,29 +15,14 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
-            android:name="preguntas.ConfirmarPreguntas"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.pregunta7"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.pregunta6"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.pregunta5"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.pregunta4"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.Pregunta3"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.Pregunta2"
-            android:exported="false" />
-        <activity
-            android:name="preguntas.Pregunta1"
-            android:exported="false" />
+            android:name=".ConfirmarPreguntas"
+            android:exported="true" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
         <activity
             android:name=".LoadingActivity2"
             android:exported="false"/>
@@ -52,13 +37,7 @@
             android:exported="false" />
         <activity
             android:name=".LoadingActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />

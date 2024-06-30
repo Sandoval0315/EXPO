@@ -8,7 +8,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import preguntas.Pregunta1
 
 class LoadingActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -22,7 +21,7 @@ class LoadingActivity2 : AppCompatActivity() {
         }
 
         Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, Pregunta1::class.java)
+            val intent = Intent(this, ConfirmarPreguntas::class.java)
             startActivity(intent)
             finish() }, 2500)
     }
