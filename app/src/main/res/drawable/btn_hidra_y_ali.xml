@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Fondo Rectángulo -->
+    <item>
+        <shape android:shape="rectangle">
+            <size android:width="331dp" android:height="123dp"/>
+            <solid android:color="#7663F2"/>
+            <corners android:radius="35dp"/>
+
+        </shape>
+    </item>
+    <!-- Imagen PNG -->
+
+
+</layer-list>
