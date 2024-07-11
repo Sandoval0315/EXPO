@@ -19,6 +19,7 @@ android {
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
+
     buildTypes {
         release {
             isMinifyEnabled = false
@@ -39,7 +40,7 @@ android {
 
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
-    implementation("com.google.android.gms:play-services-auth:21.0.0")
+    implementation("com.google.android.material:material:1.5.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
@@ -48,6 +49,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     implementation(libs.play.services.basement)
     implementation(libs.firebase.auth.ktx)
+    implementation(libs.play.services.maps)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

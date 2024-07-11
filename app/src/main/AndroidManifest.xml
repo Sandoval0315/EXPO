@@ -14,18 +14,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key"></meta-data>
+        <activity
+            android:name=".activity_mapa"
+            android:exported="false" />
         <activity
             android:name=".ConfirmarPreguntas"
-            android:exported="true" >
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-    </activity>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".LoadingActivity2"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".login"
             android:exported="false" />
