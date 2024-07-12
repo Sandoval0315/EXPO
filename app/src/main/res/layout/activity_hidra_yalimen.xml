@@ -113,7 +113,7 @@
         app:srcCompat="@drawable/hidra_y_alimen" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/btnsalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#D2CBEC"
