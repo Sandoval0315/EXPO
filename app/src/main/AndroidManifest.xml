@@ -18,8 +18,12 @@
             android:name=".activity_alimentacion"
             android:exported="false" />
         <activity
+            android:name=".Activity_rutinafuerza"
+            android:exported="false" />
+        <activity
             android:name=".activity_hidratacion"
             android:exported="false" />
+
         <activity
             android:name=".activity_rutinas"
             android:exported="false" />
