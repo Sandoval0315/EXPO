@@ -96,7 +96,7 @@
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.332"
+                app:layout_constraintVertical_bias="0.322"
                 app:srcCompat="@drawable/brazosypiernas" />
 
             <ImageView
@@ -108,7 +108,7 @@
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.416"
+                app:layout_constraintVertical_bias="0.408"
                 app:srcCompat="@drawable/sentadillas" />
 
             <ImageView
@@ -132,7 +132,7 @@
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.651"
+                app:layout_constraintVertical_bias="0.571"
                 app:srcCompat="@drawable/manosarriba" />
 
             <ImageView
@@ -144,7 +144,7 @@
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.572"
+                app:layout_constraintVertical_bias="0.653"
                 app:srcCompat="@drawable/plancha" />
 
             <ImageView
@@ -156,7 +156,7 @@
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.727"
+                app:layout_constraintVertical_bias="0.742"
                 app:srcCompat="@drawable/caminar" />
 
             <ImageView
@@ -168,7 +168,7 @@
                 app:layout_constraintHorizontal_bias="0.15"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.808"
+                app:layout_constraintVertical_bias="0.828"
                 app:srcCompat="@drawable/brazosypiernas" />
 
             <TextView
@@ -183,6 +183,96 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.247" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="224dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lexend"
+                android:text="Continúa con 1 minuto de estiramientos dinámicos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.651"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.328" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="220dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza sentadillas durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.639"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.416" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="200dp"
+                android:layout_height="46dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza flexiones durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.595"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.496" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plancha durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.563"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.646" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="188dp"
+                android:layout_height="37dp"
+                android:fontFamily="@font/lexend"
+                android:text="Camina en el lugar durante 30 segundos para bajar la intensidad."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.575"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.733" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="221dp"
+                android:layout_height="79dp"
+                android:fontFamily="@font/lexend"
+                android:text="Dedica los últimos 30 segundos a estirar los músculos principales"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.637"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.846" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="209dp"
+                android:layout_height="42dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza zancadas durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.617"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.567" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
