@@ -15,6 +15,30 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".ConfirmarPreguntas"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta7"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta6"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta5"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta4"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta3"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta2"
+            android:exported="false" />
+        <activity
+            android:name=".pregunta1"
+            android:exported="false" />
+        <activity
             android:name=".navigatioPrincipal"
             android:exported="false"
             android:label="@string/title_activity_navigatio_principal" />
@@ -50,13 +74,14 @@
             android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
