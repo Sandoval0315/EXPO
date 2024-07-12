@@ -1,17 +1,36 @@
 package HealthSync.healthsync
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.app.ActivityCompat
+import androidx.core.content.ContextCompat
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.gms.location.FusedLocationProviderClient
+import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.GoogleMap
+import com.google.android.gms.maps.MapView
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
+import com.google.android.gms.maps.model.MarkerOptions
 
 
 class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
-     private var mGoogleMap:GoogleMap? = null
+
+    private lateinit var mapView: MapView
+    private lateinit var googleMap: GoogleMap
+    private lateinit var fusedLocationClient: FusedLocationProviderClient
+
+    companion object{
+        private const val MAP_VIEW_BUNDLE_KEY = "MapViewBundleKey"
+        private const val LOCATION_PERMISSION_REQUEST_CODE =1
+    }
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -22,13 +41,44 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
             insets
         }
 
-        val map = supportFragmentManager.findFragmentById(R.id.mapFragment) as SupportMapFragment
-        map.getMapAsync(this)
+        mapView = findViewById(R.id.mapFragment)
+        fusedLocationClient = LocationServices.getFusedLocationProviderClient(this)
 
+        var mapViewBundle: Bundle? = null
+        if (savedInstanceState != null){
+            mapViewBundle = savedInstanceState.getBundle(MAP_VIEW_BUNDLE_KEY)
+        }
+        mapView.onCreate(mapViewBundle)
+        mapView.getMapAsync(this)
 
     }
+    override fun onMapReady(map: GoogleMap) {
+        googleMap = map
+        googleMap.uiSettings.isMyLocationButtonEnabled = true
 
-    override fun onMapReady(googleMap: GoogleMap) {
-        mGoogleMap = googleMap
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+            == PackageManager.PERMISSION_GRANTED){
+            googleMap.isMyLocationEnabled = true
+            getDeviceLocation()
+        }else{
+            ActivityCompat.requestPermissions(this,
+                arrayOf(Manifest.permission.ACCESS_FINE_LOCATION),
+                LOCATION_PERMISSION_REQUEST_CODE)
+        }
+
+        googleMap.setOnMapClickListener { latLng ->
+            googleMap.clear()
+            googleMap.addMarker(MarkerOptions().position(latLng).title("Selected Location"))
+            Toast.makeText(this,"Coordinates: ${latLng.latitude}, ${latLng.longitude}", Toast.LENGTH_LONG).show()
+        }
+    }
+
+    private fun getDeviceLocation(){
+        try{
+            if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
+                == PackageManager.PERMISSION_GRANTED){
+                
+            }
+        }
     }
 }

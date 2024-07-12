@@ -40,7 +40,8 @@ android {
 
 dependencies {
     implementation(platform("com.google.firebase:firebase-bom:33.0.0"))
-    implementation("com.google.android.material:material:1.5.0")
+    implementation("com.google.android.gms:play-services-maps:18.0.2")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
