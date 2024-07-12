@@ -1,8 +1,7 @@
 package preguntas
 
 import HealthSync.healthsync.R
-import HealthSync.healthsync.pregunta4
-import HealthSync.healthsync.pregunta5
+
 import android.content.Intent
 import android.os.Bundle
 import android.view.View

@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import HealthSync.healthsync.R
-import HealthSync.healthsync.pregunta6
+
 import android.content.Intent
 import android.widget.Button
 
