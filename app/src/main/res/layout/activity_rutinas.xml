@@ -134,8 +134,7 @@
         app:layout_constraintHorizontal_bias="0.975"
         app:layout_constraintStart_toStartOf="@+id/btnYoga"
         app:layout_constraintTop_toTopOf="@+id/btnYoga"
-        app:layout_constraintVertical_bias="0.333"
-        app:srcCompat="@drawable/yoga" />
+        app:layout_constraintVertical_bias="0.333" />
 
     <Button
         android:id="@+id/btnRunnig"

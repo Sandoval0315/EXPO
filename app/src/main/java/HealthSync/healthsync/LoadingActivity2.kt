@@ -19,10 +19,5 @@ class LoadingActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this, ConfirmarPreguntas::class.java)
-            startActivity(intent)
-            finish() }, 2500)
     }
 }
