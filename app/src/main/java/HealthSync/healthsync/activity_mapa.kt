@@ -22,7 +22,7 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
             insets
         }
 
-        val map = supportFragmentManager.findFragmentById(R.id.map) as SupportMapFragment
+        val map = supportFragmentManager.findFragmentById(R.id.mapFragment) as SupportMapFragment
         map.getMapAsync(this)
 
 
