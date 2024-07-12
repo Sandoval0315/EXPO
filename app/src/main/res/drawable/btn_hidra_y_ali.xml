@@ -4,9 +4,9 @@
     <!-- Fondo Rectángulo -->
     <item>
         <shape android:shape="rectangle">
-            <size android:width="331dp" android:height="123dp"/>
+            <size android:width="500dp" android:height="500dp"/>
             <solid android:color="#7663F2"/>
-            <corners android:radius="35dp"/>
+            <corners android:radius="120dp"/>
 
         </shape>
     </item>

@@ -15,6 +15,9 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_desayunar"
+            android:exported="false" />
+        <activity
             android:name=".activity_alimentacion"
             android:exported="false" />
         <activity
