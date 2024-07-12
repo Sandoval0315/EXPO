@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity_rutinas">
+
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="RUTINAS"
+        android:textAlignment="viewStart"
+        android:textColor="#454545"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.045"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.287" />
+
+    <Button
+        android:id="@+id/btnFuerzaPesas"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="325dp"
+        android:layout_height="116dp"
+        android:text="Rutinas de                              Fuerzas con                            Pesas"
+        android:textAlignment="viewStart"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.557" />
+
+    <Button
+        android:id="@+id/btnRunnig"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="325dp"
+        android:layout_height="116dp"
+        android:text="Rutinas de                              Runnig"
+        android:textAlignment="viewStart"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.593"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.721" />
+
+    <ImageView
+        android:id="@+id/imageView10"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnFuerzaPesas"
+        app:layout_constraintEnd_toEndOf="@+id/btnFuerzaPesas"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="@+id/btnFuerzaPesas"
+        app:layout_constraintTop_toTopOf="@+id/btnFuerzaPesas"
+        app:layout_constraintVertical_bias="0.515"
+        app:srcCompat="@drawable/fuerza" />
+
+    <Button
+        android:id="@+id/btnRutinaCardio"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="325dp"
+        android:layout_height="116dp"
+        android:text="Rutinas                  CardioVascular"
+        android:textAlignment="viewStart"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.409" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="85dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRutinaCardio"
+        app:layout_constraintEnd_toEndOf="@+id/btnRutinaCardio"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintStart_toStartOf="@+id/btnRutinaCardio"
+        app:layout_constraintTop_toTopOf="@+id/btnRutinaCardio"
+        app:layout_constraintVertical_bias="0.575"
+        app:srcCompat="@drawable/caminadora" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
