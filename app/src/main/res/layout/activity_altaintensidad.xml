@@ -15,6 +15,18 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="1198dp"
+                android:layout_height="1321dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/fondoclaro" />
+
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
@@ -24,7 +36,181 @@
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.074"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.024"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lbRutinaIntensidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_black"
+                android:text="RUTINAS"
+                android:textAlignment="viewStart"
+                android:textColor="#454545"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.063" />
+
+            <TextView
+                android:id="@+id/lbIntensidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_black"
+                android:text="DE INTENSIDAD"
+                android:textAlignment="viewStart"
+                android:textColor="#454545"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.217"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.113" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="409dp"
+                android:layout_height="842dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39"
+                app:srcCompat="@drawable/moradoo" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="221dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/lexend"
+                android:text="Comienza con 1 minuto de saltos suaves en el lugar."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.644"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.247"/>
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="224dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lexend"
+                android:text="Continúa con 1 minuto de estiramientos dinámicos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.651"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.328" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="220dp"
+                android:layout_height="49dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza sentadillas durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.639"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.416"  />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="200dp"
+                android:layout_height="46dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza flexiones durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.595"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.496" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Plancha durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.563"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.646" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="188dp"
+                android:layout_height="37dp"
+                android:fontFamily="@font/lexend"
+                android:text="Camina en el lugar durante 30 segundos para bajar la intensidad."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.575"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.733"  />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="221dp"
+                android:layout_height="79dp"
+                android:fontFamily="@font/lexend"
+                android:text="Dedica los últimos 30 segundos a estirar los músculos principales"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.637"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.846" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="209dp"
+                android:layout_height="42dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza zancadas durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.617"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.567" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza zancadas durante 45 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.781"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.892" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
