@@ -47,7 +47,10 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
             insets
         }
 
-        val btn = findViewById<ImageButton>(R.id.mapa_regresar)
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+
+        val btnBack = findViewById<ImageButton>(R.id.mapa_regresar)
 
 
 
@@ -61,8 +64,8 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
         mapView.onCreate(mapViewBundle)
         mapView.getMapAsync(this)
 
-        btn.setOnClickListener(){
-            val intent = Intent(this, MainActivity::class.java)
+        btnBack.setOnClickListener(){
+            val intent = Intent(this, navigatioPrincipal::class.java)
             startActivity(intent)
         }
 
