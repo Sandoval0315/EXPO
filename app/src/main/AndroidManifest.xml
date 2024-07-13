@@ -15,6 +15,9 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_altaintensidad"
+            android:exported="false" />
+        <activity
             android:name=".ConfirmarPreguntas"
             android:exported="false" />
         <activity

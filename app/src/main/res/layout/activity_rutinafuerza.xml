@@ -41,6 +41,7 @@
                 app:layout_constraintVertical_bias="0.721"
                 app:srcCompat="@drawable/moradoo" />
 
+
             <TextView
                 android:id="@+id/lbRutinaFuerza"
                 android:layout_width="wrap_content"
@@ -52,10 +53,10 @@
                 android:textSize="48sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.167"
+                app:layout_constraintHorizontal_bias="0.166"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.047" />
+                app:layout_constraintVertical_bias="0.051" />
 
             <TextView
                 android:id="@+id/lbFuerza"
@@ -68,11 +69,10 @@
                 android:textSize="32sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.141"
+                app:layout_constraintHorizontal_bias="0.136"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.108" />
-
+                app:layout_constraintVertical_bias="0.113" />
 
             <ImageView
                 android:id="@+id/imageView21"
@@ -273,6 +273,18 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.567" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.015"
+                app:srcCompat="@drawable/back" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
