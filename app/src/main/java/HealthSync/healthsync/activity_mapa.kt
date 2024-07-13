@@ -65,7 +65,7 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
         mapView.getMapAsync(this)
 
         btnBack.setOnClickListener(){
-            val intent = Intent(this, navigatioPrincipal::class.java)
+            val intent = Intent(this, activity_mapa_principal::class.java)
             startActivity(intent)
         }
 

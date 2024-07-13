@@ -20,6 +20,9 @@ class activity_mapa_principal : AppCompatActivity() {
             insets
         }
 
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+        
         val img_RegresMap = findViewById<ImageView>(R.id.img_RegresMap)
         
         val img_IrMap = findViewById<ImageView>(R.id.img_IrMap)
