@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="1742dp"
-        android:layout_height="1190dp"
+        android:layout_width="1490dp"
+        android:layout_height="1175dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,14 +22,14 @@
 
     <ImageView
         android:id="@+id/imageView18"
-        android:layout_width="287dp"
-        android:layout_height="202dp"
+        android:layout_width="305dp"
+        android:layout_height="259dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/rutinas" />
 
     <Button
