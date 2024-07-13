@@ -9,6 +9,17 @@
     tools:context=".login">
 
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="408dp"
+        android:layout_height="340dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/login"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="460dp"
@@ -52,7 +63,7 @@
         android:id="@+id/textView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_semibold"
         android:text="CONTRASEÑA"
         android:textColor="#454545"
         android:textSize="16sp"
@@ -67,7 +78,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_semibold"
         android:text="CORREO O NOMBRE DE USUARIO"
         android:textColor="#454545"
         android:textSize="16sp"
@@ -156,18 +167,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.948" />
-
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="421dp"
-        android:layout_height="370dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/d12ec4d3_3b59_4939_81f9_145622b275c8" />
 
     <ImageView
         android:id="@+id/imgBack1"

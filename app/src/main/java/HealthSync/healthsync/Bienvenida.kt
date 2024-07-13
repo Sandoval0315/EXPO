@@ -18,6 +18,9 @@ class Bienvenida : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //ocultar barra de arriba
+        supportActionBar?.hide()
        val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse);
         btnRegistrarse.setOnClickListener {
             val intent = Intent(this, registrarse::class.java)

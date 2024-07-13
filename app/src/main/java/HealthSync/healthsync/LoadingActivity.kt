@@ -12,6 +12,8 @@ class LoadingActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_loading)
 
+        //ocultar barra de arriba
+        supportActionBar?.hide()
         // codigo para que cambie a otra pantalla luego de cierto tiempo
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, Bienvenida::class.java)

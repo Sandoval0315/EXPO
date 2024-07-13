@@ -10,6 +10,17 @@
 
 
     <ImageView
+        android:id="@+id/imageView32"
+        android:layout_width="1742dp"
+        android:layout_height="1190dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView18"
+        app:layout_constraintVertical_bias="0.144"
+        app:srcCompat="@drawable/fondoclaroredondo" />
+
+    <ImageView
         android:id="@+id/imageView18"
         android:layout_width="287dp"
         android:layout_height="202dp"
@@ -135,6 +146,8 @@
         app:layout_constraintStart_toStartOf="@+id/btnYoga"
         app:layout_constraintTop_toTopOf="@+id/btnYoga"
         app:layout_constraintVertical_bias="0.333" />
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/relajacion"/>
 
     <Button
         android:id="@+id/btnRunnig"
@@ -182,7 +195,7 @@
 
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/lbRutinaFuerza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_black"
@@ -196,6 +209,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.267" />
+
 
 
 
