@@ -21,6 +21,9 @@
             android:name=".ConfirmarPreguntas"
             android:exported="false" />
         <activity
+        android:name=".activity_altaintensidad"
+            android:exported="false" />
+        <activity
             android:name=".pregunta7"
             android:exported="false" />
         <activity
