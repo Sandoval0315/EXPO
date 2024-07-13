@@ -21,6 +21,10 @@
             android:name=".activity_mapa_principal"
             android:exported="false" />
 
+        <activity
+            android:name=".activity_yoga"
+            android:exported="false" />
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDximuRbNYkzRBbt-GK5lkp3G-nvJqk1JA" />
