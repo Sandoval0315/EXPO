@@ -15,16 +15,312 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
+
+            <ImageView
+                android:id="@+id/imageView33"
+                android:layout_width="1198dp"
+                android:layout_height="1321dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/fondoclaro" />
+
             <Button
                 android:id="@+id/button2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="1000dp"
+                android:layout_marginTop="800dp"
                 android:text="Button"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.489"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.806" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.074"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.024"
+                app:srcCompat="@drawable/back" />
+
+            <TextView
+                android:id="@+id/lbRutinaIntensidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_black"
+                android:text="RUTINAS"
+                android:textAlignment="viewStart"
+                android:textColor="#454545"
+                android:textSize="48sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.063" />
+
+            <TextView
+                android:id="@+id/lbIntensidad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_black"
+                android:text="DE INTENSIDAD"
+                android:textAlignment="viewStart"
+                android:textColor="#454545"
+                android:textSize="32sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.217"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.113" />
+
+            <ImageView
+                android:id="@+id/imageView34"
+                android:layout_width="424dp"
+                android:layout_height="943dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.39"
+                app:srcCompat="@drawable/moradoo" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="221dp"
+                android:layout_height="50dp"
+                android:fontFamily="@font/lexend"
+                android:text="Comienza con 1 minuto de saltos suaves en el lugar."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.638"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.208" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="224dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/lexend"
+                android:text="Continúa con 1 minuto de estiramientos dinámicos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.65"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.28" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="209dp"
+                android:layout_height="57dp"
+                android:fontFamily="@font/lexend"
+                android:text="Corre en el lugar lo más rápido, durante 30 segundos."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.635"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.359" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="200dp"
+                android:layout_height="46dp"
+                android:fontFamily="@font/lexend"
+                android:text="Continúa con  flexiones de brazos durante 30 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.614"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.429" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="211dp"
+                android:layout_height="51dp"
+                android:text="Realiza repeticiones de burpees durante 30 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.64"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.562" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="188dp"
+                android:layout_height="37dp"
+                android:fontFamily="@font/lexend"
+                android:text="Termina con 10 abdominales."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.587"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.63" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="221dp"
+                android:layout_height="79dp"
+                android:fontFamily="@font/lexend"
+                android:text="Camina en el lugar durante 30 segundos para bajar la intensidad."
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.686"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.714" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="209dp"
+                android:layout_height="42dp"
+                android:fontFamily="@font/lexend"
+                android:text="Realiza sentadillas con salto durante 30 segundos"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.655"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.495" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="222dp"
+                android:layout_height="33dp"
+                android:fontFamily="@font/lexend"
+                android:text="Dedica los últimos 30 segundos a estirar los músculos principales"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.653"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.769" />
+
+            <ImageView
+                android:id="@+id/imageView35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.207"
+                app:srcCompat="@drawable/salto" />
+
+            <ImageView
+                android:id="@+id/imageView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView13"
+                app:layout_constraintHorizontal_bias="0.574"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView35"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/brazosypiernas" />
+
+            <ImageView
+                android:id="@+id/imageView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.359"
+                app:srcCompat="@drawable/correee" />
+
+            <ImageView
+                android:id="@+id/imageView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView26"
+                app:layout_constraintHorizontal_bias="0.579"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.431"
+                app:srcCompat="@drawable/flexiones" />
+
+            <ImageView
+                android:id="@+id/imageView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView30"
+                app:layout_constraintHorizontal_bias="0.579"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.499"
+                app:srcCompat="@drawable/sentadillas" />
+
+            <ImageView
+                android:id="@+id/imageView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView27"
+                app:layout_constraintHorizontal_bias="0.605"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView39"
+                app:layout_constraintVertical_bias="0.052"
+                app:srcCompat="@drawable/tresenuno" />
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="56dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView28"
+                app:layout_constraintHorizontal_bias="0.657"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView40"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/abdominales" />
+
+            <ImageView
+                android:id="@+id/imageView42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="24dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView43"
+                app:layout_constraintEnd_toStartOf="@+id/textView29"
+                app:layout_constraintHorizontal_bias="0.616"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/caminar" />
+
+            <ImageView
+                android:id="@+id/imageView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.17"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.766"
+                app:srcCompat="@drawable/brazosypiernas" />
+
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
