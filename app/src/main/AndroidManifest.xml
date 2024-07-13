@@ -77,12 +77,6 @@
         </intent-filter>
         </activity>
 
-
-        <activity
-            android:name=".ConfirmarPreguntas"
-            android:exported="false">
-
-        </activity>
         <activity
             android:name=".activity_Hidra_y_Alimen"
             android:exported="false" />
