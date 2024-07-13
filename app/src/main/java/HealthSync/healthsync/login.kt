@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -34,6 +35,12 @@ class login : AppCompatActivity() {
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)
         val imgBack = findViewById<ImageView>(R.id.imgBack1)
+        val lbRecuperarC = findViewById<TextView>(R.id.lbRecuperarC)
+
+        lbRecuperarC.setOnClickListener {
+            val intent = Intent(this, Recuperacion::class.java)
+            startActivity(intent)
+            }
 
         imgBack.setOnClickListener{
             val intent = Intent(this, Bienvenida::class.java)
