@@ -3,12 +3,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/navigation_home">
+    app:startDestination="@+id/inicio">
 
     <fragment
-        android:id="@+id/navigation_home"
+        android:id="@+id/inicio"
         android:name="HealthSync.healthsync.ui.home.HomeFragment"
-        android:label="inicio"
+        android:label="fragment_inicio"
         tools:layout="@layout/fragment_home" />
 
     <fragment
@@ -18,9 +18,9 @@
         tools:layout="@layout/fragment_dashboard" />
 
     <fragment
-        android:id="@+id/navigation_notifications"
+        android:id="@+id/estadisticas"
         android:name="HealthSync.healthsync.ui.notifications.NotificationsFragment"
-        android:label="estadisticas"
+        android:label="fragment_estadisticas"
         tools:layout="@layout/fragment_notifications" />
     <fragment
         android:id="@+id/perfil"
