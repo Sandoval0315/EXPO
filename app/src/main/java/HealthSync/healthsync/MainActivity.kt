@@ -19,7 +19,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+//ocultar barra de arriba
+        supportActionBar?.hide()
         val btnSeguir = findViewById<Button>(R.id.btnSeguir)
 
         btnSeguir.setOnClickListener {

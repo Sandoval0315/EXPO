@@ -20,6 +20,10 @@ class pregunta5 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
         val btnAtras = findViewById<Button>(R.id.btnAtras)
 

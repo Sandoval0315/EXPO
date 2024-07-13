@@ -28,7 +28,8 @@ class login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+//ocultar barra de arriba
+        supportActionBar?.hide()
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)

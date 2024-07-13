@@ -20,7 +20,8 @@ class LoadingActivity2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+//ocultar barra de arriba
+        supportActionBar?.hide()
         Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, pregunta1::class.java)
             startActivity(intent)

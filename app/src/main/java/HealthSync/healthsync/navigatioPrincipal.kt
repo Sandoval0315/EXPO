@@ -18,7 +18,8 @@ class navigatioPrincipal : AppCompatActivity() {
 
         binding = ActivityNavigatioPrincipalBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
+//ocultar barra de arriba
+        supportActionBar?.hide()
         val navView: BottomNavigationView = binding.navView
 
         val navController = findNavController(R.id.nav_host_fragment_activity_navigatio_principal)

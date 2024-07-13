@@ -16,5 +16,7 @@ class Activity_rutinafuerza : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //ocultar barra de arriba
+        supportActionBar?.hide()
     }
 }

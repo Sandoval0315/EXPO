@@ -25,6 +25,10 @@ class pregunta2 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             insets
         }
 
+
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+
         val sbEdad = findViewById<SeekBar>(R.id.sbEdad)
         val txtEdad = findViewById<TextView>(R.id.txtEdad)
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)

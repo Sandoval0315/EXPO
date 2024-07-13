@@ -23,6 +23,8 @@ class pregunta3 : AppCompatActivity(),SeekBar.OnSeekBarChangeListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //ocultar barra de arriba
+        supportActionBar?.hide()
 
         val sbEdad = findViewById<SeekBar>(R.id.sbEdad)
         val txtEdad = findViewById<TextView>(R.id.txtEdad)
