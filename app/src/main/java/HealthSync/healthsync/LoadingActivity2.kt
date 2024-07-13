@@ -8,7 +8,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import preguntas.pregunta1
+
 
 class LoadingActivity2 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -27,4 +27,3 @@ class LoadingActivity2 : AppCompatActivity() {
             finish() }, 2500)
     }
     }
-}

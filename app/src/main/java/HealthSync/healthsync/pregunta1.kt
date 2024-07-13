@@ -1,4 +1,4 @@
-package preguntas
+package HealthSync.healthsync
 
 import HealthSync.healthsync.R
 import android.content.Intent

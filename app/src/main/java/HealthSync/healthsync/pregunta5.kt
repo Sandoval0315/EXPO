@@ -1,4 +1,4 @@
-package preguntas
+package HealthSync.healthsync
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
