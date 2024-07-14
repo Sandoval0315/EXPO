@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
+/*class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
 
     private var sensorManager: SensorManager?= null
     private  var running = false
@@ -59,6 +59,7 @@ class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
     }
 
     override fun onSensorChanged(event: SensorEvent?) {
+
     if (running){
         totalstep = event!!.values[0]
         val currentSteps = totalstep.toInt() - previototalstep.toInt()
@@ -97,3 +98,4 @@ class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
         previototalstep = savedNumber
     }
 }
+*/

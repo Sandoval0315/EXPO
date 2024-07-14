@@ -3,6 +3,7 @@ package HealthSync.healthsync.ui.dashboard
 import HealthSync.healthsync.Activity_rutinafuerza
 import HealthSync.healthsync.R
 import HealthSync.healthsync.activity_altaintensidad
+import HealthSync.healthsync.activity_runnig
 import HealthSync.healthsync.activity_rutina_cardiovascular
 import HealthSync.healthsync.activity_rutinas
 import HealthSync.healthsync.activity_yoga
@@ -53,6 +54,10 @@ class DashboardFragment : Fragment() {
         }
         btnFuerzaPesas.setOnClickListener {
             val intent = Intent(requireContext(), Activity_rutinafuerza::class.java)
+            startActivity(intent)
+        }
+        btnRunnig.setOnClickListener {
+            val intent = Intent(requireContext(), activity_runnig::class.java)
             startActivity(intent)
         }
 
