@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android. permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION"/>
 
     <application
         android:allowBackup="true"
@@ -18,9 +19,11 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_contador_pasos"
+            android:exported="false" />
+        <activity
             android:name=".activity_mapa_principal"
             android:exported="false" />
-
         <activity
             android:name=".activity_yoga"
             android:exported="false" />
@@ -77,8 +80,7 @@
             android:exported="false" />
         <activity
             android:name=".activity_mapa"
-            android:exported="true"/>
-
+            android:exported="true" />
         <activity
             android:name=".activity_Hidra_y_Alimen"
             android:exported="false" />
@@ -93,7 +95,7 @@
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
-            android:exported="true" >
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
