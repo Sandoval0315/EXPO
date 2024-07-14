@@ -19,6 +19,31 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_flexiones"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sentadillas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_ritmolento"
+            android:exported="false"
+            android:theme="@style/Theme.HealthSync" />
+        <activity
+            android:name=".activity_correespacio"
+            android:exported="false" />
+        <activity
+            android:name=".activity_estiramientodinamico"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pausa20"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pausas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular"
+            android:exported="false" />
+        <activity
             android:name=".activity_runnig"
             android:exported="false" />
         <activity
