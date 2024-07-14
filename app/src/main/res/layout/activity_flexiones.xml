@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_ritmolento">
+    tools:context=".activity_flexiones">
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imageButton10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,48 +20,55 @@
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:id="@+id/imageView79"
+        android:id="@+id/imageView83"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247"
+        app:layout_constraintVertical_bias="0.336"
         app:srcCompat="@drawable/fondoclaropequeno"/>
 
-    <ImageView
-        android:id="@+id/imageView80"
+    <ImageButton
+        android:id="@+id/imageButton11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789"
-        app:srcCompat="@drawable/fondomaspequenoclaro"  />
+        app:layout_constraintVertical_bias="0.803"
+        app:srcCompat="@drawable/back"/>
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="150dp"
+        android:layout_height="70dp"
+
+        android:layout_marginBottom="48dp"
+        android:text="Registrarse"
+        android:textColor="#454545"
+        app:backgroundTint="#D2CBEC"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView83"
+        app:layout_constraintVertical_bias="0.521" />
 
     <ImageView
-        android:id="@+id/imageView81"
+        android:id="@+id/imageView85"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView79"
-        app:layout_constraintEnd_toEndOf="@+id/imageView79"
-        app:layout_constraintStart_toStartOf="@+id/imageView79"
-        app:layout_constraintTop_toTopOf="@+id/imageView79"
-        app:layout_constraintVertical_bias="0.27"
-        app:srcCompat="@drawable/ritmolento" />
-
-    <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView79"
-        app:layout_constraintEnd_toEndOf="@+id/imageView79"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/imageView79"
-        app:layout_constraintTop_toTopOf="@+id/imageView79"
-        app:layout_constraintVertical_bias="0.923"/>
+        app:layout_constraintBottom_toBottomOf="@+id/imageView83"
+        app:layout_constraintEnd_toEndOf="@+id/imageView83"
+        app:layout_constraintStart_toStartOf="@+id/imageView83"
+        app:layout_constraintTop_toTopOf="@+id/imageView83"
+        app:layout_constraintVertical_bias="0.342"
+        app:srcCompat="@drawable/flexiones2" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
