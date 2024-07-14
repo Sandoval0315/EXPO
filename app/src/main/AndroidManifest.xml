@@ -19,6 +19,9 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_pausa20"
+            android:exported="false" />
+        <activity
             android:name=".activity_pausas"
             android:exported="false" />
         <activity
