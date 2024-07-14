@@ -88,7 +88,7 @@
                 app:layout_constraintVertical_bias="0.108" />
 
             <ImageView
-                android:id="@+id/imageView60"
+                android:id="@+id/imgregresarRRunning"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
