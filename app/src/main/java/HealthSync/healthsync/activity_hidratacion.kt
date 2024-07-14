@@ -16,5 +16,7 @@ class activity_hidratacion : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        //ocultar barra de arriba
+        supportActionBar?.hide()
     }
 }

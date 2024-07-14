@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".activity_rutinas">
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="453dp"
+        android:layout_height="964dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView49"
+                android:layout_width="546dp"
+                android:layout_height="844dp"
+                android:layout_marginBottom="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/_301c9fe_56ee_4963_a948_857920d1bebb" />
+
+            <TextView
+                android:id="@+id/textView38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1148dp"
+                android:layout_marginEnd="3dp"
+                app:layout_constraintEnd_toStartOf="@+id/imageView49"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnRutinaCardio"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="325dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="22dp"
+                android:fontFamily="@font/lexend_extrabold"
+                android:text="RUTINAS                  CARDIOVASCULAR"
+                android:textAlignment="viewStart"
+                android:textAllCaps="false"
+                android:textColor="#3A3636"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:backgroundTint="#7663F2"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lbRutinaFuerza" />
+
+            <Button
+                android:id="@+id/btnFuerzaPesas"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="325dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="21dp"
+                android:fontFamily="@font/lexend_extrabold"
+                android:text="Rutinas de                              Fuerzas con                            Pesas"
+                android:textAlignment="viewStart"
+                android:textColor="#3A3636"
+                android:textSize="16sp"
+                app:backgroundTint="#7663F2"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRutinaCardio" />
+
+            <Button
+                android:id="@+id/btnRunnig"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="325dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/lexend_extrabold"
+                android:text="Rutinas de                              Runnig"
+                android:textAlignment="viewStart"
+                android:textColor="#3A3636"
+                android:textSize="16sp"
+                app:backgroundTint="#7663F2"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnFuerzaPesas" />
+
+            <Button
+                android:id="@+id/btnAltaIntensidad"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="325dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="36dp"
+                android:fontFamily="@font/lexend_extrabold"
+                android:text="Rutinas de                               Alta                                 Intensidad"
+                android:textAlignment="viewStart"
+                android:textColor="#3A3636"
+                android:textSize="16sp"
+                app:backgroundTint="#7663F2"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnRunnig" />
+
+            <Button
+                android:id="@+id/btnYoga"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="322dp"
+                android:layout_height="116dp"
+                android:layout_marginTop="27dp"
+                android:fontFamily="@font/lexend_extrabold"
+                android:text="Yoga y                                       Relajacion"
+                android:textAlignment="viewStart"
+                android:textColor="#3A3636"
+                android:textSize="16sp"
+                app:backgroundTint="#7663F2"
+                app:cornerRadius="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnAltaIntensidad" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="88dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnRutinaCardio"
+                app:layout_constraintEnd_toEndOf="@+id/btnRutinaCardio"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toStartOf="@+id/btnRutinaCardio"
+                app:layout_constraintTop_toTopOf="@+id/btnRutinaCardio"
+                app:srcCompat="@drawable/caminadora" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="88dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="21dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnFuerzaPesas"
+                app:layout_constraintEnd_toEndOf="@+id/btnFuerzaPesas"
+                app:layout_constraintHorizontal_bias="0.945"
+                app:layout_constraintStart_toStartOf="@+id/btnFuerzaPesas"
+                app:layout_constraintTop_toTopOf="@+id/btnFuerzaPesas"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/fuerza" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="88dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="19dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnRunnig"
+                app:layout_constraintEnd_toEndOf="@+id/btnRunnig"
+                app:layout_constraintHorizontal_bias="0.914"
+                app:layout_constraintStart_toStartOf="@+id/btnRunnig"
+                app:layout_constraintTop_toTopOf="@+id/btnRunnig"
+                app:srcCompat="@drawable/runnig" />
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="88dp"
+                android:layout_height="85dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="18dp"
+                app:layout_constraintBottom_toBottomOf="@+id/btnAltaIntensidad"
+                app:layout_constraintEnd_toEndOf="@+id/btnAltaIntensidad"
+                app:layout_constraintHorizontal_bias="0.914"
+                app:layout_constraintStart_toStartOf="@+id/btnAltaIntensidad"
+                app:layout_constraintTop_toTopOf="@+id/btnAltaIntensidad"
+                app:srcCompat="@drawable/intensidad" />
+
+            <ImageView
+                android:id="@+id/imageView18"
+                android:layout_width="428dp"
+                android:layout_height="342dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/rutinas" />
+
+            <TextView
+                android:id="@+id/lbRutinaFuerza"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lexend_black"
+                android:text="RUTINAS"
+                android:textAlignment="viewStart"
+                android:textColor="#454545"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.19"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.313" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

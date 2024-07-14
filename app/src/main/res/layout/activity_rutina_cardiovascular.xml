@@ -40,8 +40,7 @@
                 app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.257"
-                app:srcCompat="@drawable/fondomorado" />
+                app:layout_constraintVertical_bias="0.257" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -61,11 +60,13 @@
                 android:id="@+id/imageView17"
                 android:layout_width="70dp"
                 android:layout_height="57dp"
+                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView14"
-                app:layout_constraintHorizontal_bias="0.729"
+                app:layout_constraintHorizontal_bias="0.549"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/salto"
-                tools:layout_editor_absoluteY="149dp" />
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.148"
+                app:srcCompat="@drawable/salto" />
 
             <TextView
                 android:id="@+id/textView16"
@@ -91,8 +92,7 @@
                 app:layout_constraintEnd_toStartOf="@+id/textView16"
                 app:layout_constraintHorizontal_bias="0.729"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView17"
-                app:srcCompat="@drawable/yoga" />
+                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
 
             <TextView
                 android:id="@+id/textView18"
@@ -107,7 +107,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/imgregresarRCardiovascular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -122,9 +122,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empezar"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="861dp" />
+                app:layout_constraintStart_toStartOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

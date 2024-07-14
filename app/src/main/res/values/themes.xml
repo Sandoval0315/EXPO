@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Base.Theme.HealthSync" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+    <style name="Base.Theme.HealthSync" parent="Theme.MaterialComponents.DayNight">
 
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryVariant">@color/colorPrimaryVariant</item>

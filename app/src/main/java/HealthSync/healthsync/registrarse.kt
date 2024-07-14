@@ -31,6 +31,9 @@ class registrarse : AppCompatActivity() {
             insets
         }
 
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+
         val txtNombre = findViewById<EditText>(R.id.txtNombre)
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
