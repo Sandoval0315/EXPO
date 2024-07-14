@@ -1,5 +1,6 @@
 package HealthSync.healthsync.ui.dashboard
 
+import HealthSync.healthsync.R
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -8,6 +9,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import HealthSync.healthsync.databinding.FragmentDashboardBinding
+import android.widget.Button
 
 class DashboardFragment : Fragment() {
 
@@ -32,6 +34,14 @@ class DashboardFragment : Fragment() {
         dashboardViewModel.text.observe(viewLifecycleOwner) {
             textView.text = it
         }
+
+        val btnRutinaCardio = root.findViewById<Button>(R.id.btnRutinaCardio)
+        val btnFuerzaPesas = root.findViewById<Button>(R.id.btnFuerzaPesas)
+        val btnRunnig = root.findViewById<Button>(R.id.btnRunnig)
+        val btnAltaIntensidad = root.findViewById<Button>(R.id.btnAltaIntensidad)
+        val btnYoga = root.findViewById<Button>(R.id.btnYoga)
+
+
         return root
     }
 
@@ -39,4 +49,5 @@ class DashboardFragment : Fragment() {
         super.onDestroyView()
         _binding = null
     }
+
 }
