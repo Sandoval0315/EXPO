@@ -64,7 +64,7 @@
                     android:textSize="30dp" />
 
                 <Button
-                    android:id="@+id/btnempezarRC"
+                    android:id="@+id/btnmenudesayuno"
                     android:layout_width="331dp"
                     android:layout_height="97dp"
                     android:drawableRight="@drawable/desayuno"
