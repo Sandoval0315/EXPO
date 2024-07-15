@@ -21,7 +21,7 @@ class Bienvenida : AppCompatActivity() {
 
         //ocultar barra de arriba
         supportActionBar?.hide()
-       val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarse);
+       val btnRegistrarse = findViewById<Button>(R.id.btnRegistrarme);
         btnRegistrarse.setOnClickListener {
             val intent = Intent(this, registrarse::class.java)
             startActivity(intent)

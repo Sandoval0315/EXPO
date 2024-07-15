@@ -16,9 +16,10 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.security.MessageDigest
-import java.util.UUID
 
 class registrarse : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,7 +38,7 @@ class registrarse : AppCompatActivity() {
         val txtNombre = findViewById<EditText>(R.id.txtNombre)
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
-        val btnCrearCuenta = findViewById<Button>(R.id.btnAcceder)
+        val btnCrearCuenta = findViewById<Button>(R.id.btnRegistrarse)
         val btnIrAlLogin = findViewById<Button>(R.id.btnIrAlLogin)
         val imgBack = findViewById<ImageView>(R.id.imgBack)
 
@@ -87,27 +88,26 @@ class registrarse : AppCompatActivity() {
         btnCrearCuenta.setOnClickListener {
             val nombre = txtNombre.text.toString()
             val correo = txtCorreo.text.toString()
-            //contraseña ya encriptada
-            val contraseña = hashPassword(txtContraseña.text.toString())
+            val contraseñaPlana = txtContraseña.text.toString()
+            val contraseñaEncriptada = hashPassword(contraseñaPlana)
 
-
-            if (nombre.isEmpty() || correo.isEmpty() || contraseña.isEmpty()) {
+            if (nombre.isEmpty() || correo.isEmpty() || contraseñaPlana.isEmpty()) {
                 // mostrar error en caso de querer crear cuenta con campos vacios
                 val toast = Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT)
                 toast.show()
                 Handler(Looper.getMainLooper()).postDelayed({ toast.cancel() }, 3000)
             } else {
-                CoroutineScope(Dispatchers.IO).launch {
+                GlobalScope.launch (Dispatchers.IO){
                     val objConexion = ClaseConexion().CadenaConexion()
-
                     // Insertar datos en la tabla
-                    val addNombre = objConexion?.prepareStatement("insert into Usuarios (uuid, nombre, correo, contraseña) values(?,?,?,?)")!!
-                    addNombre.setString(1, UUID.randomUUID().toString())
-                    addNombre.setString(2, nombre)
-                    addNombre.setString(3, correo)
-                    addNombre.setString(4, contraseña)
+                    val addNombre = objConexion?.prepareStatement("insert into Usuarios (correo, clave, nombre) values(?,?,?)")!!
+                    addNombre.setString(1, correo)
+                    addNombre.setString(2, contraseñaEncriptada)  // Aquí usamos la contraseña encriptada
+                    addNombre.setString(3, nombre)
                     addNombre.executeUpdate()
-
+                    withContext(Dispatchers.Main){
+                        Toast.makeText(this@registrarse, "Usuario registrado", Toast.LENGTH_SHORT).show()
+                    }
                     runOnUiThread {
                         // limpiar campos al hacer clic
                         txtNombre.setText("")
@@ -120,7 +120,6 @@ class registrarse : AppCompatActivity() {
                     }
                 }
             }
-
         }
 
  

@@ -14,6 +14,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.security.MessageDigest
@@ -32,7 +33,7 @@ class login : AppCompatActivity() {
 //ocultar barra de arriba
         supportActionBar?.hide()
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
-        val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
+        val txtClave = findViewById<EditText>(R.id.txtClave)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)
         val imgBack = findViewById<ImageView>(R.id.imgBack1)
         val lbRecuperarC = findViewById<TextView>(R.id.lbRecuperarC)
@@ -49,15 +50,15 @@ class login : AppCompatActivity() {
 
         btnAcceder.setOnClickListener {
             val txtCorreo = txtCorreo.text.toString()
-            val txtContraseña = hashPassword(txtContraseña.text.toString())
+            val txtContraseña = hashPassword(txtClave.text.toString())
 
             if (txtCorreo.isEmpty() || txtContraseña.isEmpty()) {
                 Toast.makeText(this, "Campos incompletos", Toast.LENGTH_SHORT).show()
             } else {
-                CoroutineScope(Dispatchers.IO).launch {
+                GlobalScope.launch(Dispatchers.IO) {
                     val objConexion = ClaseConexion().CadenaConexion()
 
-                    val addAcceder = "select * from Usuarios where correo = ? AND contraseña = ?"
+                    val addAcceder = "select * from Usuarios where correo = ? AND clave = ?"
                     val objAcceder = objConexion?.prepareStatement(addAcceder)
                     objAcceder?.setString(1, txtCorreo)
                     objAcceder?.setString(2, txtContraseña)
@@ -80,6 +81,7 @@ class login : AppCompatActivity() {
             }
         }
     }
+
 
     // Método para hashear la contraseña con SHA-256
     private fun hashPassword(password: String): String {

@@ -24,8 +24,8 @@
         android:id="@+id/imageView6"
         android:layout_width="460dp"
         android:layout_height="922dp"
-        android:layout_marginBottom="17dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnAcceder"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnRegistrarse"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/_f910cec_c32c_4358_b6ea_84992884f255" />
@@ -105,7 +105,7 @@
         app:layout_constraintVertical_bias="0.434" />
 
     <EditText
-        android:id="@+id/txtContraseña"
+        android:id="@+id/txtClave"
         android:layout_width="332dp"
         android:layout_height="51dp"
         android:background="@drawable/edittext_background"
