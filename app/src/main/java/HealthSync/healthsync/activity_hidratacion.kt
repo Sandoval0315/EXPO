@@ -1,6 +1,8 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,5 +20,12 @@ class activity_hidratacion : AppCompatActivity() {
         }
         //ocultar barra de arriba
         supportActionBar?.hide()
+
+        val btnsalirdehidra = findViewById<ImageButton>(R.id.btnsalirdehidra)
+
+        btnsalirdehidra.setOnClickListener {
+          val  Intent = Intent(this, activity_Hidra_y_Alimen::class.java)
+            startActivity(Intent)
+        }
     }
 }
