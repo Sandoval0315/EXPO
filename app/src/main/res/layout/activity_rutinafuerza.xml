@@ -275,7 +275,7 @@
                 app:layout_constraintVertical_bias="0.567" />
 
             <ImageView
-                android:id="@+id/imageView29"
+                android:id="@+id/imgregresarRFuerza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"

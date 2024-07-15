@@ -56,7 +56,7 @@
 
 
     <ImageView
-        android:id="@+id/imageView45"
+        android:id="@+id/imgregresarRYoga"
         android:layout_width="396dp"
         android:layout_height="408dp"
         app:layout_constraintBottom_toBottomOf="parent"
