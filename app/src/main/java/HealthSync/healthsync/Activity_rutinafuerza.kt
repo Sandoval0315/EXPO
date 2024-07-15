@@ -1,8 +1,10 @@
 package HealthSync.healthsync
 
 import HealthSync.healthsync.ui.dashboard.DashboardFragment
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +12,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
 class Activity_rutinafuerza : AppCompatActivity() {
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -27,6 +30,13 @@ class Activity_rutinafuerza : AppCompatActivity() {
 
         imgregresarRFuerza.setOnClickListener{
             val intent = Intent(this, DashboardFragment::class.java)
+            startActivity(intent)
+        }
+
+        //Nos manda a la pantalla cardiovascular (Saltos continuos)
+        val button = findViewById<Button>(R.id.btn_rtsFuerza)
+        button.setOnClickListener {
+            val intent = Intent(this, activity_tiempovascular::class.java)
             startActivity(intent)
         }
     }
