@@ -108,7 +108,7 @@
                 app:srcCompat="@drawable/back" />
 
             <Button
-                android:id="@+id/btnmenudesayuno"
+                android:id="@+id/btnempezarRC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empezar"
