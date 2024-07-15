@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_pantallafinalderitmo">
+
+    <ImageView
+        android:id="@+id/imageView105"
+        android:layout_width="348dp"
+        android:layout_height="818dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fondoclaromediano" />
+
+    <TextView
+        android:id="@+id/textView70"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="FELICIDADES     RUTINA      FINALIZADA"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toTopOf="@+id/imageView105"
+        app:layout_constraintVertical_bias="0.166" />
+
+    <ImageView
+        android:id="@+id/imageView107"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toTopOf="@+id/imageView105"
+        app:layout_constraintVertical_bias="0.419"
+        app:srcCompat="@drawable/finalrutina" />
+
+    <ImageView
+        android:id="@+id/imageView108"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.087"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toTopOf="@+id/imageView105"
+        app:layout_constraintVertical_bias="0.705"
+        app:srcCompat="@drawable/calorias" />
+
+    <ImageView
+        android:id="@+id/imageView109"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toTopOf="@+id/imageView105"
+        app:layout_constraintVertical_bias="0.82"
+        app:srcCompat="@drawable/relojchiquito" />
+
+    <TextView
+        android:id="@+id/textView71"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="90"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.243"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toBottomOf="@+id/imageView107"
+        app:layout_constraintVertical_bias="0.26" />
+
+    <TextView
+        android:id="@+id/textView72"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="CALORIAS PERDIDADS"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toBottomOf="@+id/imageView107"
+        app:layout_constraintVertical_bias="0.325" />
+
+    <TextView
+        android:id="@+id/textView73"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="12m"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toBottomOf="@+id/imageView107"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textView74"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="100"
+        android:textSize="DE TIEMPO ESTIMADO"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView105"
+        app:layout_constraintEnd_toEndOf="@+id/imageView105"
+        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintStart_toStartOf="@+id/imageView105"
+        app:layout_constraintTop_toBottomOf="@+id/imageView107"
+        app:layout_constraintVertical_bias="0.605" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_ritmolento">
+    tools:context=".activity_ritomo3">
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imageButton18"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:id="@+id/imageView79"
+        android:id="@+id/imageView99"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -28,10 +28,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.247"
-        app:srcCompat="@drawable/fondoclaropequeno"/>
+        app:srcCompat="@drawable/fondoclaropequeno"  />
 
     <ImageView
-        android:id="@+id/imageView80"
+        android:id="@+id/imageView103"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,29 +42,28 @@
         app:srcCompat="@drawable/fondomaspequenoclaro"  />
 
     <ImageView
-        android:id="@+id/imageView81"
+        android:id="@+id/imageView104"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView79"
-        app:layout_constraintEnd_toEndOf="@+id/imageView79"
-        app:layout_constraintStart_toStartOf="@+id/imageView79"
-        app:layout_constraintTop_toTopOf="@+id/imageView79"
-        app:layout_constraintVertical_bias="0.27"
-        app:srcCompat="@drawable/ritmolento" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView99"
+        app:layout_constraintEnd_toEndOf="@+id/imageView99"
+        app:layout_constraintStart_toStartOf="@+id/imageView99"
+        app:layout_constraintTop_toTopOf="@+id/imageView99"
+        app:layout_constraintVertical_bias="0.198"
+        app:srcCompat="@drawable/correespacio" />
 
     <TextView
-        android:id="@+id/textView51"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView69"
+        android:layout_width="248dp"
+        android:layout_height="79dp"
         android:fontFamily="@font/lexend_black"
-        android:text="CAMINA A RITMO LENTO"
+        android:text="CORRE RAPIDAMENTE UN TU ESPACIO"
+        android:textAlignment="center"
+
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView79"
-        app:layout_constraintEnd_toEndOf="@+id/imageView79"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="@+id/imageView79"
-        app:layout_constraintTop_toTopOf="@+id/imageView79"
-        app:layout_constraintVertical_bias="0.923" />
-
-
+        app:layout_constraintBottom_toBottomOf="@+id/imageView99"
+        app:layout_constraintEnd_toEndOf="@+id/imageView99"
+        app:layout_constraintStart_toStartOf="@+id/imageView99"
+        app:layout_constraintTop_toTopOf="@+id/imageView99"
+        app:layout_constraintVertical_bias="0.926" />
 </androidx.constraintlayout.widget.ConstraintLayout>
