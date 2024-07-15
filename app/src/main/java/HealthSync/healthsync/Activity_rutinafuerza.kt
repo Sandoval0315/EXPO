@@ -1,6 +1,9 @@
 package HealthSync.healthsync
 
+import HealthSync.healthsync.ui.dashboard.DashboardFragment
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,5 +21,13 @@ class Activity_rutinafuerza : AppCompatActivity() {
         }
         //ocultar barra de arriba
         supportActionBar?.hide()
+
+
+        val imgregresarRFuerza = findViewById<ImageView>(R.id.imgregresarRFuerza)
+
+        imgregresarRFuerza.setOnClickListener{
+            val intent = Intent(this, DashboardFragment::class.java)
+            startActivity(intent)
+        }
     }
 }

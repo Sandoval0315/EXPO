@@ -84,16 +84,6 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView14"
                 app:layout_constraintVertical_bias="0.051" />
 
-            <ImageView
-                android:id="@+id/imageView18"
-                android:layout_width="70dp"
-                android:layout_height="57dp"
-                android:layout_marginTop="4dp"
-                app:layout_constraintEnd_toStartOf="@+id/textView16"
-                app:layout_constraintHorizontal_bias="0.729"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView17" />
-
             <TextView
                 android:id="@+id/textView18"
                 android:layout_width="315dp"
@@ -107,7 +97,7 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
-                android:id="@+id/imageView19"
+                android:id="@+id/imgregresarRCardiovascular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
@@ -118,13 +108,80 @@
                 app:srcCompat="@drawable/back" />
 
             <Button
-                android:id="@+id/button4"
+                android:id="@+id/btnmenudesayuno"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Empezar"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView67"
+                android:layout_width="210dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="20dp"
+                android:text="Corre en el lugar lo más rápido, durante 30 segundos."
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView16"
+                tools:layout_editor_absoluteX="192dp" />
+
+            <TextView
+                android:id="@+id/textView68"
+                android:layout_width="173dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="60dp"
+                android:text="Descansa durante 30 segundos, caminando en el lugar a un ritmo lento."
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="@+id/textView67"
+                tools:layout_editor_absoluteX="195dp" />
+
+            <TextView
+                android:id="@+id/textView69"
+                android:layout_width="184dp"
+                android:layout_height="78dp"
+                android:text="Realiza 10 repeticiones de sentadillas."
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView68"
+                tools:layout_editor_absoluteX="198dp" />
+
+            <TextView
+                android:id="@+id/textView70"
+                android:layout_width="152dp"
+                android:layout_height="44dp"
+                android:text="Continúa con 10 flexiones de brazos."
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView69"
+                tools:layout_editor_absoluteX="195dp" />
+
+            <TextView
+                android:id="@+id/textView71"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="44dp"
+                android:text="Termina con 10 abdominales."
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView69"
+                tools:layout_editor_absoluteX="192dp" />
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="217dp"
+                android:layout_height="66dp"
+                android:layout_marginTop="28dp"
+                android:text="Camina en el lugar durante 30 segundos para bajar la intensidad."
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView71"
+                tools:layout_editor_absoluteX="192dp" />
+
+            <TextView
+                android:id="@+id/textView73"
+                android:layout_width="193dp"
+                android:layout_height="82dp"
+                android:text="Dedica los últimos 30 segundos a estirar los músculos principales"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/textView72"
+                tools:layout_editor_absoluteX="192dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

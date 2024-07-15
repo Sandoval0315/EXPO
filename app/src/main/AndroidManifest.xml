@@ -19,6 +19,62 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_pantallafinalderitmo"
+            android:exported="false" />
+        <activity
+            android:name=".activity_ritomo3"
+            android:exported="false" />
+        <activity
+            android:name=".activity_ritmo2"
+            android:exported="false" />
+        <activity
+            android:name=".activitypararunnig2"
+            android:exported="false"
+            android:theme="@style/Theme.HealthSync" />
+        <activity
+            android:name=".activity_pararunnig"
+            android:exported="false" />
+        <activity
+            android:name=".activity_rutinafinalizadafuerza"
+            android:exported="false" />
+        <activity
+            android:name=".activity_plancha"
+            android:exported="false" />
+        <activity
+            android:name=".activity_zancadas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_rutinafinalizada"
+            android:exported="false" />
+        <activity
+            android:name=".activity_abdominales"
+            android:exported="false" />
+        <activity
+            android:name=".activity_flexiones"
+            android:exported="false" />
+        <activity
+            android:name=".activity_sentadillas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_ritmolento"
+            android:exported="false"
+            android:theme="@style/Theme.HealthSync" />
+        <activity
+            android:name=".activity_correespacio"
+            android:exported="false" />
+        <activity
+            android:name=".activity_estiramientodinamico"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pausa20"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pausas"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular"
+            android:exported="false" />
+        <activity
             android:name=".activity_runnig"
             android:exported="false" />
         <activity
