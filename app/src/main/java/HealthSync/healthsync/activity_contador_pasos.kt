@@ -12,8 +12,9 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.mikhaellopez.circularprogressbar.CircularProgressBar
 
-/*class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
+class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
 
     private var sensorManager: SensorManager?= null
     private  var running = false
@@ -21,6 +22,7 @@ import androidx.core.view.WindowInsetsCompat
     private var previototalstep = 0f
 
     val tv_stepsTaken = findViewById<TextView>(R.id.tv_stepsTaken)
+    val circularProgressBar = findViewById<CircularProgressBar>(R.id.circularProgressBar)
 
 
 
@@ -65,7 +67,7 @@ import androidx.core.view.WindowInsetsCompat
         val currentSteps = totalstep.toInt() - previototalstep.toInt()
         tv_stepsTaken.text = ("$currentSteps")
 
-        progrees_circular.apply{
+        circularProgressBar.apply{
             setProgressWithAnimation(currentSteps.toFloat())
         }
         }
@@ -94,8 +96,6 @@ import androidx.core.view.WindowInsetsCompat
     private fun loadData(){
         val sharedPreferences = getSharedPreferences("myPrefs",Context.MODE_PRIVATE)
         val savedNumber = sharedPreferences.getFloat("key1",0f)
-        log.d("activity_contador_pasos","$savedNumber")
         previototalstep = savedNumber
     }
 }
-*/
