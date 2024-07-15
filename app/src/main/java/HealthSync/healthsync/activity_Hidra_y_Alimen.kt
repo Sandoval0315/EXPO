@@ -1,6 +1,9 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageButton
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -18,5 +21,25 @@ class activity_Hidra_y_Alimen : AppCompatActivity() {
         }
         //ocultar barra de arriba
         supportActionBar?.hide()
+
+        val btn_hidratacion = findViewById<Button>(R.id.btnhidratacion)
+        val btn_alimen = findViewById<Button>(R.id.btnalimentacion)
+        val btn_regresar = findViewById<ImageButton>(R.id.btnsalir)
+
+        btn_hidratacion.setOnClickListener {
+            val intent = Intent(this, activity_hidratacion::class.java)
+            startActivity(intent)
+        }
+
+        btn_alimen.setOnClickListener {
+            val intent = Intent(this, activity_alimentacion::class.java)
+            startActivity(intent)
+        }
+
+        btn_regresar.setOnClickListener {
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            startActivity(intent)
+        }
+
     }
 }
