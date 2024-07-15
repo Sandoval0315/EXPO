@@ -53,7 +53,6 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/btnmenudesayuno"
                 app:layout_constraintVertical_bias="0.317">
 
                 <TextView
@@ -65,7 +64,7 @@
                     android:textSize="30dp" />
 
                 <Button
-                    android:id="@+id/btnmenudesayuno"
+                    android:id="@+id/btnempezarRC"
                     android:layout_width="331dp"
                     android:layout_height="97dp"
                     android:drawableRight="@drawable/desayuno"
