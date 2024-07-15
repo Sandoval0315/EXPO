@@ -19,6 +19,15 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_rutinafinalizadafuerza"
+            android:exported="false" />
+        <activity
+            android:name=".activity_plancha"
+            android:exported="false" />
+        <activity
+            android:name=".activity_zancadas"
+            android:exported="false" />
+        <activity
             android:name=".activity_rutinafinalizada"
             android:exported="false" />
         <activity
