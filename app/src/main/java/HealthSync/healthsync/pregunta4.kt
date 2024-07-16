@@ -14,6 +14,11 @@ import android.widget.Button
 import android.widget.EditText
 
 class pregunta4 : AppCompatActivity() {
+
+    companion object {
+        lateinit var pesoSeleccionado: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -37,6 +42,7 @@ class pregunta4 : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable?) {
+                pesoSeleccionado = s.toString()
                 btnSiguiente.visibility = if (s?.toString()?.isNotEmpty() == true) View.VISIBLE else View.GONE
             }
         })

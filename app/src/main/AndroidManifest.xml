@@ -37,7 +37,7 @@
             android:name=".activity_ritmo2"
             android:exported="false" />
         <activity
-            android:name=".activitypararunnig2"
+            android:name=".activity_running"
             android:exported="false"
             android:theme="@style/Theme.HealthSync" />
         <activity

@@ -14,6 +14,9 @@ import androidx.core.view.WindowInsetsCompat
 
 class pregunta2 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
+    companion object {
+        lateinit var edadSeleccionada: String
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +28,6 @@ class pregunta2 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             insets
         }
 
-
         //ocultar barra de arriba
         supportActionBar?.hide()
 
@@ -36,14 +38,13 @@ class pregunta2 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         sbEdad.setOnSeekBarChangeListener(this)
 
-
         btnSiguiente.visibility = View.GONE
         btnSiguiente.setOnClickListener{
             btnSiguiente.visibility = View.GONE
-
         }
 
         btnSiguiente.setOnClickListener {
+            edadSeleccionada = txtEdad.text.toString()
             val intent = Intent(this, pregunta3::class.java)
             startActivity(intent)
         }
@@ -52,18 +53,17 @@ class pregunta2 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
             val intent = Intent(this, pregunta1::class.java)
             startActivity(intent)
         }
-
     }
+
     override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
         // con esto se actualiza el edit text cuando arrastre el seekbar
-        findViewById<TextView>(R.id.txtEdad).text = progress.toString()
+        val txtEdad = findViewById<TextView>(R.id.txtEdad)
+        txtEdad.text = progress.toString()
+        edadSeleccionada = progress.toString()
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
-        val btnAtras = findViewById<Button>(R.id.btnAtras)
-
         btnSiguiente.visibility = View.VISIBLE
-
-
     }
+
     //estas dos son para cuando se mueva y se detenga el seekvar
     override fun onStartTrackingTouch(seekBar: SeekBar?) {}
     override fun onStopTrackingTouch(seekBar: SeekBar?) {}

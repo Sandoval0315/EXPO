@@ -7,9 +7,17 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import HealthSync.healthsync.R
 import android.content.Intent
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.Button
+import android.widget.EditText
 
 class pregunta6 : AppCompatActivity() {
+
+    companion object {
+        lateinit var imcSeleccionado: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,9 +33,18 @@ class pregunta6 : AppCompatActivity() {
 
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
         val btnAtras = findViewById<Button>(R.id.btnAtras)
+        val txtImc = findViewById<EditText>(R.id.txtImc)
+
+        txtImc.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable?) {
+                imcSeleccionado = s.toString()
+            }
+        })
 
         btnSiguiente.setOnClickListener {
-            val intent = Intent(this, pregunta7::class.java)
+            val intent = Intent(this, navigatioPrincipal::class.java)
             startActivity(intent)
         }
 
