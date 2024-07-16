@@ -45,7 +45,7 @@ class Recuperacion : AppCompatActivity() {
                 CoroutineScope(Dispatchers.Main).launch {
                     try {
                         withContext(Dispatchers.IO) {
-                            EnvioDeCorreo(correo, "Recuperación de contraseña", "Hola")
+                            EnvioDeCorreo("${txtCorreoR.text}", "Recuperación de contraseña", "Hola")
                         }
                         Toast.makeText(this@Recuperacion, "Correo enviado satisfactoriamente", Toast.LENGTH_SHORT).show()
                     } catch (e: Exception) {
