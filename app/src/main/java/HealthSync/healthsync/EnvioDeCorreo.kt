@@ -1,3 +1,4 @@
+
 package HealthSync.healthsync
 
 import kotlinx.coroutines.Dispatchers
@@ -11,7 +12,7 @@ import javax.mail.Transport
 import javax.mail.internet.InternetAddress
 import javax.mail.internet.MimeMessage
 
-suspend fun enviarCorreo(receptor: String, sujeto: String, mensaje: String) = withContext(
+suspend fun EnvioDeCorreo(receptor: String, sujeto: String, mensaje: String) = withContext(
     Dispatchers.IO) {
     // Configuración del servidor SMTP
     val props = Properties().apply {

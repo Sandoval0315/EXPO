@@ -3,7 +3,9 @@ package HealthSync.healthsync
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -11,6 +13,7 @@ import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class Recuperacion : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -28,17 +31,29 @@ class Recuperacion : AppCompatActivity() {
 
         val btnRecuperar = findViewById<Button>(R.id.btnRecuperarC)
         val imgBack = findViewById<ImageView>(R.id.imgBack)
+        val txtCorreoR = findViewById<EditText>(R.id.txtCorreoR)
 
-        imgBack.setOnClickListener{
+        imgBack.setOnClickListener {
             val intent = Intent(this, login::class.java)
             startActivity(intent)
         }
 
-
         btnRecuperar.setOnClickListener {
-            CoroutineScope(Dispatchers.Main).launch {
-                enviarCorreo("20200300@ricaldone.edu.sv", "Recuperación de contraseña", "Hola")
+            val correo = txtCorreoR.text.toString().trim()
 
+            if (correo.isNotEmpty()) {
+                CoroutineScope(Dispatchers.Main).launch {
+                    try {
+                        withContext(Dispatchers.IO) {
+                            EnvioDeCorreo(correo, "Recuperación de contraseña", "Hola")
+                        }
+                        Toast.makeText(this@Recuperacion, "Correo enviado satisfactoriamente", Toast.LENGTH_SHORT).show()
+                    } catch (e: Exception) {
+                        Toast.makeText(this@Recuperacion, "No se pudo enviar el correo", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            } else {
+                Toast.makeText(this@Recuperacion, "Por favor, ingrese un correo electrónico", Toast.LENGTH_SHORT).show()
             }
         }
     }
