@@ -42,12 +42,16 @@ class Recuperacion : AppCompatActivity() {
             val correo = txtCorreoR.text.toString().trim()
 
             if (correo.isNotEmpty()) {
+                val codigoVerificacion = generarCodigoVerificacion()
+                val mensaje = generarMensajeHtml(codigoVerificacion)
+
                 CoroutineScope(Dispatchers.Main).launch {
                     try {
                         withContext(Dispatchers.IO) {
-                            EnvioDeCorreo("${txtCorreoR.text}", "Recuperación de contraseña", "Hola")
+                            enviarCorreo(correo, "Recuperación de contraseña", mensaje)
                         }
                         Toast.makeText(this@Recuperacion, "Correo enviado satisfactoriamente", Toast.LENGTH_SHORT).show()
+                        txtCorreoR.text.clear()  // Limpiar el campo de correo
                     } catch (e: Exception) {
                         Toast.makeText(this@Recuperacion, "No se pudo enviar el correo", Toast.LENGTH_SHORT).show()
                     }
@@ -56,5 +60,31 @@ class Recuperacion : AppCompatActivity() {
                 Toast.makeText(this@Recuperacion, "Por favor, ingrese un correo electrónico", Toast.LENGTH_SHORT).show()
             }
         }
+    }
+
+    private fun generarCodigoVerificacion(): String {
+        val caracteres = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        return (1..6).map { caracteres.random() }.joinToString("")
+    }
+
+    private fun generarMensajeHtml(codigo: String): String {
+        return """
+            <html>
+            <body style="font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0;">
+                <div style="max-width: 600px; margin: auto; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h1 style="color: #6a1b9a; text-align: center;">HealthSync</h1>
+                    <h2 style="color: #6a1b9a; text-align: center;">Recuperación de Contraseña</h2>
+                    <p style="color: #333333;">Hola,</p>
+                    <p style="color: #333333;">Has solicitado la recuperación de tu contraseña. Utiliza el siguiente código de verificación:</p>
+                    <div style="background-color: #6a1b9a; color: #ffffff; padding: 20px; text-align: center; border-radius: 5px;">
+                        <h2>$codigo</h2>
+                    </div>
+                    <p style="color: #333333;">Por favor, ingresa este código en la aplicación para continuar con el proceso de recuperación.</p>
+                    <p style="color: #333333;">Saludos,</p>
+                    <p style="color: #333333;">El equipo de HealthSync</p>
+                </div>
+            </body>
+            </html>
+        """.trimIndent()
     }
 }

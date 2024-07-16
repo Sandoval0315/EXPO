@@ -1,4 +1,3 @@
-
 package HealthSync.healthsync
 
 import kotlinx.coroutines.Dispatchers
@@ -12,7 +11,7 @@ import javax.mail.Transport
 import javax.mail.internet.InternetAddress
 import javax.mail.internet.MimeMessage
 
-suspend fun EnvioDeCorreo(receptor: String, sujeto: String, mensaje: String) = withContext(
+suspend fun enviarCorreo(receptor: String, sujeto: String, mensaje: String) = withContext(
     Dispatchers.IO) {
     // Configuración del servidor SMTP
     val props = Properties().apply {
@@ -35,7 +34,7 @@ suspend fun EnvioDeCorreo(receptor: String, sujeto: String, mensaje: String) = w
             setFrom(InternetAddress("somos.healthsync@gmail.com"))
             addRecipient(Message.RecipientType.TO, InternetAddress(receptor))
             subject = sujeto
-            setText(mensaje)
+            setContent(mensaje, "text/html; charset=utf-8")
         }
         Transport.send(message)
         println("Correo enviado satisfactoriamente")
