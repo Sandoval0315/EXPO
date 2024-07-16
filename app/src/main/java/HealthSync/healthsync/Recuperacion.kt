@@ -64,7 +64,7 @@ class Recuperacion : AppCompatActivity() {
 
     private fun generarCodigoVerificacion(): String {
         val caracteres = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-        return (1..6).map { caracteres.random() }.joinToString("")
+        return (1..5).map { caracteres.random() }.joinToString("")
     }
 
     private fun generarMensajeHtml(codigo: String): String {
