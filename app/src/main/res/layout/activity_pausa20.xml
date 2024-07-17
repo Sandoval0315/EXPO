@@ -8,7 +8,7 @@
     tools:context=".activity_pausa20">
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/imgbtn_regresoPausa20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageView
-        android:id="@+id/imageView72"
+        android:id="@+id/img_finRutina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
