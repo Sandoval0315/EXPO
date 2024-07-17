@@ -28,5 +28,7 @@ class activity_tiempovascular : AppCompatActivity() {
             val intent = Intent(this, DashboardFragment::class.java)
             startActivity(intent)
         }
+
+
     }
 }
