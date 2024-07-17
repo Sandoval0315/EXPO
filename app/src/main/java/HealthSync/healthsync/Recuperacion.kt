@@ -17,7 +17,8 @@ import kotlinx.coroutines.withContext
 
 class Recuperacion : AppCompatActivity() {
     companion object {
-        var codigoVerificacion: String = ""
+        var codigoVer: String = ""
+        var correo : String = ""
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -43,11 +44,11 @@ class Recuperacion : AppCompatActivity() {
         }
 
         btnRecuperar.setOnClickListener {
-            val correo = txtCorreoR.text.toString().trim()
+            correo = txtCorreoR.text.toString().trim()
 
             if (correo.isNotEmpty()) {
-                codigoVerificacion = generarCodigoVerificacion()
-                val mensaje = generarMensajeHtml(codigoVerificacion)
+                codigoVer = generarCodigoVerificacion()
+                val mensaje = generarMensajeHtml(codigoVer)
 
                 CoroutineScope(Dispatchers.Main).launch {
                     try {
@@ -57,11 +58,11 @@ class Recuperacion : AppCompatActivity() {
                         Toast.makeText(this@Recuperacion, "Correo enviado satisfactoriamente", Toast.LENGTH_SHORT).show()
                         txtCorreoR.text.clear()  // Limpiar el campo de correo
                         // Redirigir a la actividad de código de verificación
-                        val intent = Intent(this@Recuperacion, codigoVerificacion::class.java)
-                        startActivity(intent)
                     } catch (e: Exception) {
                         Toast.makeText(this@Recuperacion, "No se pudo enviar el correo", Toast.LENGTH_SHORT).show()
                     }
+                    val intent = Intent(this@Recuperacion, codigoVerificacion::class.java)
+                    startActivity(intent)
                 }
             } else {
                 Toast.makeText(this@Recuperacion, "Por favor, ingrese un correo electrónico", Toast.LENGTH_SHORT).show()

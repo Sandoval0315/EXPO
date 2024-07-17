@@ -106,13 +106,8 @@
 
         <activity
             android:name=".Recuperacion"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".ConfirmarPreguntas"
             android:exported="false" />
@@ -173,7 +168,13 @@
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <activity
             android:name=".LoadingActivity"
