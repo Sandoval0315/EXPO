@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.util.Patterns
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -14,7 +15,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
@@ -74,7 +74,6 @@ class registrarse : AppCompatActivity() {
         txtCorreo.setOnFocusChangeListener(textWatcher)
         txtContraseña.setOnFocusChangeListener(textWatcher)
 
-
         //Escriptacion de la contraseña
         fun hashPassword(password: String): String {
             val bytes = password.toByteArray()
@@ -83,45 +82,66 @@ class registrarse : AppCompatActivity() {
             return digest.fold("") { str, it -> str + "%02x".format(it) }
         }
 
+        // Función para validar el correo electrónico
+        fun isValidEmail(email: String): Boolean {
+            return Patterns.EMAIL_ADDRESS.matcher(email).matches()
+        }
 
+        // Función para validar la contraseña (mayúsculas, minúsculas y mínimo 8 caracteres)
+        fun isValidPassword(password: String): Boolean {
+            return password.length >= 8 && password.any { it.isUpperCase() } && password.any { it.isLowerCase() }
+        }
+
+        // Función para verificar si el correo ya existe en la base de datos
+        suspend fun isEmailAlreadyRegistered(email: String): Boolean {
+            return withContext(Dispatchers.IO) {
+                val objConexion = ClaseConexion().CadenaConexion()
+                val query = "SELECT COUNT(*) FROM Usuarios WHERE correo = ?"
+                val statement = objConexion?.prepareStatement(query)
+                statement?.setString(1, email)
+                val resultSet = statement?.executeQuery()
+                if (resultSet?.next() == true) {
+                    resultSet.getInt(1) > 0
+                } else {
+                    false
+                }
+            }
+        }
 
         btnCrearCuenta.setOnClickListener {
             val nombre = txtNombre.text.toString()
             val correo = txtCorreo.text.toString()
             val contraseñaPlana = txtContraseña.text.toString()
-            val contraseñaEncriptada = hashPassword(contraseñaPlana)
 
             if (nombre.isEmpty() || correo.isEmpty() || contraseñaPlana.isEmpty()) {
-                // mostrar error en caso de querer crear cuenta con campos vacios
-                val toast = Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT)
-                toast.show()
-                Handler(Looper.getMainLooper()).postDelayed({ toast.cancel() }, 3000)
+                Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
+            } else if (!isValidEmail(correo)) {
+                Toast.makeText(this, "Ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show()
+            } else if (!isValidPassword(contraseñaPlana)) {
+                Toast.makeText(this, "Contraseña insegura", Toast.LENGTH_SHORT).show()
             } else {
-                GlobalScope.launch (Dispatchers.IO){
-                    val objConexion = ClaseConexion().CadenaConexion()
-                    // Insertar datos en la tabla
-                    val addNombre = objConexion?.prepareStatement("insert into Usuarios (correo, clave, nombre) values(?,?,?)")!!
-                    addNombre.setString(1, correo)
-                    addNombre.setString(2, contraseñaEncriptada)  // Aquí usamos la contraseña encriptada
-                    addNombre.setString(3, nombre)
-                    addNombre.executeUpdate()
-                    withContext(Dispatchers.Main){
+                GlobalScope.launch(Dispatchers.Main) {
+                    if (isEmailAlreadyRegistered(correo)) {
+                        Toast.makeText(this@registrarse, "Correo inválido: ya está en uso", Toast.LENGTH_SHORT).show()
+                    } else {
+                        val contraseñaEncriptada = hashPassword(contraseñaPlana)
+                        withContext(Dispatchers.IO) {
+                            val objConexion = ClaseConexion().CadenaConexion()
+                            val addNombre = objConexion?.prepareStatement("INSERT INTO Usuarios (correo, clave, nombre) VALUES (?, ?, ?)")
+                            addNombre?.setString(1, correo)
+                            addNombre?.setString(2, contraseñaEncriptada)
+                            addNombre?.setString(3, nombre)
+                            addNombre?.executeUpdate()
+                        }
                         Toast.makeText(this@registrarse, "Usuario registrado", Toast.LENGTH_SHORT).show()
-                    }
-                    runOnUiThread {
-                        // limpiar campos al hacer clic
                         txtNombre.setText("")
                         txtCorreo.setText("")
                         txtContraseña.setText("")
-
-                        // quitar botón de crear cuenta y poner botón para que lo mande al iniciar sesión
                         btnCrearCuenta.visibility = View.GONE
                         btnIrAlLogin.visibility = View.VISIBLE
                     }
                 }
             }
         }
-
- 
     }
 }

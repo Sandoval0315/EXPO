@@ -41,7 +41,7 @@
             android:name=".activity_ritmo2"
             android:exported="false" />
         <activity
-            android:name=".activity_running"
+            android:name=".activity_runnig"
             android:exported="false"
             android:theme="@style/Theme.HealthSync" />
         <activity
@@ -86,9 +86,6 @@
             android:exported="false" />
         <activity
             android:name=".activity_tiempovascular"
-            android:exported="false" />
-        <activity
-            android:name=".activity_runnig"
             android:exported="false" />
         <activity
             android:name=".activity_contador_pasos"
