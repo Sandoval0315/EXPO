@@ -16,6 +16,10 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 
 class Recuperacion : AppCompatActivity() {
+    companion object {
+        var codigoVerificacion: String = ""
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,7 +30,7 @@ class Recuperacion : AppCompatActivity() {
             insets
         }
 
-        //ocultar barra de arriba
+        // Ocultar barra de arriba
         supportActionBar?.hide()
 
         val btnRecuperar = findViewById<Button>(R.id.btnRecuperarC)
@@ -42,7 +46,7 @@ class Recuperacion : AppCompatActivity() {
             val correo = txtCorreoR.text.toString().trim()
 
             if (correo.isNotEmpty()) {
-                val codigoVerificacion = generarCodigoVerificacion()
+                codigoVerificacion = generarCodigoVerificacion()
                 val mensaje = generarMensajeHtml(codigoVerificacion)
 
                 CoroutineScope(Dispatchers.Main).launch {
@@ -52,6 +56,9 @@ class Recuperacion : AppCompatActivity() {
                         }
                         Toast.makeText(this@Recuperacion, "Correo enviado satisfactoriamente", Toast.LENGTH_SHORT).show()
                         txtCorreoR.text.clear()  // Limpiar el campo de correo
+                        // Redirigir a la actividad de código de verificación
+                        val intent = Intent(this@Recuperacion, codigoVerificacion::class.java)
+                        startActivity(intent)
                     } catch (e: Exception) {
                         Toast.makeText(this@Recuperacion, "No se pudo enviar el correo", Toast.LENGTH_SHORT).show()
                     }
