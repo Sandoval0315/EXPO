@@ -19,11 +19,12 @@ import android.text.TextWatcher
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import java.sql.Connection
-import java.sql.DriverManager
-import java.sql.PreparedStatement
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
-/*class pregunta7 : AppCompatActivity() {
+class pregunta7 : AppCompatActivity() {
 
     companion object {
         lateinit var experienciaSeleccionada: String
@@ -55,22 +56,38 @@ import java.sql.PreparedStatement
         })
 
         btnSiguiente.setOnClickListener {
+            CoroutineScope(Dispatchers.IO).launch {
+                val objConexion = ClaseConexion().CadenaConexion()
 
-            val objConexion = ClaseConexion().CadenaConexion()
+                // Insertar en la tabla Experiencia
+                val insertarExperiencia = objConexion?.prepareStatement("INSERT INTO Experiencia (experiencia) VALUES (?)")!!
+                insertarExperiencia.setString(1, experienciaSeleccionada)
+                insertarExperiencia.executeUpdate()
 
-            val insertarPreguntas = objConexion?.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, experiencia) VALUES (?, ?, ?, ?, ?, ?)")!!
+                // Obtener el último idExperiencia insertado
+                val obtenerIdExperiencia = objConexion.prepareStatement("SELECT MAX(idExperiencia) FROM Experiencia")
+                val resultSet = obtenerIdExperiencia.executeQuery()
+                var idExperiencia: Int = -1
+                if (resultSet.next()) {
+                    idExperiencia = resultSet.getInt(1)
+                }
 
-            insertarPreguntas.setString(1, edadSeleccionada)
-            insertarPreguntas.setString(2, estaturaSeleccionada)
-            insertarPreguntas.setString(3, pesoSeleccionado)
-            insertarPreguntas.setString(4, imcSeleccionado)
-            insertarPreguntas.setString(5, enfermedadSeleccionada)
-            insertarPreguntas.setString(6, experienciaSeleccionada)
-            insertarPreguntas.executeUpdate()
+                // Insertar en la tabla Cliente
+                val insertarCliente = objConexion.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, idExperiencia) VALUES (?, ?, ?, ?, ?, ?)")
+                insertarCliente.setString(1, edadSeleccionada)
+                insertarCliente.setString(2, estaturaSeleccionada)
+                insertarCliente.setString(3, pesoSeleccionado)
+                insertarCliente.setString(4, imcSeleccionado)
+                insertarCliente.setString(5, enfermedadSeleccionada)
+                insertarCliente.setInt(6, idExperiencia)
+                insertarCliente.executeUpdate()
 
-            Toast.makeText(this, "Bienvenido a HealthSync", Toast.LENGTH_SHORT).show()
-            val intent = Intent(this, navigatioPrincipal::class.java)
-            startActivity(intent)
+                withContext(Dispatchers.Main) {
+                    Toast.makeText(this@pregunta7, "Bienvenido a HealthSync", Toast.LENGTH_SHORT).show()
+                    val intent = Intent(this@pregunta7, navigatioPrincipal::class.java)
+                    startActivity(intent)
+                }
+            }
         }
 
         btnAtras.setOnClickListener {
@@ -79,4 +96,3 @@ import java.sql.PreparedStatement
         }
     }
 }
-*/

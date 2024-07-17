@@ -44,7 +44,7 @@ class pregunta6 : AppCompatActivity() {
         })
 
         btnSiguiente.setOnClickListener {
-            val intent = Intent(this, navigatioPrincipal::class.java)
+            val intent = Intent(this, pregunta7::class.java)
             startActivity(intent)
         }
 
