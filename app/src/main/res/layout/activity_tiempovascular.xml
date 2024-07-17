@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageView
-        android:id="@+id/imageView67"
+        android:id="@+id/imgParaPausa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
