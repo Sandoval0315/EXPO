@@ -8,113 +8,90 @@
     android:background="#D2CBEC"
     tools:context=".activity_alimentacion">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:layout_editor_absoluteY="0dp">
+    <LinearLayout
+        android:layout_width="452dp"
+        android:layout_height="586dp"
+        android:layout_marginBottom="4dp"
+        android:gravity="center|center_vertical|fill_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/constraintLayout3"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/lexend_black"
+            android:text="Horario de Alimentacion"
+            android:textSize="30sp" />
 
-            <ImageView
-                android:id="@+id/imageView12"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.066"
-                app:srcCompat="@drawable/dieta" />
+        <Button
+            android:id="@+id/btnmenudesayuno"
+            android:layout_width="331dp"
+            android:layout_height="97dp"
+            android:drawableRight="@drawable/desayuno"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="Menú de desayunos"
+            app:cornerRadius="35dp" />
 
-            <ImageButton
-                android:id="@+id/btnsalirdealimen"
-                android:layout_width="54dp"
-                android:layout_height="64dp"
-                android:background="#D2CBEC"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/back" />
+        <Button
+            android:id="@+id/btnrefrigeriomanana"
+            android:layout_width="331dp"
+            android:layout_height="97dp"
+            android:drawableRight="@drawable/tetera"
+            android:text="Recomendaciones de refrigerio"
+            app:cornerRadius="35dp" />
 
-            <LinearLayout
-                android:layout_width="438dp"
-                android:layout_height="660dp"
-                android:layout_marginTop="13dp"
-                android:layout_marginBottom="242dp"
-                android:gravity="center|center_vertical|fill_vertical"
-                android:orientation="vertical"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintVertical_bias="0.317">
+        <Button
+            android:id="@+id/btnmenualmuerzo"
+            android:layout_width="331dp"
+            android:layout_height="97dp"
+            android:drawableRight="@drawable/almuerzo"
+            android:text="Menù Almuerzo"
+            app:cornerRadius="35dp" />
 
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/lexend"
-                    android:text="Horario de Alimentacion"
-                    android:textSize="30dp" />
+        <Button
+            android:id="@+id/btnrefrigeriotarde"
+            android:layout_width="331dp"
+            android:layout_height="97dp"
+            android:drawableRight="@drawable/tetera"
+            android:text="Recomendaciones de Refrigerio"
+            app:cornerRadius="35dp" />
 
-                <Button
-                    android:id="@+id/btnmenudesayuno"
-                    android:layout_width="331dp"
-                    android:layout_height="97dp"
-                    android:drawableRight="@drawable/desayuno"
-                    android:gravity="center_horizontal|center_vertical"
-                    android:text="Menú de desayunos"
-                    app:cornerRadius="35dp" />
+        <Button
+            android:id="@+id/btncenas"
+            android:layout_width="331dp"
+            android:layout_height="97dp"
+            android:layout_marginBottom="208dp"
+            android:drawableRight="@drawable/cenas"
+            android:text="Recomendaciones de Cenas"
+            app:cornerRadius="35dp" />
+    </LinearLayout>
 
-                <Button
-                    android:id="@+id/btnrefrigeriomanana"
-                    android:layout_width="331dp"
-                    android:layout_height="97dp"
-                    android:drawableRight="@drawable/tetera"
-                    android:text="Recomendaciones de refrigerio"
-                    app:cornerRadius="35dp" />
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="643dp"
+        android:layout_height="519dp"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dieta" />
 
-                <Button
-                    android:id="@+id/btnmenualmuerzo"
-                    android:layout_width="331dp"
-                    android:layout_height="97dp"
-                    android:drawableRight="@drawable/almuerzo"
-                    android:text="Menù Almuerzo"
-                    app:cornerRadius="35dp" />
+    <ImageButton
+        android:id="@+id/btnsalirdealimen"
+        android:layout_width="54dp"
+        android:layout_height="64dp"
+        android:background="#D2CBEC"
+        app:srcCompat="@drawable/back" />
 
-                <Button
-                    android:id="@+id/btnrefrigeriotarde"
-                    android:layout_width="331dp"
-                    android:layout_height="97dp"
-                    android:drawableRight="@drawable/tetera"
-                    android:text="Recomendaciones de Refrigerio"
-                    app:cornerRadius="35dp" />
-
-                <Button
-                    android:id="@+id/btncenas"
-                    android:layout_width="331dp"
-                    android:layout_height="97dp"
-                    android:layout_marginBottom="208dp"
-                    android:drawableRight="@drawable/cenas"
-                    android:text="Recomendaciones de Cenas"
-                    app:cornerRadius="35dp" />
-            </LinearLayout>
-
-            <TextView
-                android:id="@+id/Scrollbotton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="1392dp"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:layout_editor_absoluteX="25dp" />
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    <TextView
+        android:id="@+id/Scrollbotton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="1382dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

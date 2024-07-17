@@ -8,18 +8,6 @@
     android:background="#7663F2"
     tools:context=".login">
 
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="408dp"
-        android:layout_height="340dp"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/login"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="460dp"
@@ -169,18 +157,6 @@
         app:layout_constraintVertical_bias="0.948" />
 
     <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="421dp"
-        android:layout_height="370dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.025"
-        app:srcCompat="@drawable/d12ec4d3_3b59_4939_81f9_145622b275c8" />
-
-    <ImageView
         android:id="@+id/imgBack1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -191,6 +167,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.016"
         app:srcCompat="@drawable/back" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="559dp"
+        android:layout_height="618dp"
+        android:layout_marginTop="-100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/acceco" />
 
     <TextView
         android:id="@+id/lbRecuperarC"
