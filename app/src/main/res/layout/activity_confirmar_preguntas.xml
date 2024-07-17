@@ -7,4 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".ConfirmarPreguntas">
 
+    <Button
+        android:id="@+id/btnSiguienteMenu"
+        android:layout_width="190dp"
+        android:layout_height="101dp"
+        android:text="xd"
+        tools:layout_editor_absoluteX="129dp"
+        tools:layout_editor_absoluteY="448dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

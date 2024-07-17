@@ -8,7 +8,7 @@
     tools:context=".activity_estiramientodinamico">
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/imgbuttonregresarpausa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/fondoclaropequeno"/>
 
     <ImageView
-        android:id="@+id/imageView74"
+        android:id="@+id/img_siguientePausa20"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

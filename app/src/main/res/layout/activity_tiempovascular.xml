@@ -19,7 +19,7 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageView
-        android:id="@+id/imageView67"
+        android:id="@+id/imgParaPausa"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/imgbtnregresarRtprincipal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -65,4 +65,42 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView68"
         app:layout_constraintVertical_bias="0.923" />
+
+    <TextView
+        android:id="@+id/txtcuentaAtras"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="01:00"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imgParaPausa"
+        app:layout_constraintEnd_toEndOf="@+id/imgParaPausa"
+        app:layout_constraintStart_toStartOf="@+id/imgParaPausa"
+        app:layout_constraintTop_toTopOf="@+id/imgParaPausa"
+        app:layout_constraintVertical_bias="0.393" />
+
+    <ImageView
+        android:id="@+id/imgPausa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imgParaPausa"
+        app:layout_constraintEnd_toEndOf="@+id/imgParaPausa"
+        app:layout_constraintHorizontal_bias="0.141"
+        app:layout_constraintStart_toStartOf="@+id/imgParaPausa"
+        app:layout_constraintTop_toTopOf="@+id/imgParaPausa"
+        app:layout_constraintVertical_bias="0.962"
+        app:srcCompat="@drawable/pausa_png" />
+
+    <Button
+        android:id="@+id/btnEmpezarTVascular"
+        android:layout_width="108dp"
+        android:layout_height="46dp"
+        android:text="Empezar"
+        app:layout_constraintBottom_toBottomOf="@+id/imgParaPausa"
+        app:layout_constraintEnd_toEndOf="@+id/imgParaPausa"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imgParaPausa"
+        app:layout_constraintVertical_bias="1.0" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_width="374dp"
+        android:layout_height="385dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,19 +33,6 @@
         app:srcCompat="@drawable/back" />
 
     <Button
-        android:id="@+id/btnhidratacion"
-        android:layout_width="331dp"
-        android:layout_height="123dp"
-        android:drawableRight="@drawable/hidratacion"
-        android:fontFamily="@font/lexend"
-        android:text="Hidratacion"
-        app:cornerRadius="30dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
         android:id="@+id/btnalimentacion"
         android:layout_width="331dp"
         android:layout_height="123dp"
@@ -58,6 +45,21 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.697" />
+        app:layout_constraintVertical_bias="0.735" />
+
+    <Button
+        android:id="@+id/btnhidratacion"
+        android:layout_width="331dp"
+        android:layout_height="123dp"
+        android:drawableRight="@drawable/hidratacion"
+        android:fontFamily="@font/lexend"
+        android:text="Hidratacion"
+        app:cornerRadius="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

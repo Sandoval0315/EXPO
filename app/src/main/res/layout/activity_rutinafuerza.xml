@@ -16,7 +16,7 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_rtsFuerza"
                 android:layout_width="127dp"
                 android:layout_height="63dp"
                 android:layout_marginTop="1000dp"

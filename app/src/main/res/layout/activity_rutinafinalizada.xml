@@ -45,23 +45,11 @@
         app:layout_constraintVertical_bias="0.409"
         app:srcCompat="@drawable/finalrutina" />
 
-    <ImageView
-        android:id="@+id/imageView60"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@tools:sample/avatars"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
-        app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.087"
-        app:layout_constraintStart_toStartOf="@+id/imageView29"
-        app:layout_constraintTop_toBottomOf="@+id/imageView45"
-        app:layout_constraintVertical_bias="0.153"
-        app:srcCompat="@drawable/calorias" />
 
     <ImageView
         android:id="@+id/imageView86"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="34dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
         app:layout_constraintHorizontal_bias="0.084"
@@ -79,10 +67,10 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.161"
-        app:layout_constraintStart_toEndOf="@+id/imageView60"
+        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintStart_toEndOf="@+id/imageView67"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
-        app:layout_constraintVertical_bias="0.206" />
+        app:layout_constraintVertical_bias="0.209" />
 
     <TextView
         android:id="@+id/textView57"
@@ -93,10 +81,10 @@
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.089"
-        app:layout_constraintStart_toEndOf="@+id/imageView60"
+        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintStart_toEndOf="@+id/imageView67"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
-        app:layout_constraintVertical_bias="0.144" />
+        app:layout_constraintVertical_bias="0.158" />
 
     <TextView
         android:id="@+id/textView58"
@@ -127,7 +115,7 @@
         app:layout_constraintVertical_bias="0.2" />
 
     <Button
-        android:id="@+id/button5"
+        android:id="@+id/btnFinal"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="156dp"
         android:layout_height="59dp"
@@ -143,4 +131,16 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.801" />
+
+    <ImageView
+        android:id="@+id/imageView67"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView29"
+        app:layout_constraintEnd_toEndOf="@+id/imageView29"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="@+id/imageView29"
+        app:layout_constraintTop_toTopOf="@+id/imageView29"
+        app:layout_constraintVertical_bias="0.649"
+        app:srcCompat="@drawable/calorias" />
 </androidx.constraintlayout.widget.ConstraintLayout>

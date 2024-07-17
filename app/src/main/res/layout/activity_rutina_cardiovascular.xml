@@ -22,10 +22,8 @@
                 android:id="@+id/imageView8"
                 android:layout_width="616dp"
                 android:layout_height="1107dp"
-                android:layout_marginTop="5dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.502"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0"
@@ -37,10 +35,9 @@
                 android:layout_height="774dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.493"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.257" />
+                app:layout_constraintVertical_bias="0.375" />
 
             <TextView
                 android:id="@+id/textView14"
@@ -58,8 +55,8 @@
 
             <ImageView
                 android:id="@+id/imageView17"
-                android:layout_width="70dp"
-                android:layout_height="57dp"
+                android:layout_width="60dp"
+                android:layout_height="47dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@+id/textView14"
                 app:layout_constraintHorizontal_bias="0.549"
@@ -108,9 +105,10 @@
                 app:srcCompat="@drawable/back" />
 
             <Button
-                android:id="@+id/btnmenudesayuno"
+                android:id="@+id/btnempezarRC"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginBottom="272dp"
                 android:text="Empezar"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView8"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -182,6 +180,86 @@
                 android:textStyle="bold"
                 app:layout_constraintTop_toBottomOf="@+id/textView72"
                 tools:layout_editor_absoluteX="192dp" />
+
+            <ImageView
+                android:id="@+id/imageView121"
+                android:layout_width="64dp"
+                android:layout_height="66dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toTopOf="@+id/textView18"
+                app:layout_constraintVertical_bias="0.219"
+                app:srcCompat="@drawable/brazosypiernas"
+                tools:layout_editor_absoluteX="67dp" />
+
+            <ImageView
+                android:id="@+id/imageView122"
+                android:layout_width="55dp"
+                android:layout_height="53dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView121"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/caminar2"
+                tools:layout_editor_absoluteX="67dp" />
+
+            <ImageView
+                android:id="@+id/imageView123"
+                android:layout_width="59dp"
+                android:layout_height="61dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView121"
+                app:layout_constraintVertical_bias="0.124"
+                app:srcCompat="@drawable/caminar"
+                tools:layout_editor_absoluteX="69dp" />
+
+            <ImageView
+                android:id="@+id/imageView124"
+                android:layout_width="62dp"
+                android:layout_height="61dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView123"
+                app:layout_constraintVertical_bias="0.023"
+                app:srcCompat="@drawable/sentadillas"
+                tools:layout_editor_absoluteX="69dp" />
+
+            <ImageView
+                android:id="@+id/imageView126"
+                android:layout_width="60dp"
+                android:layout_height="58dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView124"
+                app:layout_constraintVertical_bias="0.008"
+                app:srcCompat="@drawable/flexiones"
+                tools:layout_editor_absoluteX="77dp" />
+
+            <ImageView
+                android:id="@+id/imageView127"
+                android:layout_width="59dp"
+                android:layout_height="64dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView126"
+                app:layout_constraintVertical_bias="0.0"
+                app:srcCompat="@drawable/brazosypiernas"
+                tools:layout_editor_absoluteX="78dp" />
+
+            <ImageView
+                android:id="@+id/imageView128"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView127"
+                app:layout_constraintVertical_bias="0.028"
+                app:srcCompat="@drawable/caminar"
+                tools:layout_editor_absoluteX="81dp" />
+
+            <ImageView
+                android:id="@+id/imageView129"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@+id/imageView12"
+                app:layout_constraintTop_toBottomOf="@+id/imageView128"
+                app:layout_constraintVertical_bias="0.09"
+                app:srcCompat="@drawable/manosarriba"
+                tools:layout_editor_absoluteX="83dp" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>

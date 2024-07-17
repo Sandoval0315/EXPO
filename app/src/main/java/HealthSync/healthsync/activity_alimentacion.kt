@@ -28,11 +28,13 @@ class activity_alimentacion : AppCompatActivity() {
         val btnmenudesayuno = findViewById<Button>(R.id.btnmenudesayuno)
 
         btnsalidealimen.setOnClickListener {
-            val Intent = Intent(this, activity_Hidra_y_Alimen::class.java)
+            val intent = Intent(this, activity_Hidra_y_Alimen::class.java)
+            startActivity(intent)
         }
 
         btnmenudesayuno.setOnClickListener {
-            val Intent = Intent(this, activity_desayunar::class.java)
+            val intent = Intent(this, activity_desayunar::class.java)
+            startActivity(intent)
         }
 
     }

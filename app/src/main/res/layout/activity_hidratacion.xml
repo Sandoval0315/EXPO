@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="450dp"
+        android:layout_height="526dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -33,10 +33,10 @@
         app:srcCompat="@drawable/back" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_extrabold"
         android:text="Horario de Hidratacion"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -44,59 +44,55 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.529" />
+        app:layout_constraintVertical_bias="0.59" />
 
     <TextView
-        android:id="@+id/textView52"
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_extrabold"
         android:text="Meta Diaria"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.894"
+        app:layout_constraintHorizontal_bias="0.893"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.654" />
+        app:layout_constraintVertical_bias="0.682" />
 
     <TextView
-        android:id="@+id/textView14"
+        android:id="@+id/textView12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="60%"
-        android:textSize="70dp"
+        android:textSize="96sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.853"
+        app:layout_constraintHorizontal_bias="0.921"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.771" />
+        app:layout_constraintVertical_bias="0.781" />
 
     <ImageView
         android:id="@+id/imageView13"
-        android:layout_width="55dp"
-        android:layout_height="41dp"
+        android:layout_width="47dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
+        app:layout_constraintVertical_bias="0.032"
         app:srcCompat="@drawable/configuracion" />
 
     <ImageView
-        android:id="@+id/imageView15"
-        android:layout_width="185dp"
-        android:layout_height="170dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.11"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775"
-        app:srcCompat="@drawable/btn_hidra_y_ali" />
+        android:id="@+id/imageView51"
+        android:layout_width="171dp"
+        android:layout_height="178dp"
+        app:srcCompat="@drawable/c12ab09b_05c0_429c_9678_7629c6c53d88"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="636dp" />
 
     <TextView
         android:id="@+id/textView13"

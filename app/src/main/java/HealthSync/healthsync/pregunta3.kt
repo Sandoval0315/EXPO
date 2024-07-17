@@ -1,7 +1,6 @@
 package HealthSync.healthsync
 
 import HealthSync.healthsync.R
-
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
@@ -13,7 +12,12 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
-class pregunta3 : AppCompatActivity(),SeekBar.OnSeekBarChangeListener {
+class pregunta3 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
+
+    companion object {
+        lateinit var estaturaSeleccionada: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,32 +30,32 @@ class pregunta3 : AppCompatActivity(),SeekBar.OnSeekBarChangeListener {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val sbEdad = findViewById<SeekBar>(R.id.sbEdad)
-        val txtEdad = findViewById<TextView>(R.id.txtEdad)
+        val sbEstatura = findViewById<SeekBar>(R.id.sbEstatura)
+        val txtEstatura = findViewById<TextView>(R.id.txtEstatura)
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
         val btnAtras = findViewById<Button>(R.id.btnAtras)
 
-        sbEdad.setOnSeekBarChangeListener(this)
-
-        btnSiguiente.visibility = View.GONE
-        btnSiguiente.setOnClickListener{
-            btnSiguiente.visibility = View.GONE}
+        sbEstatura.setOnSeekBarChangeListener(this)
 
         btnSiguiente.setOnClickListener {
+            btnSiguiente.visibility = View.GONE
+            estaturaSeleccionada = txtEstatura.text.toString()
             val intent = Intent(this, pregunta4::class.java)
             startActivity(intent)
         }
+
         btnAtras.setOnClickListener {
-            val intent = Intent(this, pregunta5::class.java)
+            val intent = Intent(this, pregunta2::class.java)
             startActivity(intent)
         }
     }
+
     override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
         // con esto se actualiza el edit text cuando arrastre el seekbar
-        findViewById<TextView>(R.id.txtEdad).text = progress.toString()
+        val txtEstatura = findViewById<TextView>(R.id.txtEstatura)
+        txtEstatura.text = progress.toString()
+        estaturaSeleccionada = progress.toString()
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
-        val btnAtras = findViewById<Button>(R.id.btnAtras)
-
         btnSiguiente.visibility = View.VISIBLE
     }
 

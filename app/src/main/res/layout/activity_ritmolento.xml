@@ -8,7 +8,7 @@
     tools:context=".activity_ritmolento">
 
     <ImageButton
-        android:id="@+id/imageButton7"
+        android:id="@+id/imgbtnregresarRtprincipal2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/fondoclaropequeno"/>
 
     <ImageView
-        android:id="@+id/imageView80"
+        android:id="@+id/imgdescanso"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

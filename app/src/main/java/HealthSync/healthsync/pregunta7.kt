@@ -7,10 +7,28 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import HealthSync.healthsync.R
+import HealthSync.healthsync.pregunta2.Companion.edadSeleccionada
+import HealthSync.healthsync.pregunta3.Companion.estaturaSeleccionada
+import HealthSync.healthsync.pregunta4.Companion.pesoSeleccionado
+import HealthSync.healthsync.pregunta5.Companion.enfermedadSeleccionada
+import HealthSync.healthsync.pregunta6.Companion.imcSeleccionado
+import Modelo.ClaseConexion
 import android.content.Intent
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.Button
+import android.widget.EditText
+import android.widget.Toast
+import java.sql.Connection
+import java.sql.DriverManager
+import java.sql.PreparedStatement
 
-class pregunta7 : AppCompatActivity() {
+/*class pregunta7 : AppCompatActivity() {
+
+    companion object {
+        lateinit var experienciaSeleccionada: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -26,9 +44,32 @@ class pregunta7 : AppCompatActivity() {
 
         val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
         val btnAtras = findViewById<Button>(R.id.btnAtras)
+        val txtExperiencia = findViewById<EditText>(R.id.txtExperiencia)
+
+        txtExperiencia.addTextChangedListener(object : TextWatcher {
+            override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
+            override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
+            override fun afterTextChanged(s: Editable?) {
+                experienciaSeleccionada = s.toString()
+            }
+        })
 
         btnSiguiente.setOnClickListener {
-            val intent = Intent(this, ConfirmarPreguntas::class.java)
+
+            val objConexion = ClaseConexion().CadenaConexion()
+
+            val insertarPreguntas = objConexion?.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, experiencia) VALUES (?, ?, ?, ?, ?, ?)")!!
+
+            insertarPreguntas.setString(1, edadSeleccionada)
+            insertarPreguntas.setString(2, estaturaSeleccionada)
+            insertarPreguntas.setString(3, pesoSeleccionado)
+            insertarPreguntas.setString(4, imcSeleccionado)
+            insertarPreguntas.setString(5, enfermedadSeleccionada)
+            insertarPreguntas.setString(6, experienciaSeleccionada)
+            insertarPreguntas.executeUpdate()
+
+            Toast.makeText(this, "Bienvenido a HealthSync", Toast.LENGTH_SHORT).show()
+            val intent = Intent(this, navigatioPrincipal::class.java)
             startActivity(intent)
         }
 
@@ -38,3 +79,4 @@ class pregunta7 : AppCompatActivity() {
         }
     }
 }
+*/

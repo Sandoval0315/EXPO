@@ -2,13 +2,24 @@ package HealthSync.healthsync
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.EditText
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 
 class Recuperacion : AppCompatActivity() {
+    companion object {
+        var codigoVerificacion: String = ""
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -19,14 +30,68 @@ class Recuperacion : AppCompatActivity() {
             insets
         }
 
-        //ocultar barra de arriba
+        // Ocultar barra de arriba
         supportActionBar?.hide()
 
+        val btnRecuperar = findViewById<Button>(R.id.btnRecuperarC)
         val imgBack = findViewById<ImageView>(R.id.imgBack)
+        val txtCorreoR = findViewById<EditText>(R.id.txtCorreoR)
 
-        imgBack.setOnClickListener{
+        imgBack.setOnClickListener {
             val intent = Intent(this, login::class.java)
             startActivity(intent)
         }
+
+        btnRecuperar.setOnClickListener {
+            val correo = txtCorreoR.text.toString().trim()
+
+            if (correo.isNotEmpty()) {
+                codigoVerificacion = generarCodigoVerificacion()
+                val mensaje = generarMensajeHtml(codigoVerificacion)
+
+                CoroutineScope(Dispatchers.Main).launch {
+                    try {
+                        withContext(Dispatchers.IO) {
+                            enviarCorreo(correo, "Recuperación de contraseña", mensaje)
+                        }
+                        Toast.makeText(this@Recuperacion, "Correo enviado satisfactoriamente", Toast.LENGTH_SHORT).show()
+                        txtCorreoR.text.clear()  // Limpiar el campo de correo
+                        // Redirigir a la actividad de código de verificación
+                        val intent = Intent(this@Recuperacion, codigoVerificacion::class.java)
+                        startActivity(intent)
+                    } catch (e: Exception) {
+                        Toast.makeText(this@Recuperacion, "No se pudo enviar el correo", Toast.LENGTH_SHORT).show()
+                    }
+                }
+            } else {
+                Toast.makeText(this@Recuperacion, "Por favor, ingrese un correo electrónico", Toast.LENGTH_SHORT).show()
+            }
+        }
+    }
+
+    private fun generarCodigoVerificacion(): String {
+        val caracteres = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        return (1..5).map { caracteres.random() }.joinToString("")
+    }
+
+    private fun generarMensajeHtml(codigo: String): String {
+        return """
+            <html>
+            <body style="font-family: Arial, sans-serif; background-color: #f4f4f9; margin: 0; padding: 0;">
+                <div style="max-width: 600px; margin: auto; padding: 20px; background-color: #ffffff; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                    <h1 style="color: #6a1b9a; text-align: center;">HealthSync</h1>
+                    <h2 style="color: #6a1b9a; text-align: center;">Recuperación de Contraseña</h2>
+                    <p style="color: #333333;">Hola,</p>
+                    <p style="color: #333333;">Has solicitado la recuperación de tu contraseña. Utiliza el siguiente código de verificación:</p>
+                    <div style="background-color: #6a1b9a; color: #ffffff; padding: 20px; text-align: center; border-radius: 5px;">
+                        <h2>$codigo</h2>
+                    </div>
+                    <p style="color: #333333;">Por favor, ingresa este código en la aplicación para continuar con el proceso de recuperación.</p>
+                    <p style="color: #333333;">Saludos,</p>
+                    <p style="color: #333333;">El equipo de HealthSync</p>
+                </div>
+            </body>
+            </html>
+        """.trimIndent()
     }
 }
