@@ -61,7 +61,7 @@ class HomeFragment : Fragment() {
         }*/
         btnmotivacion.setOnClickListener {
             
-        }
+        }g
         btnmapa.setOnClickListener {}
 
         return root
