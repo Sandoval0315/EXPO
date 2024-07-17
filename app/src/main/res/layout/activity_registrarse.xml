@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-
     xmlns:app="http://schemas.android.com/apk/res-auto"
-
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:background="#7663F2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".registrarse">
-
 
     <ImageView
         android:id="@+id/imageView4"
@@ -22,17 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_575a196_3b0d_4d62_aa9d_59fec22b5f1c" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="386dp"
-        android:layout_height="398dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.015"
-        app:srcCompat="@drawable/af29897af4cd833d34ee0ac8bd7c2ca8_removebg_preview" />
 
     <TextView
         android:id="@+id/textView4"
@@ -164,6 +150,8 @@
         app:layout_constraintVertical_bias="0.857"
         app:srcCompat="@drawable/google" />
 
+
+
     <Button
         android:id="@+id/btnIrAlLogin"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -214,7 +202,7 @@
         android:id="@+id/textView3"
         android:layout_width="275dp"
         android:layout_height="44dp"
-        android:fontFamily="@font/lexend_semibold"
+        android:fontFamily="@font/lexend_black"
         android:text="REGISTRATE"
         android:textColor="#454545"
         android:textSize="40sp"
@@ -238,6 +226,17 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="419dp"
+        android:layout_height="373dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView2"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/_46fd9f4_6714_4816_9573_0d809cda4199" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
