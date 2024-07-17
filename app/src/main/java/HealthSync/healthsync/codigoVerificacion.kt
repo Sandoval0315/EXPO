@@ -50,7 +50,7 @@ class codigoVerificacion : AppCompatActivity() {
                         R.id.txtcode5 -> {
                             // Aquí verificamos el código
                             val codigoIngresado = "${code1.text}${code2.text}${code3.text}${code4.text}${code5.text}"
-                            val codigoCorrecto = Recuperacion.codigoVerificacion
+                            val codigoCorrecto = Recuperacion.codigoVer
 
                             if (codigoIngresado == codigoCorrecto) {
                                 // Redirigir a la pantalla de cambio de contraseña
