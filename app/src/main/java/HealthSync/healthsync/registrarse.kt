@@ -3,8 +3,6 @@ package HealthSync.healthsync
 import Modelo.ClaseConexion
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Patterns
 import android.view.View
 import android.view.animation.Animation
@@ -25,6 +23,11 @@ import kotlinx.coroutines.withContext
 import java.security.MessageDigest
 
 class registrarse : AppCompatActivity() {
+
+    companion object {
+        lateinit var nombreUsuario: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -43,7 +46,7 @@ class registrarse : AppCompatActivity() {
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
         val btnCrearCuenta = findViewById<Button>(R.id.btnRegistrarse)
         val btnIrAlLogin = findViewById<Button>(R.id.btnIrAlLogin)
-        val imgBack = findViewById<ImageView>(R.id.imgBack)
+        val imgBack = findViewById<ImageView>(R.id.imgVolveralPerfil)
         val tvSuccessMessage = findViewById<TextView>(R.id.tvSuccessMessage)
 
         imgBack.setOnClickListener {
@@ -131,6 +134,10 @@ class registrarse : AppCompatActivity() {
                             addNombre?.setString(3, nombre)
                             addNombre?.executeUpdate()
                         }
+
+                        // Guardar el nombre en el companion object
+                        nombreUsuario = nombre
+
                         Toast.makeText(this@registrarse, "Usuario registrado", Toast.LENGTH_SHORT).show()
                         txtNombre.setText("")
                         txtCorreo.setText("")

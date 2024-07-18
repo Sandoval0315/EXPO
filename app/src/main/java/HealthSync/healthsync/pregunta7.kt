@@ -66,20 +66,29 @@ class pregunta7 : AppCompatActivity() {
 
                 // Obtener el último idExperiencia insertado
                 val obtenerIdExperiencia = objConexion.prepareStatement("SELECT MAX(idExperiencia) FROM Experiencia")
-                val resultSet = obtenerIdExperiencia.executeQuery()
+                val resultSetExperiencia = obtenerIdExperiencia.executeQuery()
                 var idExperiencia: Int = -1
-                if (resultSet.next()) {
-                    idExperiencia = resultSet.getInt(1)
+                if (resultSetExperiencia.next()) {
+                    idExperiencia = resultSetExperiencia.getInt(1)
+                }
+
+                // Obtener el último idUsuario a partir del correo más reciente
+                val obtenerIdUsuario = objConexion.prepareStatement("SELECT idUsuario FROM Usuarios WHERE correo = (SELECT MAX(correo) FROM Usuarios)")
+                val resultSetUsuario = obtenerIdUsuario.executeQuery()
+                var idUsuario: Int = -1
+                if (resultSetUsuario.next()) {
+                    idUsuario = resultSetUsuario.getInt(1)
                 }
 
                 // Insertar en la tabla Cliente
-                val insertarCliente = objConexion.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, idExperiencia) VALUES (?, ?, ?, ?, ?, ?)")
+                val insertarCliente = objConexion.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, idExperiencia, idUsuario) VALUES (?, ?, ?, ?, ?, ?, ?)")
                 insertarCliente.setString(1, edadSeleccionada)
                 insertarCliente.setString(2, estaturaSeleccionada)
                 insertarCliente.setString(3, pesoSeleccionado)
                 insertarCliente.setString(4, imcSeleccionado)
                 insertarCliente.setString(5, enfermedadSeleccionada)
                 insertarCliente.setInt(6, idExperiencia)
+                insertarCliente.setInt(7, idUsuario)
                 insertarCliente.executeUpdate()
 
                 withContext(Dispatchers.Main) {
@@ -96,3 +105,4 @@ class pregunta7 : AppCompatActivity() {
         }
     }
 }
+

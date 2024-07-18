@@ -113,7 +113,7 @@
         app:layout_constraintVertical_bias="0.454" />
 
     <ImageView
-        android:id="@+id/imageView13"
+        android:id="@+id/imgEditarHidra"
         android:layout_width="124dp"
         android:layout_height="16dp"
         app:layout_constraintBottom_toBottomOf="parent"

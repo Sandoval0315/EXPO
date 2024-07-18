@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editarPerfil">
+
+    <ImageView
+        android:id="@+id/imgVolveralPerfil"
+        android:layout_width="43dp"
+        android:layout_height="52dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/back" />
+
+    <EditText
+        android:id="@+id/txtPesoPerfil"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#7663F2"
+        android:ems="10"
+        android:fontFamily="@font/lexend_semibold"
+        android:hint="Peso"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#7663F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.603" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil4"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.65"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <EditText
+        android:id="@+id/txtEnfermedadesPerfil"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#7663F2"
+        android:ems="10"
+        android:fontFamily="@font/lexend_semibold"
+        android:hint="Enfermedad"
+        android:inputType="text"
+        android:textAlignment="center"
+        android:textColor="#7663F2"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil3"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil5"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.926"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <EditText
+        android:id="@+id/txtIMCPerfil"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#7663F2"
+        android:ems="10"
+        android:fontFamily="@font/lexend_semibold"
+        android:hint="IMC"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#7663F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.92"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <EditText
+        android:id="@+id/txtEdadPerfil"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#7663F2"
+        android:ems="10"
+        android:fontFamily="@font/lexend_semibold"
+        android:hint="Edad"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#7663F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.179" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil2"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.276"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <EditText
+        android:id="@+id/txtAlturaPerfil"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#7663F2"
+        android:ems="10"
+        android:fontFamily="@font/lexend_semibold"
+        android:hint="Altura"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#7663F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.371" />
+
+    <Button
+        android:id="@+id/btnActualizarPerfil"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="169dp"
+        android:layout_height="54dp"
+        android:text="Aceptar"
+        android:textColor="#FEFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.824" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

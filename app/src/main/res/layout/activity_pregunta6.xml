@@ -96,7 +96,6 @@
         android:layout_width="245dp"
         android:layout_height="80dp"
         android:ems="10"
-        android:hint="aqui xd"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

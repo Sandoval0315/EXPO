@@ -12,11 +12,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import kotlinx.coroutines.CoroutineScope
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
-import kotlinx.coroutines.launch
-import kotlinx.coroutines.withContext
+import kotlinx.coroutines.*
+
 import java.security.MessageDigest
 
 class login : AppCompatActivity() {
@@ -30,7 +27,7 @@ class login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-//ocultar barra de arriba
+        //ocultar barra de arriba
         supportActionBar?.hide()
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtClave = findViewById<EditText>(R.id.txtClave)
@@ -41,9 +38,9 @@ class login : AppCompatActivity() {
         lbRecuperarC.setOnClickListener {
             val intent = Intent(this, Recuperacion::class.java)
             startActivity(intent)
-            }
+        }
 
-        imgBack.setOnClickListener{
+        imgBack.setOnClickListener {
             val intent = Intent(this, Bienvenida::class.java)
             startActivity(intent)
         }
@@ -58,22 +55,36 @@ class login : AppCompatActivity() {
                 GlobalScope.launch(Dispatchers.IO) {
                     val objConexion = ClaseConexion().CadenaConexion()
 
-                    val addAcceder = "select * from Usuarios where correo = ? AND clave = ?"
-                    val objAcceder = objConexion?.prepareStatement(addAcceder)
-                    objAcceder?.setString(1, txtCorreo)
-                    objAcceder?.setString(2, txtContraseña)
+                    // Verificar las credenciales en la tabla Usuarios
+                    val queryUsuarios = "SELECT * FROM Usuarios WHERE correo = ? AND clave = ?"
+                    val stmtUsuarios = objConexion?.prepareStatement(queryUsuarios)
+                    stmtUsuarios?.setString(1, txtCorreo)
+                    stmtUsuarios?.setString(2, txtContraseña)
+                    val resultadoUsuarios = stmtUsuarios?.executeQuery()
 
-                    val resultado = objAcceder?.executeQuery()
+                    if (resultadoUsuarios?.next() == true) {
+                        // Si las credenciales son correctas, verificar si existe un registro en Cliente
+                        val queryCliente = "SELECT * FROM Cliente WHERE idUsuario = ?"
+                        val stmtCliente = objConexion?.prepareStatement(queryCliente)
+                        stmtCliente?.setInt(1, resultadoUsuarios.getInt("idUsuario"))
+                        val resultadoCliente = stmtCliente?.executeQuery()
 
-                    if (resultado?.next() == true) {
-                        withContext(Dispatchers.IO) {
-                            // si esta correctas las credenciales pasa al main activity(inicio)
-                            val intent = Intent(this@login, LoadingActivity2::class.java)
-                            startActivity(intent)
+                        if (resultadoCliente?.next() == true) {
+                            // Si existe un registro en Cliente, navegar a NavigationPrincipal
+                            withContext(Dispatchers.Main) {
+                                val intent = Intent(this@login, navigatioPrincipal::class.java)
+                                startActivity(intent)
+                            }
+                        } else {
+                            // Si no existe registro en Cliente, continuar con el flujo normal
+                            withContext(Dispatchers.Main) {
+                                val intent = Intent(this@login, pregunta1::class.java)
+                                startActivity(intent)
+                            }
                         }
                     } else {
+                        // Credenciales incorrectas
                         withContext(Dispatchers.Main) {
-                            // mensaje de error en credenciales incorrectas
                             Toast.makeText(this@login, "La contraseña o el correo son incorrectos", Toast.LENGTH_SHORT).show()
                         }
                     }
@@ -81,7 +92,6 @@ class login : AppCompatActivity() {
             }
         }
     }
-
 
     // Método para hashear la contraseña con SHA-256
     private fun hashPassword(password: String): String {
