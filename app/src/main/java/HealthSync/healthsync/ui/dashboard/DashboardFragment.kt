@@ -18,7 +18,8 @@ import HealthSync.healthsync.databinding.FragmentDashboardBinding
 import android.content.Intent
 import android.widget.Button
 
-class DashboardFragment : Fragment() {
+class
+DashboardFragment : Fragment() {
 
     private var _binding: FragmentDashboardBinding? = null
 
