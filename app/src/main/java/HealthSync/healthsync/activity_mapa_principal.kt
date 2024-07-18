@@ -1,5 +1,7 @@
 package HealthSync.healthsync
 
+import HealthSync.healthsync.ui.dashboard.DashboardFragment
+import HealthSync.healthsync.ui.home.HomeFragment
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
@@ -28,7 +30,7 @@ class activity_mapa_principal : AppCompatActivity() {
         val img_IrMap = findViewById<ImageView>(R.id.img_IrMap)
 
         img_RegresMap.setOnClickListener(){
-            val intent = Intent(this, navigatioPrincipal::class.java)
+            val intent = Intent(this, HomeFragment::class.java)
             startActivity(intent)
         }
 

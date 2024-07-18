@@ -1,11 +1,15 @@
 package HealthSync.healthsync
 
+import HealthSync.healthsync.ui.dashboard.DashboardFragment
+import HealthSync.healthsync.ui.home.HomeFragment
 import android.content.Context
+import android.content.Intent
 import android.hardware.Sensor
 import android.hardware.SensorEvent
 import android.hardware.SensorEventListener
 import android.hardware.SensorManager
 import android.os.Bundle
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -40,6 +44,14 @@ class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
         resetSteps()
 
         sensorManager = getSystemService(Context.SENSOR_SERVICE) as SensorManager
+
+        val regresar_pasos = findViewById<ImageView>(R.id.regresar_pasos)
+
+
+        regresar_pasos.setOnClickListener(){
+            val intent = Intent(this, HomeFragment::class.java)
+            startActivity(intent)
+        }
 
     }
 
