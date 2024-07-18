@@ -85,7 +85,7 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <ImageView
-        android:id="@+id/imageView50"
+        android:id="@+id/regresar_pasos"
         android:layout_width="52dp"
         android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -3,6 +3,7 @@ package HealthSync.healthsync.ui.home
 import HealthSync.healthsync.R
 import HealthSync.healthsync.activity_Hidra_y_Alimen
 import HealthSync.healthsync.activity_contador_pasos
+import HealthSync.healthsync.activity_mapa_principal
 import HealthSync.healthsync.activity_rutinas
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -59,10 +60,15 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), ::class.java)
             startActivity(intent)
         }*/
-        btnmotivacion.setOnClickListener {
-            
+        //btnmotivacion.setOnClickListener {
+            /*/val intent = Intent(requireContext(), activity_::class.java)
+            startActivity(intent)
+        }*/
+
+        btnmapa.setOnClickListener {
+            val intent = Intent(requireContext(), activity_mapa_principal::class.java)
+            startActivity(intent)
         }
-        btnmapa.setOnClickListener {}
 
         return root
     }
