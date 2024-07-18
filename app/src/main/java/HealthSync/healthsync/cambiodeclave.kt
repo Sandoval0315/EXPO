@@ -1,9 +1,11 @@
 package HealthSync.healthsync
 
 import Modelo.ClaseConexion
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -24,20 +26,23 @@ class cambiodeclave : AppCompatActivity() {
             insets
         }
         val txtCorreoR = findViewById<EditText>(R.id.txtCorreoR)
-        val btnVerificarCode = findViewById<Button>(R.id.btnVerificarCode)
+        val imgBack = findViewById<ImageView>(R.id.imgBackk)
 
 // Ocultar barra de arriba
         supportActionBar?.hide()
 
+        imgBack.setOnClickListener {
+            val intent = Intent(this, Recuperacion::class.java)
+            startActivity(intent)
+        }
         fun hashPassword(password: String): String {
             val bytes = password.toByteArray()
             val md = MessageDigest.getInstance("SHA-256")
             val digest = md.digest(bytes)
             return digest.fold("") { str, it -> str + "%02x".format(it) }
         }
-
-
-        btnVerificarCode.setOnClickListener {
+        val btnRecuperar = findViewById<Button>(R.id.btnRecuperarC)
+        btnRecuperar.setOnClickListener {
             val contraseña = txtCorreoR.text.toString()
             CoroutineScope(Dispatchers.IO).launch {
                 val objConexion = ClaseConexion().CadenaConexion()
@@ -48,6 +53,8 @@ class cambiodeclave : AppCompatActivity() {
                 val commit = objConexion.prepareStatement("commit")!!
                 commit.executeUpdate()
             }
+
+            txtCorreoR.setText("")
         }
     }
 }

@@ -29,7 +29,8 @@ class Activity_rutinafuerza : AppCompatActivity() {
         val imgregresarRFuerza = findViewById<ImageView>(R.id.imgregresarRFuerza)
 
         imgregresarRFuerza.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
 

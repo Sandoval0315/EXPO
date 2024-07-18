@@ -20,13 +20,14 @@ class activity_yoga : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
+        supportActionBar?.hide()
 
         val imgregresarRYoga = findViewById<ImageView>(R.id.imgregresarRYoga)
         val siguiente = findViewById<Button>(R.id.btnparamientras)
 
         imgregresarRYoga.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
 

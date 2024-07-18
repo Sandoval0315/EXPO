@@ -89,15 +89,15 @@
 
             <ImageView
                 android:id="@+id/imgregresarRRunning"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="48dp"
+                android:layout_height="53dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.047"
+                app:layout_constraintHorizontal_bias="0.025"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.015"
-                app:srcCompat="@drawable/back"/>
+                app:layout_constraintVertical_bias="0.038"
+                app:srcCompat="@drawable/back" />
 
             <ImageView
                 android:id="@+id/imageView61"

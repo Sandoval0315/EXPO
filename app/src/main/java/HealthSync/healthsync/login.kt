@@ -78,7 +78,7 @@ class login : AppCompatActivity() {
                         } else {
                             // Si no existe registro en Cliente, continuar con el flujo normal
                             withContext(Dispatchers.Main) {
-                                val intent = Intent(this@login, pregunta1::class.java)
+                                val intent = Intent(this@login, LoadingActivity2::class.java)
                                 startActivity(intent)
                             }
                         }

@@ -23,11 +23,13 @@ class activity_tiempovascular : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
         val regresar = findViewById<ImageButton>(R.id.imgbtnregresarRtprincipal)
         val pausa = findViewById<ImageView>(R.id.imgParaPausa)
 
         regresar.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
             startActivity(intent)
         }
 

@@ -23,10 +23,13 @@ class activity_runnig : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
         val imgregresarRRunning = findViewById<ImageView>(R.id.imgregresarRRunning)
 
         imgregresarRRunning.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
 

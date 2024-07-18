@@ -9,7 +9,7 @@
     tools:context=".cambiodeclave">
 
     <Button
-        android:id="@+id/btnVerificarCode"
+        android:id="@+id/btnRecuperarC"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="177dp"
         android:layout_height="78dp"
@@ -42,9 +42,9 @@
         android:layout_width="332dp"
         android:layout_height="51dp"
         android:layout_marginStart="169dp"
-        android:layout_marginTop="589dp"
+        android:layout_marginTop="621dp"
         android:layout_marginEnd="173dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="84dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionDone"
@@ -65,24 +65,37 @@
         android:layout_marginStart="173dp"
         android:layout_marginTop="539dp"
         android:layout_marginEnd="301dp"
-        android:layout_marginBottom="196dp"
+        android:layout_marginBottom="23dp"
         android:fontFamily="@font/lexend_extrabold"
         android:text="CAMBIAR CONTRASEÑA"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView52"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorreoR"
         app:layout_constraintEnd_toEndOf="@+id/imageView52"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView52"
-        app:layout_constraintTop_toTopOf="@+id/imageView52" />
+        app:layout_constraintTop_toTopOf="@+id/imageView52"
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView119"
-        android:layout_width="461dp"
-        android:layout_height="530dp"
+        android:layout_width="494dp"
+        android:layout_height="532dp"
         android:layout_marginTop="-30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/tablet_login_cuate" />
+
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.064"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/back" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

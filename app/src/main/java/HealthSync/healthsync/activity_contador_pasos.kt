@@ -35,6 +35,8 @@ class activity_contador_pasos : AppCompatActivity(), SensorEventListener {
             insets
         }
 
+        supportActionBar?.hide()
+
         // Inicializar vistas
         tv_stepsTaken = findViewById(R.id.tv_stepsTaken)
         circularProgressBar = findViewById(R.id.circularProgressBar)

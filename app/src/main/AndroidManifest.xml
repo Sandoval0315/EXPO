@@ -23,7 +23,8 @@
             android:exported="false" />
         <activity
             android:name=".cambiodeclave"
-            android:exported="false" />
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".codigoVerificacion"
             android:exported="true" />
@@ -141,8 +142,9 @@
             android:exported="false" />
         <activity
             android:name=".navigatioPrincipal"
-            android:exported="false"
-            android:label="@string/title_activity_navigatio_principal" />
+            android:exported="true"
+            android:label="@string/title_activity_navigatio_principal" >
+        </activity>
         <activity
             android:name=".activity_alimentacion"
             android:exported="false" />
@@ -179,6 +181,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".LoadingActivity"
             android:exported="true" />
