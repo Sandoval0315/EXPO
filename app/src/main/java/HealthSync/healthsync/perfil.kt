@@ -65,6 +65,7 @@ class perfil : Fragment() {
         val txtIMC = root.findViewById<TextView>(R.id.txtIMC)
         val txtGenero = root.findViewById<TextView>(R.id.txtGenero)
         val imgEditarPerfil = root.findViewById<ImageView>(R.id.imgEditarPerfil)
+        val imgCerrarSesion = root.findViewById<ImageView>(R.id.imgCerrarSesion)
 
         txtNombrePerfil.text = nombreUsuario
         txtIMC.text = imcSeleccionado
@@ -75,6 +76,11 @@ class perfil : Fragment() {
 
         imgEditarPerfil.setOnClickListener {
             val intent = Intent(requireActivity(), editarPerfil::class.java)
+            startActivity(intent)
+        }
+
+        imgCerrarSesion.setOnClickListener {
+            val intent = Intent(requireActivity(),login::class.java)
             startActivity(intent)
         }
 
