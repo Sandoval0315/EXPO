@@ -139,7 +139,7 @@ class registrarse : AppCompatActivity() {
                         btnIrAlLogin.visibility = View.VISIBLE
 
                         // Mostrar mensaje de éxito con animación
-                        val fadeInOut = AnimationUtils.loadAnimation(this@registrarse, R.drawable.fade_in_out)
+                        val fadeInOut = AnimationUtils.loadAnimation(this@registrarse, R.anim.fade_in_out)
                         tvSuccessMessage.visibility = View.VISIBLE
                         tvSuccessMessage.startAnimation(fadeInOut)
                         fadeInOut.setAnimationListener(object : Animation.AnimationListener {
