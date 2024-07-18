@@ -42,6 +42,8 @@ class editarPerfil : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
         val imgRegresarPerfil = findViewById<ImageView>(R.id.imgVolveralPerfil)
 
         imgRegresarPerfil.setOnClickListener {
