@@ -119,7 +119,7 @@ class registrarse : AppCompatActivity() {
             } else if (!isValidEmail(correo)) {
                 Toast.makeText(this, "Ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show()
             } else if (!isValidPassword(contraseñaPlana)) {
-                Toast.makeText(this, "Contraseña insegura", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Contraseña insegura: debe tener al menos 8 caracteres, una mayúscula y una minúscula", Toast.LENGTH_SHORT).show()
             } else {
                 GlobalScope.launch(Dispatchers.Main) {
                     if (isEmailAlreadyRegistered(correo)) {
