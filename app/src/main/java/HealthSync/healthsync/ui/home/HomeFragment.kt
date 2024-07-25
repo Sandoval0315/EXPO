@@ -3,6 +3,7 @@ package HealthSync.healthsync.ui.home
 import HealthSync.healthsync.R
 import HealthSync.healthsync.activity_Hidra_y_Alimen
 import HealthSync.healthsync.activity_contador_pasos
+import HealthSync.healthsync.activity_mapa
 import HealthSync.healthsync.activity_mapa_principal
 import HealthSync.healthsync.activity_rutinas
 import android.os.Bundle
@@ -37,7 +38,7 @@ class HomeFragment : Fragment() {
 
         val btncontadordepaso = root.findViewById<Button>(R.id.btncontadordepaso)
         val btnaliyhidra = root.findViewById<Button>(R.id.btn_ali_y_hidra)
-        val btnrutinas = root.findViewById<Button>(R.id.btnrutinas)
+        val btnMapaGym = root.findViewById<Button>(R.id.btnMapaGym)
         val btnproductividad = root.findViewById<Button>(R.id.btnproductividad)
         val btnmotivacion = root.findViewById<Button>(R.id.btnmotivacion)
         val btnmapa = root.findViewById<Button>(R.id.btnmapa)
@@ -50,8 +51,8 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), activity_Hidra_y_Alimen::class.java)
             startActivity(intent)
         }
-        btnrutinas.setOnClickListener {
-            val intent = Intent(requireContext(), activity_rutinas::class.java)
+        btnMapaGym.setOnClickListener {
+            val intent = Intent(requireContext(), activity_mapa_principal::class.java)
             startActivity(intent)
         }
 

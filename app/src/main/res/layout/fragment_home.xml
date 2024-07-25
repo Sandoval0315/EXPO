@@ -86,7 +86,7 @@
                     app:cornerRadius="35dp" />
 
                 <Button
-                    android:id="@+id/btnrutinas"
+                    android:id="@+id/btnMapaGym"
                     android:layout_width="331dp"
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/entrenamiento"

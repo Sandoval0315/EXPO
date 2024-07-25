@@ -144,6 +144,11 @@
             android:name=".navigatioPrincipal"
             android:exported="true"
             android:label="@string/title_activity_navigatio_principal" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".activity_alimentacion"
@@ -175,11 +180,7 @@
         <activity
             android:name=".Bienvenida"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
 
         <activity
