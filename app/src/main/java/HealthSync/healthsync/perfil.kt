@@ -1,6 +1,5 @@
 package HealthSync.healthsync
 
-import HealthSync.healthsync.databinding.FragmentHomeBinding
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -11,9 +10,7 @@ import HealthSync.healthsync.pregunta2.Companion.edadSeleccionada
 import HealthSync.healthsync.pregunta3.Companion.estaturaSeleccionada
 import HealthSync.healthsync.pregunta4.Companion.pesoSeleccionado
 import HealthSync.healthsync.registrarse.Companion.nombreUsuario
-import HealthSync.healthsync.pregunta5.Companion.enfermedadSeleccionada
-import HealthSync.healthsync.pregunta6.Companion.imcSeleccionado
-import HealthSync.healthsync.pregunta7.Companion.experienciaSeleccionada
+import HealthSync.healthsync.pregunta6.Companion.IMCtotal
 import HealthSync.healthsync.ui.perfil.PerfilViewModel
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
@@ -68,7 +65,7 @@ class perfil : Fragment() {
         val imgCerrarSesion = root.findViewById<ImageView>(R.id.imgCerrarSesion)
 
         txtNombrePerfil.text = nombreUsuario
-        txtIMC.text = imcSeleccionado
+        txtIMC.text =   IMCtotal.toString()
         txtGenero.text = generoSeleccionado
         txtEdad.text = edadSeleccionada.toString()
         txtAltura.text = estaturaSeleccionada.toString()

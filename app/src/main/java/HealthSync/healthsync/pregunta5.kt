@@ -9,6 +9,7 @@ import HealthSync.healthsync.R
 import android.content.Intent
 import android.text.Editable
 import android.text.TextWatcher
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 
@@ -17,6 +18,8 @@ class pregunta5 : AppCompatActivity() {
     companion object {
         lateinit var enfermedadSeleccionada: String
     }
+
+    private lateinit var btnSiguiente: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,15 +34,20 @@ class pregunta5 : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
+        btnSiguiente = findViewById(R.id.btnSiguiente)
         val btnAtras = findViewById<Button>(R.id.btnAtras)
         val txtEnfermedad = findViewById<EditText>(R.id.txtEnfermedad)
+
+        // Inicialmente ocultar el botón
+        btnSiguiente.visibility = View.GONE
 
         txtEnfermedad.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable?) {
                 enfermedadSeleccionada = s.toString()
+                // Mostrar el botón solo si hay texto
+                btnSiguiente.visibility = if (s.isNullOrEmpty()) View.GONE else View.VISIBLE
             }
         })
 

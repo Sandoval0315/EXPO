@@ -120,36 +120,27 @@
             android:name=".activity_altaintensidad"
             android:exported="false" />
         <activity
-            android:name=".pregunta7"
-            android:exported="false" />
-        <activity
             android:name=".pregunta6"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".pregunta5"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".pregunta4"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".pregunta3"
-            android:exported="false" />
+            android:exported="true"/>
         <activity
             android:name=".pregunta2"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".pregunta1"
             android:exported="false" />
         <activity
             android:name=".navigatioPrincipal"
-            android:exported="true"
-            android:label="@string/title_activity_navigatio_principal" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+            android:exported="false"
+            android:label="@string/title_activity_navigatio_principal" />
         <activity
             android:name=".activity_alimentacion"
             android:exported="false" />
@@ -158,13 +149,13 @@
             android:exported="false" />
         <activity
             android:name=".activity_hidratacion"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activity_rutinas"
             android:exported="false" />
         <activity
             android:name=".activity_mapa"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".activity_Hidra_y_Alimen"
             android:exported="false" />
@@ -180,15 +171,18 @@
         <activity
             android:name=".Bienvenida"
             android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".LoadingActivity"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" />
+            android:exported="false" />
 
         <meta-data
             android:name="preloaded_fonts"
