@@ -67,22 +67,19 @@
         app:layout_constraintTop_toTopOf="@+id/imageView73"
         app:layout_constraintVertical_bias="0.923" />
 
+
     <TextView
-<<<<<<< HEAD
         android:id="@+id/txtestiramientoRCV"
-=======
-        android:id="@+id/txtTiempo1minCRV"
->>>>>>> Master
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_black"
         android:text="01:00"
-<<<<<<< HEAD
-        android:textSize="34sp"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
-        app:layout_constraintTop_toTopOf="@+id/imageView73"
-        app:layout_constraintVertical_bias="0.858"
-        tools:layout_editor_absoluteX="153dp" />
+        app:layout_constraintEnd_toEndOf="@+id/img_siguientePausa20"
+        app:layout_constraintStart_toStartOf="@+id/img_siguientePausa20"
+        app:layout_constraintTop_toBottomOf="@+id/imageView73"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/imgIniciar1min"
@@ -100,16 +97,8 @@
         android:layout_height="42dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
         app:layout_constraintTop_toTopOf="@+id/imageView73"
-        app:layout_constraintVertical_bias="0.975"
+        app:layout_constraintVertical_bias="0.985"
         app:srcCompat="@drawable/imgplay1"
-        tools:layout_editor_absoluteX="231dp" />
+        tools:layout_editor_absoluteX="232dp" />
 
-=======
-        android:textAppearance="@style/Base.Theme.HealthSync"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
-        app:layout_constraintTop_toTopOf="@+id/imageView73"
-        app:layout_constraintVertical_bias="0.818"
-        tools:layout_editor_absoluteX="168dp" />
->>>>>>> Master
 </androidx.constraintlayout.widget.ConstraintLayout>

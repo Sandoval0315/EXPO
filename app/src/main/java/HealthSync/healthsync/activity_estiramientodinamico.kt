@@ -73,12 +73,13 @@ class activity_estiramientodinamico : AppCompatActivity() {
                 txtTimer.text = String.format("%02d:%02d", secondsRemaining / 60, secondsRemaining % 60)
             }
 
-           /// override fun onFinish() {
-              ///  txtTimer.text = "00:00"
-              ///  // Cambiar de pantalla cuando el temporizador termine
-              //  val intent = Intent(this@MainActivity, otra pantalla::class.java)
-              //  startActivity(intent)
-               ///finish() // Finaliza la actividad actual
+            override fun onFinish() {
+                txtTimer.text = "00:00"
+            }
+        // Cambiar de pantalla cuando el temporizador termine
+             //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)
+           ///    startActivity(intent)
+            //finish() // Finaliza la actividad actual
             }
     }
 
