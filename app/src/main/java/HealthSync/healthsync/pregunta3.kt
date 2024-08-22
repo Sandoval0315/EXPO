@@ -18,6 +18,9 @@ class pregunta3 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
         lateinit var estaturaSeleccionada: String
     }
 
+    private lateinit var btnSiguiente: Button
+    private var seekBarMoved = false
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -32,13 +35,15 @@ class pregunta3 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
 
         val sbEstatura = findViewById<SeekBar>(R.id.sbEstatura)
         val txtEstatura = findViewById<TextView>(R.id.txtEstatura)
-        val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
+        btnSiguiente = findViewById(R.id.btnSiguiente)
         val btnAtras = findViewById<Button>(R.id.btnAtras)
 
         sbEstatura.setOnSeekBarChangeListener(this)
 
+        // Initially hide the button
+        btnSiguiente.visibility = View.GONE
+
         btnSiguiente.setOnClickListener {
-            btnSiguiente.visibility = View.GONE
             estaturaSeleccionada = txtEstatura.text.toString()
             val intent = Intent(this, pregunta4::class.java)
             startActivity(intent)
@@ -51,12 +56,14 @@ class pregunta3 : AppCompatActivity(), SeekBar.OnSeekBarChangeListener {
     }
 
     override fun onProgressChanged(seekBar: SeekBar?, progress: Int, fromUser: Boolean) {
-        // con esto se actualiza el edit text cuando arrastre el seekbar
         val txtEstatura = findViewById<TextView>(R.id.txtEstatura)
         txtEstatura.text = progress.toString()
         estaturaSeleccionada = progress.toString()
-        val btnSiguiente = findViewById<Button>(R.id.btnSiguiente)
-        btnSiguiente.visibility = View.VISIBLE
+
+        if (!seekBarMoved) {
+            seekBarMoved = true
+            btnSiguiente.visibility = View.VISIBLE
+        }
     }
 
     override fun onStartTrackingTouch(seekBar: SeekBar?) {}

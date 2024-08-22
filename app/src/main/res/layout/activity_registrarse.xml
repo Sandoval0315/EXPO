@@ -174,7 +174,6 @@
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="202dp"
         android:layout_height="58dp"
-
         android:text="CREAR CUENTA"
         android:textColor="#454545"
         android:textSize="16sp"
@@ -185,6 +184,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.954" />
+
+    <TextView
+        android:id="@+id/tvSuccessMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cuenta creada con éxito"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3" />
 
     <ImageView
         android:id="@+id/imgVer"
@@ -214,7 +228,7 @@
         app:layout_constraintVertical_bias="0.46" />
 
     <ImageView
-        android:id="@+id/imgBack"
+        android:id="@+id/imgVolveralPerfil"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -227,16 +241,18 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/back" />
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="419dp"
-        android:layout_height="373dp"
-        android:layout_marginStart="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/lottieAnimationView2"
-        app:layout_constraintHorizontal_bias="0.448"
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="569dp"
+        android:layout_height="530dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/_46fd9f4_6714_4816_9573_0d809cda4199" />
+        app:layout_constraintVertical_bias="0.351"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/registrarr" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

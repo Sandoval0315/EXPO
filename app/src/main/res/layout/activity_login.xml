@@ -87,10 +87,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.507"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
+        app:layout_constraintVertical_bias="0.461" />
 
     <EditText
         android:id="@+id/txtClave"
@@ -169,10 +169,12 @@
         app:srcCompat="@drawable/back" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="559dp"
-        android:layout_height="618dp"
-        android:layout_marginTop="-100dp"
+        android:layout_width="599dp"
+        android:layout_height="526dp"
+        android:layout_marginTop="-40dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:lottie_autoPlay="true"

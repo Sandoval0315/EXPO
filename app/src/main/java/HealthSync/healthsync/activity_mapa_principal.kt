@@ -1,5 +1,7 @@
 package HealthSync.healthsync
 
+import HealthSync.healthsync.ui.dashboard.DashboardFragment
+import HealthSync.healthsync.ui.home.HomeFragment
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton

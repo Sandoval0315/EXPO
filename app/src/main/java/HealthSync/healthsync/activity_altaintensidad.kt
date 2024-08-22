@@ -23,10 +23,13 @@ class activity_altaintensidad : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
         val imgregresarRIntensidad = findViewById<ImageView>(R.id.imgregresarRIntensidad)
 
         imgregresarRIntensidad.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
 

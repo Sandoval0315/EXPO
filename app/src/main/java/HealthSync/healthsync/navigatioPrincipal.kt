@@ -32,5 +32,11 @@ class navigatioPrincipal : AppCompatActivity() {
         )
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
+
+        if (intent.getBooleanExtra("ir_a_agregar_rutinas", false)) {
+            navController.navigate(R.id.rutinas)
+        }
+
+
     }
 }

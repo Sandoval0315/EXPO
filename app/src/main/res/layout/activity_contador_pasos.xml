@@ -8,20 +8,36 @@
     android:background="#D2CBEC"
     tools:context=".activity_contador_pasos">
 
+
+    <ImageView
+        android:id="@+id/imageView54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="208dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:srcCompat="@drawable/caminando" />
+
     <com.mikhaellopez.circularprogressbar.CircularProgressBar
         android:id="@+id/circularProgressBar"
         android:layout_width="169dp"
         android:layout_height="150dp"
+        android:layout_marginEnd="72dp"
         app:cpb_background_progressbar_color="#5448A6"
         app:cpb_background_progressbar_width="5dp"
         app:cpb_progress_direction="to_right"
         app:cpb_progressbar_color="#3f51b5"
         app:cpb_progressbar_width="10dp"
         app:cpb_round_border="false"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="26dp"
-        tools:layout_editor_absoluteY="125dp" />
-
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.137"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.197"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tv_stepsTaken"
@@ -69,7 +85,7 @@
         app:layout_constraintVertical_bias="0.127" />
 
     <ImageView
-        android:id="@+id/imageView50"
+        android:id="@+id/regresar_pasos"
         android:layout_width="52dp"
         android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -79,18 +95,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/back" />
-
-    <ImageView
-        android:id="@+id/imageView54"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.931"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.414"
-        app:srcCompat="@drawable/caminando" />
 
     <ImageView
         android:id="@+id/imageView55"

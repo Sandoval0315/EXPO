@@ -8,24 +8,6 @@
     android:background="#7663F2"
     tools:context=".codigoVerificacion">
 
-    <Button
-        android:id="@+id/btnVerificarCode"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="177dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="17dp"
-        android:text="COMPROBAR"
-        android:textColor="#7663F2"
-        android:textSize="16sp"
-        app:backgroundTint="#D2CBEC"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView52"
-        app:layout_constraintVertical_bias="0.26" />
-
     <ImageView
         android:id="@+id/imageView52"
         android:layout_width="675dp"

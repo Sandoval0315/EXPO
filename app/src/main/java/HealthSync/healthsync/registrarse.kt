@@ -3,13 +3,14 @@ package HealthSync.healthsync
 import Modelo.ClaseConexion
 import android.content.Intent
 import android.os.Bundle
-import android.os.Handler
-import android.os.Looper
 import android.util.Patterns
 import android.view.View
+import android.view.animation.Animation
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,6 +23,11 @@ import kotlinx.coroutines.withContext
 import java.security.MessageDigest
 
 class registrarse : AppCompatActivity() {
+
+    companion object {
+        lateinit var nombreUsuario: String
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -40,9 +46,10 @@ class registrarse : AppCompatActivity() {
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
         val btnCrearCuenta = findViewById<Button>(R.id.btnRegistrarse)
         val btnIrAlLogin = findViewById<Button>(R.id.btnIrAlLogin)
-        val imgBack = findViewById<ImageView>(R.id.imgBack)
+        val imgBack = findViewById<ImageView>(R.id.imgVolveralPerfil)
+        val tvSuccessMessage = findViewById<TextView>(R.id.tvSuccessMessage)
 
-        imgBack.setOnClickListener{
+        imgBack.setOnClickListener {
             val intent = Intent(this, Bienvenida::class.java)
             startActivity(intent)
         }
@@ -52,13 +59,11 @@ class registrarse : AppCompatActivity() {
             startActivity(intent)
         }
 
-        //codigo para quitar el boton de crear cuenta luego dde crearla, para que salga el de ir al inicio de sesion
         fun showCreateAccountButton() {
             btnCrearCuenta.visibility = View.VISIBLE
             btnIrAlLogin.visibility = View.GONE
         }
 
-        // esto sirve para cuando crea una cuenta, al tocar algun edit text se ponga el boton de crear cuenta en caso de que quiera crear otra
         val textWatcher = object : View.OnFocusChangeListener, View.OnClickListener {
             override fun onClick(v: View?) {
                 showCreateAccountButton()
@@ -74,7 +79,6 @@ class registrarse : AppCompatActivity() {
         txtCorreo.setOnFocusChangeListener(textWatcher)
         txtContraseña.setOnFocusChangeListener(textWatcher)
 
-        //Escriptacion de la contraseña
         fun hashPassword(password: String): String {
             val bytes = password.toByteArray()
             val md = MessageDigest.getInstance("SHA-256")
@@ -82,17 +86,14 @@ class registrarse : AppCompatActivity() {
             return digest.fold("") { str, it -> str + "%02x".format(it) }
         }
 
-        // Función para validar el correo electrónico
         fun isValidEmail(email: String): Boolean {
             return Patterns.EMAIL_ADDRESS.matcher(email).matches()
         }
 
-        // Función para validar la contraseña (mayúsculas, minúsculas y mínimo 8 caracteres)
         fun isValidPassword(password: String): Boolean {
             return password.length >= 8 && password.any { it.isUpperCase() } && password.any { it.isLowerCase() }
         }
 
-        // Función para verificar si el correo ya existe en la base de datos
         suspend fun isEmailAlreadyRegistered(email: String): Boolean {
             return withContext(Dispatchers.IO) {
                 val objConexion = ClaseConexion().CadenaConexion()
@@ -118,7 +119,7 @@ class registrarse : AppCompatActivity() {
             } else if (!isValidEmail(correo)) {
                 Toast.makeText(this, "Ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show()
             } else if (!isValidPassword(contraseñaPlana)) {
-                Toast.makeText(this, "Contraseña insegura", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Contraseña insegura: debe tener al menos 8 caracteres, una mayúscula y una minúscula", Toast.LENGTH_SHORT).show()
             } else {
                 GlobalScope.launch(Dispatchers.Main) {
                     if (isEmailAlreadyRegistered(correo)) {
@@ -133,15 +134,39 @@ class registrarse : AppCompatActivity() {
                             addNombre?.setString(3, nombre)
                             addNombre?.executeUpdate()
                         }
+
+                        // Guardar el nombre en el companion object
+                        nombreUsuario = nombre
+
                         Toast.makeText(this@registrarse, "Usuario registrado", Toast.LENGTH_SHORT).show()
                         txtNombre.setText("")
                         txtCorreo.setText("")
                         txtContraseña.setText("")
                         btnCrearCuenta.visibility = View.GONE
                         btnIrAlLogin.visibility = View.VISIBLE
+
+                        // Mostrar mensaje de éxito con animación
+                        val fadeInOut = AnimationUtils.loadAnimation(this@registrarse, R.anim.fade_in_out)
+                        tvSuccessMessage.visibility = View.VISIBLE
+                        tvSuccessMessage.startAnimation(fadeInOut)
+                        fadeInOut.setAnimationListener(object : Animation.AnimationListener {
+                            override fun onAnimationStart(animation: Animation?) {
+                                // No hacer nada
+                            }
+
+                            override fun onAnimationEnd(animation: Animation?) {
+                                // Ocultar el mensaje después de la animación
+                                tvSuccessMessage.visibility = View.GONE
+                            }
+
+                            override fun onAnimationRepeat(animation: Animation?) {
+                                // No hacer nada
+                            }
+                        })
                     }
                 }
             }
         }
     }
 }
+
