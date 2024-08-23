@@ -19,6 +19,12 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_yoga3"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga2"
+            android:exported="false" />
+        <activity
             android:name=".activity_yoga1"
             android:exported="false" />
         <activity
@@ -26,7 +32,7 @@
             android:exported="false" />
         <activity
             android:name=".cambiodeclave"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".codigoVerificacion"
             android:exported="true" />
