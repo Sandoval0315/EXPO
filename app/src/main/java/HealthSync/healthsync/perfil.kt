@@ -11,6 +11,15 @@ import HealthSync.healthsync.pregunta3.Companion.estaturaSeleccionada
 import HealthSync.healthsync.pregunta4.Companion.pesoSeleccionado
 import HealthSync.healthsync.registrarse.Companion.nombreUsuario
 import HealthSync.healthsync.pregunta6.Companion.IMCtotal
+import HealthSync.healthsync.editarPerfil.Companion.edadPerfilActu
+import HealthSync.healthsync.editarPerfil.Companion.alturaPerfilActu
+import HealthSync.healthsync.editarPerfil.Companion.pesoPerfilActu
+import HealthSync.healthsync.editarPerfil.Companion.txtIMCactu
+import HealthSync.healthsync.editarPerfil.Companion.enfermedadesPerfilActu
+import HealthSync.healthsync.editarPerfil.Companion.isEdadPerfilActuInitialized
+import HealthSync.healthsync.editarPerfil.Companion.isAlturaPerfilActuInitialized
+import HealthSync.healthsync.editarPerfil.Companion.isPesoPerfilActuInitialized
+import HealthSync.healthsync.editarPerfil.Companion.isTxtIMCactuInitialized
 import HealthSync.healthsync.ui.perfil.PerfilViewModel
 import android.widget.TextView
 import androidx.lifecycle.ViewModelProvider
@@ -18,24 +27,17 @@ import HealthSync.healthsync.databinding.FragmentPerfilBinding
 import android.content.Intent
 import android.widget.ImageView
 
-
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
 private const val ARG_PARAM1 = "param1"
 private const val ARG_PARAM2 = "param2"
 
-/**
- * A simple [Fragment] subclass.
- * Use the [perfil.newInstance] factory method to
- * create an instance of this fragment.
- */
 class perfil : Fragment() {
 
     private var _binding: FragmentPerfilBinding? = null
     private val binding get() = _binding!!
-    // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
+
+    private var shouldLoadActuData: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -50,10 +52,9 @@ class perfil : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        // Inflate the layout for this fragment
         val pefilModelProvider = ViewModelProvider(this).get(PerfilViewModel::class.java)
         _binding = FragmentPerfilBinding.inflate(inflater, container, false)
-        val root: View =  binding.root
+        val root: View = binding.root
 
         val txtNombrePerfil = root.findViewById<TextView>(R.id.txtNombrePerfil)
         val txtEdad = root.findViewById<TextView>(R.id.txtEdad)
@@ -62,30 +63,44 @@ class perfil : Fragment() {
         val txtIMC = root.findViewById<TextView>(R.id.txtIMC)
         val txtGenero = root.findViewById<TextView>(R.id.txtGenero)
         val imgEditarPerfil = root.findViewById<ImageView>(R.id.imgEditarPerfil)
-        val imgCerrarSesion = root.findViewById<ImageView>(R.id.imgCerrarSesion)
 
-        txtNombrePerfil.text = nombreUsuario
-        txtIMC.text =   IMCtotal.toString()
-        txtGenero.text = generoSeleccionado
-        txtEdad.text = edadSeleccionada.toString()
-        txtAltura.text = estaturaSeleccionada.toString()
-        txtPeso.text = pesoSeleccionado.toString()
+        if (shouldLoadActuData) {
+            if (isEdadPerfilActuInitialized()) txtEdad.text = edadPerfilActu
+            if (isAlturaPerfilActuInitialized()) txtAltura.text = alturaPerfilActu
+            if (isPesoPerfilActuInitialized()) txtPeso.text = pesoPerfilActu
+            if (isTxtIMCactuInitialized()) txtIMC.text = txtIMCactu
+        } else {
+            txtNombrePerfil.text = nombreUsuario
+            txtEdad.text = edadSeleccionada
+            txtAltura.text = estaturaSeleccionada
+            txtPeso.text = pesoSeleccionado
+            txtIMC.text = IMCtotal
+            txtGenero.text = generoSeleccionado
+        }
 
         imgEditarPerfil.setOnClickListener {
-            val intent = Intent(requireActivity(), editarPerfil::class.java)
-            startActivity(intent)
+            shouldLoadActuData = true
+            val intent = Intent(requireContext(), editarPerfil::class.java)
+            startActivityForResult(intent, editarPerfil.REQUEST_CODE_ACTUALIZAR_PERFIL)
         }
 
-        imgCerrarSesion.setOnClickListener {
-            val intent = Intent(requireActivity(),login::class.java)
-            startActivity(intent)
-        }
-
-        return  root
+        return root
     }
 
     override fun onDestroyView() {
         super.onDestroyView()
         _binding = null
     }
+
+    companion object {
+        @JvmStatic
+        fun newInstance(param1: String, param2: String) =
+            perfil().apply {
+                arguments = Bundle().apply {
+                    putString(ARG_PARAM1, param1)
+                    putString(ARG_PARAM2, param2)
+                }
+            }
+    }
 }
+
