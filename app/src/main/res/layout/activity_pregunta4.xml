@@ -8,6 +8,21 @@
     android:layout_height="match_parent"
     tools:context=".pregunta4">
 
+    <TextView
+        android:id="@+id/txtLBS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="Lbs"
+        android:textColor="#7663F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.706"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.479" />
+
     <Button
         android:id="@+id/btnSiguiente"
         style="@style/Widget.MaterialComponents.Button.TextButton"

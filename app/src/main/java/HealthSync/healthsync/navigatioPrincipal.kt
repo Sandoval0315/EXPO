@@ -37,5 +37,6 @@ class navigatioPrincipal : AppCompatActivity() {
             navController.navigate(R.id.rutinas)
         }
 
+
     }
 }

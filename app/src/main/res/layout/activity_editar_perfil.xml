@@ -33,10 +33,10 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.603" />
+        app:layout_constraintVertical_bias="0.178" />
 
     <ImageView
         android:id="@+id/imgEditarPerfil4"
@@ -44,10 +44,10 @@
         android:layout_height="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.65"
+        app:layout_constraintVertical_bias="0.262"
         app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
 
     <EditText
@@ -67,7 +67,7 @@
         app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.4" />
+        app:layout_constraintVertical_bias="0.371" />
 
     <ImageView
         android:id="@+id/imgEditarPerfil3"
@@ -78,39 +78,8 @@
         app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471"
+        app:layout_constraintVertical_bias="0.444"
         app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
-
-    <ImageView
-        android:id="@+id/imgEditarPerfil5"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.926"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276"
-        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
-
-    <EditText
-        android:id="@+id/txtIMCPerfil"
-        android:layout_width="122dp"
-        android:layout_height="101dp"
-        android:backgroundTint="#7663F2"
-        android:ems="10"
-        android:fontFamily="@font/lexend_semibold"
-        android:hint="IMC"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="#7663F2"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.92"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
 
     <ImageView
         android:id="@+id/imgEditarPerfil"
@@ -177,8 +146,8 @@
     <Button
         android:id="@+id/btnActualizarPerfil"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="169dp"
-        android:layout_height="54dp"
+        android:layout_width="211dp"
+        android:layout_height="82dp"
         android:text="Aceptar"
         android:textColor="#FEFFFF"
         android:textSize="16sp"
@@ -186,8 +155,9 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.824" />
+        app:layout_constraintVertical_bias="0.646" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

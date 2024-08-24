@@ -30,7 +30,7 @@ class activity_mapa_principal : AppCompatActivity() {
         val img_IrMap = findViewById<ImageView>(R.id.img_IrMap)
 
         img_RegresMap.setOnClickListener(){
-            val intent = Intent(this, HomeFragment::class.java)
+            val intent = Intent(this, navigatioPrincipal::class.java)
             startActivity(intent)
         }
 
