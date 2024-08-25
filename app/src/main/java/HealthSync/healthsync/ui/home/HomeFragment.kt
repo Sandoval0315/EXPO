@@ -2,10 +2,10 @@ package HealthSync.healthsync.ui.home
 
 import HealthSync.healthsync.R
 import HealthSync.healthsync.activity_Hidra_y_Alimen
-import HealthSync.healthsync.activity_contador_pasos
 import HealthSync.healthsync.activity_mapa
 import HealthSync.healthsync.activity_mapa_principal
 import HealthSync.healthsync.activity_rutinas
+import HealthSync.healthsync.activity_stepCounter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -44,7 +44,7 @@ class HomeFragment : Fragment() {
         val btnmapa = root.findViewById<Button>(R.id.btnmapa)
 
         btncontadordepaso.setOnClickListener {
-            val intent = Intent(requireContext(), activity_contador_pasos::class.java)
+            val intent = Intent(requireContext(), activity_stepCounter::class.java)
             startActivity(intent)
         }
         btnaliyhidra.setOnClickListener {
