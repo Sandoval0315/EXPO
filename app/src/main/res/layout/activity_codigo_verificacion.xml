@@ -24,7 +24,7 @@
     <EditText
         android:id="@+id/txtcode1"
         android:layout_width="59dp"
-        android:layout_height="109dp"
+        android:layout_height="100dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionNext"
@@ -46,7 +46,7 @@
     <EditText
         android:id="@+id/txtcode2"
         android:layout_width="59dp"
-        android:layout_height="109dp"
+        android:layout_height="100dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionNext"
@@ -68,7 +68,7 @@
     <EditText
         android:id="@+id/txtcode3"
         android:layout_width="59dp"
-        android:layout_height="109dp"
+        android:layout_height="100dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionNext"
@@ -90,7 +90,7 @@
     <EditText
         android:id="@+id/txtcode4"
         android:layout_width="59dp"
-        android:layout_height="109dp"
+        android:layout_height="100dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionNext"
@@ -112,7 +112,7 @@
     <EditText
         android:id="@+id/txtcode5"
         android:layout_width="59dp"
-        android:layout_height="109dp"
+        android:layout_height="100dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionDone"

@@ -28,19 +28,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.336"
-        app:srcCompat="@drawable/fondoclaropequeno"/>
-
-    <ImageButton
-        android:id="@+id/imageButton11"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.803"
-        app:srcCompat="@drawable/back"/>
+        app:srcCompat="@drawable/fondoclaropequeno" />
 
     <Button
         android:id="@+id/button9"
@@ -83,6 +71,20 @@
         app:layout_constraintStart_toStartOf="@+id/imageView83"
         app:layout_constraintTop_toTopOf="@+id/imageView83"
         app:layout_constraintVertical_bias="0.945" />
+
+    <ImageView
+        android:id="@+id/imageView56"
+        android:layout_width="47dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="196dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button9"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView83"
+        app:srcCompat="@drawable/volver__1_" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

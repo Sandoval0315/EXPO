@@ -94,8 +94,9 @@
 
     <EditText
         android:id="@+id/txtEnfermedad"
-        android:layout_width="305dp"
-        android:layout_height="63dp"
+        android:layout_width="351dp"
+        android:layout_height="65dp"
+        android:background="@drawable/edittext_background"
         android:ems="10"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

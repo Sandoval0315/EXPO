@@ -40,7 +40,7 @@
     <EditText
         android:id="@+id/txtCorreoR"
         android:layout_width="332dp"
-        android:layout_height="51dp"
+        android:layout_height="55dp"
         android:layout_marginStart="169dp"
         android:layout_marginTop="621dp"
         android:layout_marginEnd="173dp"

@@ -79,7 +79,7 @@
                 app:layout_constraintHorizontal_bias="0.169"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.055" />
+                app:layout_constraintVertical_bias="0.064" />
 
             <ImageView
                 android:id="@+id/imageView14"
@@ -369,10 +369,10 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.421"
+                app:layout_constraintHorizontal_bias="0.342"
                 app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/btn_hidra_y_ali"
-                tools:layout_editor_absoluteY="1521dp" />
+                tools:layout_editor_absoluteY="1505dp" />
 
             <TextView
                 android:id="@+id/textView88"

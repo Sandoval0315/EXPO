@@ -85,20 +85,27 @@
         android:id="@+id/imgIniciar1min"
         android:layout_width="47dp"
         android:layout_height="37dp"
+        android:layout_marginTop="152dp"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="4dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
-        app:layout_constraintTop_toBottomOf="@+id/imageView73"
-        app:layout_constraintVertical_bias="0.875"
-        app:srcCompat="@drawable/pausa_png"
-        tools:layout_editor_absoluteX="302dp" />
+        app:layout_constraintEnd_toEndOf="@+id/img_siguientePausa20"
+        app:layout_constraintTop_toTopOf="@+id/img_siguientePausa20"
+        app:layout_constraintVertical_bias="0.269"
+        app:srcCompat="@drawable/pausa_png" />
 
     <ImageView
-        android:id="@+id/imgplay"
-        android:layout_width="57dp"
-        android:layout_height="42dp"
+        android:id="@+id/imageView55"
+        android:layout_width="47dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="210dp"
+        android:layout_marginTop="159dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginBottom="23dp"
         app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
-        app:layout_constraintTop_toTopOf="@+id/imageView73"
-        app:layout_constraintVertical_bias="0.985"
-        app:srcCompat="@drawable/imgplay1"
-        tools:layout_editor_absoluteX="232dp" />
+        app:layout_constraintEnd_toStartOf="@+id/imgIniciar1min"
+        app:layout_constraintStart_toStartOf="@+id/img_siguientePausa20"
+        app:layout_constraintTop_toTopOf="@+id/img_siguientePausa20"
+        app:srcCompat="@drawable/boton_de_play" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
