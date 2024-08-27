@@ -24,9 +24,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView138"
-        app:layout_constraintVertical_bias="0.389"
+        app:layout_constraintVertical_bias="0.826"
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
@@ -64,4 +65,16 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView138"
         app:layout_constraintStart_toStartOf="@+id/imageView138"
         app:layout_constraintTop_toTopOf="@+id/imageView138" />
+
+    <ImageButton
+        android:id="@+id/imageButton28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView139"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton22"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="@+id/imageView139"
+        app:layout_constraintTop_toTopOf="@+id/imageView139"
+        app:layout_constraintVertical_bias="0.846"
+        app:srcCompat="@drawable/back" />
 </androidx.constraintlayout.widget.ConstraintLayout>
