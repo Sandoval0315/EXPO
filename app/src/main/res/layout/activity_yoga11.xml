@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_yoga11">
+
+    <ImageView
+        android:id="@+id/imageView141"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.231"
+        app:srcCompat="@drawable/fondoclaropequeno" />
+
+    <ImageView
+        android:id="@+id/imageView142"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView141"
+        app:layout_constraintVertical_bias="0.258"
+        app:srcCompat="@drawable/fondomaspequenoclaro" />
+
+    <ImageButton
+        android:id="@+id/imageButton23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/imageButton26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView142"
+        app:layout_constraintEnd_toEndOf="@+id/imageView142"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="@+id/imageView142"
+        app:layout_constraintTop_toTopOf="@+id/imageView142"
+        app:layout_constraintVertical_bias="0.905"
+        app:srcCompat="@drawable/pausa_png" />
+
+    <TextView
+        android:id="@+id/textView105"
+        android:layout_width="295dp"
+        android:layout_height="97dp"
+        android:fontFamily="@font/lexend_black"
+        android:text="COLOCATE EN POSICIÓN DE 4 PATAS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView141"
+        app:layout_constraintEnd_toEndOf="@+id/imageView141"
+        app:layout_constraintStart_toStartOf="@+id/imageView141"
+        app:layout_constraintTop_toTopOf="@+id/imageView141" />
+
+    <ImageButton
+        android:id="@+id/imageButton27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView142"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton26"
+        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintStart_toStartOf="@+id/imageView142"
+        app:layout_constraintTop_toTopOf="@+id/imageView142"
+        app:layout_constraintVertical_bias="0.905"
+        app:srcCompat="@drawable/back" />
+</androidx.constraintlayout.widget.ConstraintLayout>
