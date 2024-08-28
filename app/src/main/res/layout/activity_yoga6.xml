@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_yoga6">
+
+    <ImageView
+        android:id="@+id/imageView173"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/fondoclaropequeno" />
+
+    <ImageView
+        android:id="@+id/imageView174"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/fondomaspequenoclaro" />
+
+    <ImageButton
+        android:id="@+id/imageButton53"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/back" />
+
+    <ImageButton
+        android:id="@+id/imageButton54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView174"
+        app:layout_constraintEnd_toEndOf="@+id/imageView174"
+        app:layout_constraintStart_toStartOf="@+id/imageView174"
+        app:layout_constraintTop_toTopOf="@+id/imageView174"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintVertical_bias="0.899"
+        app:srcCompat="@drawable/pausa_png" />
+
+    <TextView
+        android:id="@+id/textView136"
+        android:layout_width="289dp"
+        android:layout_height="114dp"
+        android:fontFamily="@font/lexend_black"
+        android:text="SIÉNTATE EN UNA POSICÍON CÓMODA CON LA ESPALDA RECTA Y LOS HOMBROS RELAJADOS"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView173"
+        app:layout_constraintEnd_toEndOf="@+id/imageView173"
+        app:layout_constraintStart_toStartOf="@+id/imageView173"
+        app:layout_constraintTop_toTopOf="@+id/imageView173" />
+</androidx.constraintlayout.widget.ConstraintLayout>
