@@ -60,7 +60,7 @@ class activity_estiramientodinamico : AppCompatActivity() {
                 // Pausar el temporizador
                 countDownTimer?.cancel()
                 isPaused = true
-                pauseButton.setImageResource(R.drawable.imgplay1) // Cambia la imagen al ícono de reproducir
+                pauseButton.setImageResource(R.drawable.boton_de_play) // Cambia la imagen al ícono de reproducir
             }
         }
     }

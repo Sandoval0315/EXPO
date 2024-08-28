@@ -95,7 +95,7 @@
         app:srcCompat="@drawable/pausa_png" />
 
     <ImageView
-        android:id="@+id/imageView55"
+        android:id="@+id/imgplay2"
         android:layout_width="47dp"
         android:layout_height="37dp"
         android:layout_marginStart="210dp"
