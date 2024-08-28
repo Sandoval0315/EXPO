@@ -5,10 +5,10 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_yoga21">
+    tools:context=".activity_yoga22">
 
     <ImageButton
-        android:id="@+id/imageButton47"
+        android:id="@+id/imageButton49"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/back" />
 
     <ImageView
-        android:id="@+id/imageView163"
+        android:id="@+id/imageView166"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageView
-        android:id="@+id/imageView164"
+        android:id="@+id/imageView167"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -42,37 +42,26 @@
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/imageButton48"
+        android:id="@+id/imageButton50"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView164"
-        app:layout_constraintEnd_toEndOf="@+id/imageView164"
-        app:layout_constraintStart_toStartOf="@+id/imageView164"
-        app:layout_constraintTop_toTopOf="@+id/imageView164"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView167"
+        app:layout_constraintEnd_toEndOf="@+id/imageView167"
+        app:layout_constraintStart_toStartOf="@+id/imageView167"
+        app:layout_constraintTop_toTopOf="@+id/imageView167"
         app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintVertical_bias="0.899"
         app:srcCompat="@drawable/pausa_png" />
 
     <TextView
-        android:id="@+id/textView128"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/textView129"
+        android:layout_width="325dp"
+        android:layout_height="92dp"
         android:fontFamily="@font/lexend_black"
-        android:text="REPLICA LA POSTURA"
+        android:text="ACUESTATE EN POSTURA DE CADAVER"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView163"
-        app:layout_constraintEnd_toEndOf="@+id/imageView163"
-        app:layout_constraintStart_toStartOf="@+id/imageView163"
-        app:layout_constraintTop_toTopOf="@+id/imageView163"
-        app:layout_constraintVertical_bias="0.894" />
-
-    <ImageView
-        android:id="@+id/imageView165"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView163"
-        app:layout_constraintEnd_toEndOf="@+id/imageView163"
-        app:layout_constraintStart_toStartOf="@+id/imageView163"
-        app:layout_constraintTop_toTopOf="@+id/imageView163"
-        app:srcCompat="@drawable/yoga3" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView166"
+        app:layout_constraintEnd_toEndOf="@+id/imageView166"
+        app:layout_constraintStart_toStartOf="@+id/imageView166"
+        app:layout_constraintTop_toTopOf="@+id/imageView166" />
 </androidx.constraintlayout.widget.ConstraintLayout>
