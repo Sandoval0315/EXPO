@@ -5,10 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity_yoga2">
+    tools:context=".activity_yoga14">
 
     <ImageView
-        android:id="@+id/imageView133"
+        android:id="@+id/imageView147"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/fondomaspequenoclaro" />
+
+    <ImageView
+        android:id="@+id/imageView149"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -19,18 +30,19 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageView
-        android:id="@+id/imageView134"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.789"
-        app:srcCompat="@drawable/fondomaspequenoclaro" />
+        android:id="@+id/imageView150"
+        android:layout_width="22dp"
+        android:layout_height="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView147"
+        app:layout_constraintEnd_toEndOf="@+id/imageView147"
+        app:layout_constraintStart_toStartOf="@+id/imageView147"
+        app:layout_constraintTop_toTopOf="@+id/imageView147"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintVertical_bias="0.899"
+        app:srcCompat="@drawable/pausa_png" />
 
-    <ImageButton
-        android:id="@+id/imageButton3"
+    <ImageView
+        android:id="@+id/imageView151"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -41,27 +53,17 @@
         app:layout_constraintVertical_bias="0.046"
         app:srcCompat="@drawable/back" />
 
-    <ImageButton
-        android:id="@+id/imageButton4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView134"
-        app:layout_constraintEnd_toEndOf="@+id/imageView134"
-        app:layout_constraintHorizontal_bias="0.948"
-        app:layout_constraintStart_toStartOf="@+id/imageView134"
-        app:layout_constraintTop_toTopOf="@+id/imageView134"
-        app:layout_constraintVertical_bias="0.917"
-        app:srcCompat="@drawable/pausa_png" />
-
     <TextView
-        android:id="@+id/textView95"
-        android:layout_width="282dp"
-        android:layout_height="89dp"
+        android:id="@+id/textView121"
+        android:layout_width="211dp"
+        android:layout_height="78dp"
         android:fontFamily="@font/lexend_black"
-        android:text="CIERRAS LOS OJOS Y LLEVA TU ATENCION A LA RESPIRACION"
+        android:text="INHALA Y
+ EXHALA
+REPETITIVAMENTE"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView133"
-        app:layout_constraintEnd_toEndOf="@+id/imageView133"
-        app:layout_constraintStart_toStartOf="@+id/imageView133"
-        app:layout_constraintTop_toTopOf="@+id/imageView133" />
+        app:layout_constraintBottom_toBottomOf="@+id/imageView149"
+        app:layout_constraintEnd_toEndOf="@+id/imageView149"
+        app:layout_constraintStart_toStartOf="@+id/imageView149"
+        app:layout_constraintTop_toTopOf="@+id/imageView149" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,6 +26,15 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_yoga16"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga14"
+            android:exported="false" />
+        <activity
             android:name=".activity_yoga13"
             android:exported="false" />
         <activity
