@@ -63,20 +63,9 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/img_finRutina"
         app:layout_constraintEnd_toEndOf="@+id/img_finRutina"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/img_finRutina"
         app:layout_constraintTop_toBottomOf="@+id/imageView69"
-        app:layout_constraintVertical_bias="0.191" />
-
-    <ImageView
-        android:id="@+id/imginiciar20seg"
-        android:layout_width="49dp"
-        android:layout_height="45dp"
-        app:layout_constraintEnd_toEndOf="@+id/img_finRutina"
-        app:layout_constraintHorizontal_bias="0.715"
-        app:layout_constraintStart_toStartOf="@+id/img_finRutina"
-        app:srcCompat="@drawable/boton_de_play"
-        tools:layout_editor_absoluteY="565dp" />
+        app:layout_constraintVertical_bias="0.46" />
 
     <ImageView
         android:id="@+id/imgpausa"

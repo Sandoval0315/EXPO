@@ -64,16 +64,6 @@
         app:srcCompat="@drawable/pausa_png"
         tools:layout_editor_absoluteX="311dp" />
 
-    <ImageView
-        android:id="@+id/imgplay15seg"
-        android:layout_width="61dp"
-        android:layout_height="58dp"
-        app:layout_constraintBottom_toBottomOf="@+id/img_siguientePantalla"
-        app:layout_constraintTop_toBottomOf="@+id/imageView70"
-        app:layout_constraintVertical_bias="0.924"
-        app:srcCompat="@drawable/boton_de_play"
-        tools:layout_editor_absoluteX="243dp" />
-
     <TextView
         android:id="@+id/txt15seg"
         android:layout_width="wrap_content"
@@ -82,7 +72,8 @@
         android:text="00:15"
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/img_siguientePantalla"
+        app:layout_constraintEnd_toEndOf="@+id/img_siguientePantalla"
+        app:layout_constraintStart_toStartOf="@+id/img_siguientePantalla"
         app:layout_constraintTop_toBottomOf="@+id/imageView70"
-        app:layout_constraintVertical_bias="0.123"
-        tools:layout_editor_absoluteX="135dp" />
+        app:layout_constraintVertical_bias="0.483" />
 </androidx.constraintlayout.widget.ConstraintLayout>

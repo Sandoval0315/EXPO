@@ -67,18 +67,6 @@
         app:layout_constraintVertical_bias="0.932" />
 
     <ImageView
-        android:id="@+id/imgplay"
-        android:layout_width="51dp"
-        android:layout_height="40dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView97"
-        app:layout_constraintEnd_toEndOf="@+id/imageView97"
-        app:layout_constraintHorizontal_bias="0.703"
-        app:layout_constraintStart_toStartOf="@+id/imageView97"
-        app:layout_constraintTop_toBottomOf="@+id/imageView96"
-        app:layout_constraintVertical_bias="0.867"
-        app:srcCompat="@drawable/boton_de_play" />
-
-    <ImageView
         android:id="@+id/imgpause"
         android:layout_width="41dp"
         android:layout_height="44dp"
@@ -99,8 +87,7 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView97"
         app:layout_constraintEnd_toEndOf="@+id/imageView97"
-        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/imageView97"
         app:layout_constraintTop_toBottomOf="@+id/imageView96"
-        app:layout_constraintVertical_bias="0.0" />"
+        app:layout_constraintVertical_bias="0.465" />"
 </androidx.constraintlayout.widget.ConstraintLayout>

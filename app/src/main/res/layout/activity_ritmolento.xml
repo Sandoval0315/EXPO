@@ -66,5 +66,30 @@
         app:layout_constraintTop_toTopOf="@+id/imageView79"
         app:layout_constraintVertical_bias="0.923" />
 
+    <TextView
+        android:id="@+id/txt30segRL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:30"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgdescanso"
+        app:layout_constraintEnd_toEndOf="@+id/imgdescanso"
+        app:layout_constraintStart_toStartOf="@+id/imgdescanso"
+        app:layout_constraintTop_toTopOf="@+id/imgdescanso"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ImageView
+        android:id="@+id/img30segRL"
+        android:layout_width="52dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgdescanso"
+        app:layout_constraintEnd_toEndOf="@+id/imgdescanso"
+        app:layout_constraintHorizontal_bias="0.868"
+        app:layout_constraintStart_toStartOf="@+id/imgdescanso"
+        app:layout_constraintTop_toTopOf="@+id/imgdescanso"
+        app:layout_constraintVertical_bias="0.917"
+        app:srcCompat="@drawable/pausa_png" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

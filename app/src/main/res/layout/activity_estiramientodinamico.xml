@@ -77,9 +77,10 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
         app:layout_constraintEnd_toEndOf="@+id/img_siguientePausa20"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/img_siguientePausa20"
         app:layout_constraintTop_toBottomOf="@+id/imageView73"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.504" />
 
     <ImageView
         android:id="@+id/imgIniciar1min"
@@ -93,19 +94,5 @@
         app:layout_constraintTop_toTopOf="@+id/img_siguientePausa20"
         app:layout_constraintVertical_bias="0.269"
         app:srcCompat="@drawable/pausa_png" />
-
-    <ImageView
-        android:id="@+id/imgplay2"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
-        android:layout_marginStart="210dp"
-        android:layout_marginTop="159dp"
-        android:layout_marginEnd="7dp"
-        android:layout_marginBottom="23dp"
-        app:layout_constraintBottom_toBottomOf="@+id/img_siguientePausa20"
-        app:layout_constraintEnd_toStartOf="@+id/imgIniciar1min"
-        app:layout_constraintStart_toStartOf="@+id/img_siguientePausa20"
-        app:layout_constraintTop_toTopOf="@+id/img_siguientePausa20"
-        app:srcCompat="@drawable/boton_de_play" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

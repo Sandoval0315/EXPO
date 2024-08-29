@@ -65,12 +65,10 @@ class activity_pausas : AppCompatActivity() {
                 countDownTimer = createCountDownTimer(timeRemaining)
                 countDownTimer?.start()
                 isPaused = false
-                pauseButton.setImageResource(R.drawable.pausa_png) // Cambia la imagen al ícono de pausa
             } else {
                 // Pausar el temporizador
                 countDownTimer?.cancel()
                 isPaused = true
-                pauseButton.setImageResource(R.drawable.boton_de_play) // Cambia la imagen al ícono de reproducir
             }
         }
     }
