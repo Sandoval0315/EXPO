@@ -26,6 +26,18 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_tiempovascular11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular8"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular6"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular5"
+            android:exported="false" />
+        <activity
             android:name=".activity_tomadescaso2"
             android:exported="false" />
         <activity
