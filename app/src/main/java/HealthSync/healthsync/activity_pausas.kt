@@ -24,6 +24,9 @@ class activity_pausas : AppCompatActivity() {
     private var isPaused: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pausas)
@@ -32,6 +35,10 @@ class activity_pausas : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+
+
+
 
         val regresar = findViewById<ImageButton>(R.id.button_regresamos)
         val siguientePantalla = findViewById<ImageView>(R.id.img_siguientePantalla)
@@ -83,6 +90,21 @@ class activity_pausas : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
+                val valorRecibido = intent.getStringExtra("identificador")
+
+                println("ESTE ES EL VALOR QUE RTECIBO $valorRecibido")
+
+                if(valorRecibido == "Primer"){
+                    //intent a la segunda pantalla
+                    val intent = Intent(this@activity_pausas, activity_yoga2::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido == "segunda"){
+                    //iintent a la tercera
+                }
+
+
             }
             // Cambiar de pantalla cuando el temporizador termine
             //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)

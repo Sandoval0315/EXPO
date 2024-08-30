@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.ImageView
@@ -62,11 +63,12 @@ class activity_yoga2 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
+                val intent = Intent(this@activity_yoga2, activity_pausas::class.java)
+                intent.putExtra("identificador", "segunda")
+                startActivity(intent)
+                finish()
             }
-            // Cambiar de pantalla cuando el temporizador termine
-            //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)
-            ///    startActivity(intent)
-            //finish() // Finaliza la actividad actual
+
         }
 
     }
