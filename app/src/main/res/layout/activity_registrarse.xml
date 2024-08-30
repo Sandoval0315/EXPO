@@ -15,10 +15,39 @@
         android:layout_height="651dp"
         android:layout_marginTop="352dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_575a196_3b0d_4d62_aa9d_59fec22b5f1c" />
+
+    <TextView
+        android:id="@+id/txtContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="CONTRASEÑA"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.727" />
+
+    <TextView
+        android:id="@+id/txtConfirmarContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="CONFIRMAR CONTRASEÑA"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
 
     <TextView
         android:id="@+id/textView4"
@@ -50,21 +79,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.621" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
-        android:text="CONTRASEÑA"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.136"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.728" />
 
     <EditText
         android:id="@+id/txtNombre"
@@ -122,35 +136,26 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.785" />
 
-    <Button
-        android:id="@+id/btnInicioSesionGoogle"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="258dp"
+
+    <EditText
+        android:id="@+id/txtConfirmarContraseña"
+        android:layout_width="332dp"
         android:layout_height="51dp"
-        android:text="     Iniciar con Google"
-        android:textColor="#000000"
-        android:textSize="12sp"
-        app:backgroundTint="#80D2CBEC"
-        app:cornerRadius="20dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/lexend"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="#454545"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.871" />
-
-    <ImageView
-        android:id="@+id/imageView3"
-        android:layout_width="21dp"
-        android:layout_height="19dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.259"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.857"
-        app:srcCompat="@drawable/google" />
-
-
+        app:layout_constraintVertical_bias="0.885" />
 
     <Button
         android:id="@+id/btnIrAlLogin"
@@ -201,15 +206,27 @@
         app:layout_constraintVertical_bias="0.3" />
 
     <ImageView
-        android:id="@+id/imgVer"
+        android:id="@+id/imgVerContraseña"
         android:layout_width="31dp"
         android:layout_height="23dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.817"
+        app:layout_constraintHorizontal_bias="0.842"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.781"
+        app:layout_constraintVertical_bias="0.775"
+        app:srcCompat="@drawable/ver" />
+
+    <ImageView
+        android:id="@+id/imgVerConfirmarContraseña"
+        android:layout_width="31dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.842"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.872"
         app:srcCompat="@drawable/ver" />
 
     <TextView
