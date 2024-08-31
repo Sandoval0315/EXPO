@@ -21,6 +21,9 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import java.security.MessageDigest
+import android.text.InputType
+import android.os.Handler
+import android.os.Looper
 
 class registrarse : AppCompatActivity() {
 
@@ -44,9 +47,12 @@ class registrarse : AppCompatActivity() {
         val txtNombre = findViewById<EditText>(R.id.txtNombre)
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
+        val txtConfirmarContrasena = findViewById<EditText>(R.id.txtConfirmarContraseña)
         val btnCrearCuenta = findViewById<Button>(R.id.btnRegistrarse)
         val btnIrAlLogin = findViewById<Button>(R.id.btnIrAlLogin)
         val imgBack = findViewById<ImageView>(R.id.imgVolveralPerfil)
+        val imgVerContrasena = findViewById<ImageView>(R.id.imgVerContraseña)
+        val imgVerConfirmarContrasena = findViewById<ImageView>(R.id.imgVerConfirmarContraseña)
         val tvSuccessMessage = findViewById<TextView>(R.id.tvSuccessMessage)
 
         imgBack.setOnClickListener {
@@ -109,17 +115,35 @@ class registrarse : AppCompatActivity() {
             }
         }
 
+        fun togglePasswordVisibility(editText: EditText) {
+            editText.inputType = InputType.TYPE_TEXT_VARIATION_VISIBLE_PASSWORD
+            Handler(Looper.getMainLooper()).postDelayed({
+                editText.inputType = InputType.TYPE_CLASS_TEXT or InputType.TYPE_TEXT_VARIATION_PASSWORD
+            }, 5000)
+        }
+
+        imgVerContrasena.setOnClickListener {
+            togglePasswordVisibility(txtContraseña)
+        }
+
+        imgVerConfirmarContrasena.setOnClickListener {
+            togglePasswordVisibility(txtConfirmarContrasena)
+        }
+
         btnCrearCuenta.setOnClickListener {
             val nombre = txtNombre.text.toString()
             val correo = txtCorreo.text.toString()
             val contraseñaPlana = txtContraseña.text.toString()
+            val confirmarContraseña = txtConfirmarContrasena.text.toString()
 
-            if (nombre.isEmpty() || correo.isEmpty() || contraseñaPlana.isEmpty()) {
+            if (nombre.isEmpty() || correo.isEmpty() || contraseñaPlana.isEmpty() || confirmarContraseña.isEmpty()) {
                 Toast.makeText(this, "Debe llenar todos los campos", Toast.LENGTH_SHORT).show()
             } else if (!isValidEmail(correo)) {
                 Toast.makeText(this, "Ingrese un correo electrónico válido", Toast.LENGTH_SHORT).show()
             } else if (!isValidPassword(contraseñaPlana)) {
                 Toast.makeText(this, "Contraseña insegura: debe tener al menos 8 caracteres, una mayúscula y una minúscula", Toast.LENGTH_SHORT).show()
+            } else if (contraseñaPlana != confirmarContraseña) {
+                Toast.makeText(this, "Ingrese correctamente la contraseña", Toast.LENGTH_SHORT).show()
             } else {
                 GlobalScope.launch(Dispatchers.Main) {
                     if (isEmailAlreadyRegistered(correo)) {
@@ -142,6 +166,7 @@ class registrarse : AppCompatActivity() {
                         txtNombre.setText("")
                         txtCorreo.setText("")
                         txtContraseña.setText("")
+                        txtConfirmarContrasena.setText("")
                         btnCrearCuenta.visibility = View.GONE
                         btnIrAlLogin.visibility = View.VISIBLE
 
@@ -169,4 +194,3 @@ class registrarse : AppCompatActivity() {
         }
     }
 }
-
