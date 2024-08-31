@@ -26,6 +26,18 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_intensidad23"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad21"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad19"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad17"
+            android:exported="false" />
+        <activity
             android:name=".activity_intensidad15"
             android:exported="false" />
         <activity
