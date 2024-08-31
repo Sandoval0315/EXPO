@@ -26,6 +26,33 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_intensidad15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad13"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad9"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad7"
+            android:exported="false" />
+        <activity
+            android:name=".ativity_intensidad5"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad3"
+            android:exported="false" />
+        <activity
+            android:name=".activiti_pausai"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensisdad1"
+            android:exported="false" />
+        <activity
             android:name=".activity_runnig15"
             android:exported="false" />
         <activity
