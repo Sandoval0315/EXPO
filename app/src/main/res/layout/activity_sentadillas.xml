@@ -37,7 +37,7 @@
         android:layout_height="70dp"
 
         android:layout_marginBottom="48dp"
-        android:text="Registrarse"
+        android:text="siguiente"
         android:textColor="#454545"
         app:backgroundTint="#D2CBEC"
         app:cornerRadius="20dp"
