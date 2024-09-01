@@ -62,11 +62,10 @@ class activity_yoga12 : AppCompatActivity() {
             }
 
             override fun onFinish() {
-             //   txtTimer.text = "00:00"
-              //  val intent = Intent(this@activity_yoga2, activity_pausas::class.java)
-             //   intent.putExtra("identificador", "segunda")
-              //  startActivity(intent)
-              //  finish()
+              txtTimer.text = "00:00"
+                val intent = Intent(this@activity_yoga12, activity_yoga13::class.java)
+                startActivity(intent)
+                finish() // Finaliza la actividad actual
             }
 
         }

@@ -64,11 +64,17 @@ class activity_yoga1 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
+
+                val intent = Intent(this@activity_yoga1, activity_yoga2::class.java)
+                  startActivity(intent)
+                finish() // Finaliza la actividad actual
+
+
                 // Cambiar de pantalla cuando el temporizador termine
-                val intent = Intent(this@activity_yoga1, activity_pausas::class.java)
-                intent.putExtra("identificador", "Primer")
-                startActivity(intent)
-                finish()
+               // val intent = Intent(this@activity_yoga1, activity_pausas::class.java)
+               // intent.putExtra("identificador", "Primer")
+                //startActivity(intent)
+                //finish()
             }
 
 
