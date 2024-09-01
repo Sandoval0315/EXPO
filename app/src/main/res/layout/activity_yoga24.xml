@@ -44,7 +44,7 @@
         app:srcCompat="@drawable/finalrutina"  />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnFinalYoga"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="156dp"
         android:layout_height="59dp"
@@ -79,7 +79,7 @@
         android:fontFamily="@font/lexend"
         android:text="15M"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinalYoga"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
         app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toEndOf="@+id/imageView172"
@@ -93,7 +93,7 @@
         android:fontFamily="@font/lexend"
         android:text="DE TIEMPO ESTIMADO"
         android:textSize="13sp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinalYoga"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
         app:layout_constraintHorizontal_bias="0.034"
         app:layout_constraintStart_toEndOf="@+id/imageView172"
