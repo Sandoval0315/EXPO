@@ -69,7 +69,7 @@ class activity_yoga1 : AppCompatActivity() {
                 txtTimer.text = "00:00"
 
                 val intent = Intent(this@activity_yoga1, activity_yoga2::class.java)
-                  startActivity(intent)
+                startActivity(intent)
                 finish() // Finaliza la actividad actual
 
 

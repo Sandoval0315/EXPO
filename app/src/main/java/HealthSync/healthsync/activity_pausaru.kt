@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.ImageView
@@ -14,7 +15,7 @@ class activity_pausaru : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 30000 // 30 seg en milisegundos
+    private var timeRemaining: Long = 10000 // 30 seg en milisegundos
     private var isPaused: Boolean = false
 
 
@@ -67,11 +68,55 @@ class activity_pausaru : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                // val intent = Intent(this@, ::class.java)
-                // startActivity(intent)
-                // finish()
+
+                val valorRecibido = intent.getStringExtra("identificador")
+
+                println("ESTE ES EL VALOR QUE RTECIBO $valorRecibido")
+
+                if(valorRecibido == "Runnig1"){
+                    //intent a la segunda pantalla
+                    val intent = Intent(this@activity_pausaru, activity_runnig3::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido == "Runnig3"){
+                    //iintent a la tercera
+                    val intent = Intent(this@activity_pausaru, activity_runnig5::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido == "Runnig5"){
+                    //intent a la cuarta
+                    val intent = Intent(this@activity_pausaru, activity_running9::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+
+                }else if(valorRecibido == "Runnig9"){
+                    //intent a la quinta
+                    val intent = Intent(this@activity_pausaru, activity_runnig11::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido == "Runnig11"){
+                    //intent a la sexta
+                    val intent = Intent(this@activity_pausaru, activity_runnig13::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido=="Runnig13"){
+                    //intent a la septima
+                    val intent = Intent(this@activity_pausaru, activity_runnig15::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }
+
+
+
             }
         }
+
 
 
 

@@ -90,7 +90,8 @@
             android:exported="false" />
         <activity
             android:name=".activity_runnig1"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
             android:name=".activity_fuerza23"
             android:exported="false" />
@@ -273,8 +274,14 @@
             android:exported="false" />
         <activity
             android:name=".activity_runnig"
-            android:exported="false"
-            android:theme="@style/Theme.HealthSync" />
+            android:exported="true"
+            android:theme="@style/Theme.HealthSync">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activity_pararunnig"
             android:exported="false" />
@@ -393,11 +400,7 @@
         <activity
             android:name=".Bienvenida"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".LoadingActivity"

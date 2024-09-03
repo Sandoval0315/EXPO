@@ -92,19 +92,19 @@ class activity_pausas : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                val valorRecibido = intent.getStringExtra("identificador")
+               // val valorRecibido = intent.getStringExtra("identificador")
 
-                println("ESTE ES EL VALOR QUE RTECIBO $valorRecibido")
+                //println("ESTE ES EL VALOR QUE RTECIBO $valorRecibido")
 
-                if(valorRecibido == "Primer"){
+               // if(valorRecibido == "Primer"){
                     //intent a la segunda pantalla
-                    val intent = Intent(this@activity_pausas, activity_yoga2::class.java)
-                    startActivity(intent)
-                    println("despues de cambair pantalla")
-                    finish()
-                }else if(valorRecibido == "segunda"){
+                //    val intent = Intent(this@activity_pausas, activity_yoga2::class.java)
+                  //  startActivity(intent)
+                   // println("despues de cambair pantalla")
+                 //   finish()
+               // }else if(valorRecibido == "segunda"){
                     //iintent a la tercera
-                }
+               // }
 
 
             }
