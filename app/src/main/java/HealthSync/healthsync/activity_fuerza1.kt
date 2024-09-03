@@ -75,9 +75,10 @@ class activity_fuerza1 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                // val intent = Intent(this@, ::class.java)
-                // startActivity(intent)
-                // finish()
+                val intent = Intent(this@activity_fuerza1, activity_pausaf::class.java)
+                intent.putExtra("identificador", "fuerza1")
+                startActivity(intent)
+                finish()
             }
         }
 

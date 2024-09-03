@@ -67,7 +67,7 @@
         app:layout_constraintVertical_bias="0.923" />
 
     <ImageButton
-        android:id="@+id/imageButton76"
+        android:id="@+id/img1minF1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView218"
@@ -77,4 +77,16 @@
         app:layout_constraintHorizontal_bias="0.904"
         app:layout_constraintVertical_bias="0.899"
         app:srcCompat="@drawable/pausa_png" />
+
+    <TextView
+        android:id="@+id/txt1minF1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="01:00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView218"
+        app:layout_constraintEnd_toEndOf="@+id/imageView218"
+        app:layout_constraintStart_toStartOf="@+id/imageView218"
+        app:layout_constraintTop_toTopOf="@+id/imageView218" />
 </androidx.constraintlayout.widget.ConstraintLayout>

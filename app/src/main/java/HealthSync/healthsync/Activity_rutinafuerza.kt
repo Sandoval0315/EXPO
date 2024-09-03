@@ -27,16 +27,14 @@ class Activity_rutinafuerza : AppCompatActivity() {
 
 
         val imgregresarRFuerza = findViewById<ImageView>(R.id.imgregresarRFuerza)
+        val btnfuerza = findViewById<Button>(R.id.btn_rtsFuerza)
 
         imgregresarRFuerza.setOnClickListener{
             val intent = Intent(this, navigatioPrincipal::class.java)
             intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
-
-        //Nos manda a la pantalla cardiovascular (Saltos continuos)
-        val button = findViewById<Button>(R.id.btn_rtsFuerza)
-        button.setOnClickListener {
+        btnfuerza.setOnClickListener{
             val intent = Intent(this, activity_fuerza1::class.java)
             startActivity(intent)
         }
