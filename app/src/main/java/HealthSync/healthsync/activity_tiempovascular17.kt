@@ -1,6 +1,8 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,5 +21,13 @@ class activity_tiempovascular17 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val btnT17 = findViewById<Button>(R.id.btnT17)
+
+        btnT17.setOnClickListener{
+            val intent = Intent(this@activity_tiempovascular17, activity_tomadescaso2::class.java)
+            intent.putExtra("identificador", "tiempo17")
+            startActivity(intent)
+            finish()
+        }
     }
 }

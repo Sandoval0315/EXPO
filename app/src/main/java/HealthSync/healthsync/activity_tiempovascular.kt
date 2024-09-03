@@ -18,7 +18,7 @@ class activity_tiempovascular : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 60000 // 1 min en milisegundos
+    private var timeRemaining: Long = 10000 // 1 min en milisegundos
     private var isPaused: Boolean = false
 
     @SuppressLint("MissingInflatedId")
@@ -77,11 +77,14 @@ class activity_tiempovascular : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
+
+                val intent = Intent(this@activity_tiempovascular, activity_tomadescaso2::class.java)
+                intent.putExtra("identificador", "tiempo1")
+                startActivity(intent)
+                finish()
+
             }
-            // Cambiar de pantalla cuando el temporizador termine
-            //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)
-            ///    startActivity(intent)
-            //finish()
+
         }
 
 

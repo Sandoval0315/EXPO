@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.ImageView
@@ -31,6 +32,7 @@ class activity_tomadescaso2 : AppCompatActivity() {
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt20s)
+        pauseButton = findViewById(R.id.img20seg)
 
         // Configurar el CountdownTimer
         countDownTimer = createCountDownTimer(timeRemaining)
@@ -63,11 +65,76 @@ class activity_tomadescaso2 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
+
+                val valorRecibido = intent.getStringExtra("identificador")
+
+                println("ESTE ES EL VALOR QUE RTECIBO $valorRecibido")
+
+                if(valorRecibido == "tiempo1"){
+                    //intent a la segunda pantalla
+                    val intent = Intent(this@activity_tomadescaso2, activity_estiramientodinamico::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido == "tiempo2"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular5::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if(valorRecibido == "tiempo5"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular6::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo6"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular8::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo8"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular11::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo11"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_timepovascular13::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo13"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular15::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo15"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular17::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo17"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular19::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo19"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular21::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo21"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular24::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }else if (valorRecibido == "tiempo24"){
+                    val intent = Intent(this@activity_tomadescaso2, activity_tiempovascular26::class.java)
+                    startActivity(intent)
+                    println("despues de cambair pantalla")
+                    finish()
+                }
+
             }
-            // Cambiar de pantalla cuando el temporizador termine
-            //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)
-            ///    startActivity(intent)
-            //finish() // Finaliza la actividad actual
+
         }
 
     }

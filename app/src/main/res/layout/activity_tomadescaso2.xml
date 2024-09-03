@@ -68,4 +68,16 @@
         app:layout_constraintTop_toTopOf="@+id/imageView182"
         app:layout_constraintVertical_bias="0.541" />
 
+    <ImageView
+        android:id="@+id/img20seg"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView182"
+        app:layout_constraintEnd_toEndOf="@+id/imageView182"
+        app:layout_constraintHorizontal_bias="0.865"
+        app:layout_constraintStart_toStartOf="@+id/imageView182"
+        app:layout_constraintTop_toTopOf="@+id/imageView182"
+        app:layout_constraintVertical_bias="0.936"
+        app:srcCompat="@drawable/pausa_png" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
