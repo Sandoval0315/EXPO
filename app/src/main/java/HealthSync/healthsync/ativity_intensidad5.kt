@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.ImageView
@@ -64,9 +65,10 @@ class ativity_intensidad5 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                // val intent = Intent(this@, ::class.java)
-                // startActivity(intent)
-                // finish()
+                val intent = Intent(this@ativity_intensidad5, activiti_pausai::class.java)
+                intent.putExtra("identificador", "intensidad5")
+                startActivity(intent)
+                finish()
             }
         }
 

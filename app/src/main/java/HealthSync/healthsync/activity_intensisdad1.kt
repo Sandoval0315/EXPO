@@ -15,7 +15,7 @@ class activity_intensisdad1 : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 60000 // 1 min en milisegundos
+    private var timeRemaining: Long = 10000 // 1 min en milisegundos
     private var isPaused: Boolean = false
 
 
@@ -75,9 +75,15 @@ class activity_intensisdad1 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                // val intent = Intent(this@, ::class.java)
-                // startActivity(intent)
-                // finish()
+                val intent = Intent(this@activity_intensisdad1, activiti_pausai::class.java)
+                intent.putExtra("identificador", "intensidad1")
+                startActivity(intent)
+                finish()
+
+               // val intent = Intent(this@activity_runnig15, activity_pantallafinalderitmo::class.java)
+               // intent.putExtra("identificador", "Runnig15")
+              //  startActivity(intent)
+               // finish()
             }
         }
 

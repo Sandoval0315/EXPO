@@ -42,7 +42,7 @@
         app:srcCompat="@drawable/fondomaspequenoclaro"/>
 
     <ImageButton
-        android:id="@+id/imageButton117"
+        android:id="@+id/img15segIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView281"
@@ -65,4 +65,16 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView280"
         app:layout_constraintStart_toStartOf="@+id/imageView280"
         app:layout_constraintTop_toTopOf="@+id/imageView280" />
+
+    <TextView
+        android:id="@+id/txtpausaIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:15"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView281"
+        app:layout_constraintEnd_toEndOf="@+id/imageView281"
+        app:layout_constraintStart_toStartOf="@+id/imageView281"
+        app:layout_constraintTop_toTopOf="@+id/imageView281" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -66,9 +66,11 @@ class activity_intensidad3 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                // val intent = Intent(this@, ::class.java)
-                // startActivity(intent)
-                // finish()
+
+                val intent = Intent(this@activity_intensidad3, activiti_pausai::class.java)
+                intent.putExtra("identificador", "intensidad3")
+                startActivity(intent)
+                finish()
             }
         }
 

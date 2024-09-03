@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.widget.ImageView
@@ -15,7 +16,7 @@ class activity_intensidad15 : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 3000 // 1 min en milisegundos
+    private var timeRemaining: Long = 10000 // 1 min en milisegundos
     private var isPaused: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,9 +66,10 @@ class activity_intensidad15 : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
-                // val intent = Intent(this@, ::class.java)
-                // startActivity(intent)
-                // finish()
+                val intent = Intent(this@activity_intensidad15, activiti_pausai::class.java)
+                intent.putExtra("identificador", "intensidad15")
+                startActivity(intent)
+                finish()
             }
         }
 
