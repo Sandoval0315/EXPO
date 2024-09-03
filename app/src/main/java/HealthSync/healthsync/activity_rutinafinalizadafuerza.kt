@@ -1,6 +1,8 @@
 package HealthSync.healthsync
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -19,5 +21,12 @@ class activity_rutinafinalizadafuerza : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val btnFinFuerza = findViewById<Button>(R.id.btnFinalFuerza)
+
+        btnFinFuerza.setOnClickListener{
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
+            startActivity(intent)
+        }
     }
 }

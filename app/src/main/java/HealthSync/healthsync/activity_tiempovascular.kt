@@ -81,7 +81,7 @@ class activity_tiempovascular : AppCompatActivity() {
             // Cambiar de pantalla cuando el temporizador termine
             //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)
             ///    startActivity(intent)
-            //finish() // Finaliza la actividad actual
+            //finish()
         }
 
 
