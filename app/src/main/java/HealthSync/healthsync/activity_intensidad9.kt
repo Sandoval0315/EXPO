@@ -14,7 +14,7 @@ class activity_intensidad9 : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 60000 // 1 min en milisegundos
+    private var timeRemaining: Long = 3000 // 1 min en milisegundos
     private var isPaused: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
