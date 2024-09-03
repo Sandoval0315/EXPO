@@ -28,6 +28,9 @@ class activity_yoga13 : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
+
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt15segY13)
         pauseButton = findViewById(R.id.img15segY13)

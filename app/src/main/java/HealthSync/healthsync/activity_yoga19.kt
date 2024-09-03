@@ -27,6 +27,9 @@ class activity_yoga19 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        supportActionBar?.hide()
+
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt15segY19)
         pauseButton = findViewById(R.id.img15segY19)

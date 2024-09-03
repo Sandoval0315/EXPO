@@ -16,5 +16,7 @@ class activity_runnig11 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.hide()
+
     }
 }

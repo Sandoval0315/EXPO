@@ -29,6 +29,9 @@ class activity_plancha : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
+
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30seg)
         pauseButton = findViewById(R.id.imgpausa30seg)

@@ -30,6 +30,9 @@ class activity_pararunnig : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
+
         val regresar = findViewById<ImageButton>(R.id.imgregresar)
         regresar.setOnClickListener{
            // val intent = Intent(this, activity_pausas::class.java) poner la pantalla a la que va

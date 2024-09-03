@@ -19,6 +19,9 @@ class activity_finalyoga : AppCompatActivity() {
             insets
         }
 
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+
         val btnFinalYoga = findViewById<Button>(R.id.btnFinalYoga)
 
         btnFinalYoga.setOnClickListener{

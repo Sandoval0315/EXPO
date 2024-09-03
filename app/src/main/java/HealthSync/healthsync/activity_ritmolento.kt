@@ -31,6 +31,8 @@ class activity_ritmolento : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.hide()
+
 
         val regresar = findViewById<ImageButton>(R.id.imgbtnregresarRtprincipal2)
         val descanso = findViewById<ImageView>(R.id.imgdescanso)

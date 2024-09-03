@@ -35,17 +35,12 @@ class activity_tiempovascular : AppCompatActivity() {
         supportActionBar?.hide()
 
         val regresar = findViewById<ImageButton>(R.id.imgbtnregresarRtprincipal)
-        val pausa = findViewById<ImageView>(R.id.imgParaPausa)
 
         regresar.setOnClickListener{
             val intent = Intent(this, activity_rutina_cardiovascular::class.java)
             startActivity(intent)
         }
 
-        pausa.setOnClickListener{
-            val intent = Intent(this, activity_pausas::class.java)
-            startActivity(intent)
-        }
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txtcuentaAtras)

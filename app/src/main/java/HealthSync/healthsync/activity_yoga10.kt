@@ -21,6 +21,9 @@ class activity_yoga10 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        supportActionBar?.hide()
+
         val btnYoga10 = findViewById<Button>(R.id.btnyogasiguiente)
 
         btnYoga10.setOnClickListener{

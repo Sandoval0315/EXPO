@@ -20,6 +20,9 @@ class activity_rutinafinalizada : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
+
         val regresar = findViewById<Button>(R.id.btnFinal)
 
         regresar.setOnClickListener{

@@ -27,6 +27,8 @@ class activity_yoga2 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.hide()
+
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segY2)

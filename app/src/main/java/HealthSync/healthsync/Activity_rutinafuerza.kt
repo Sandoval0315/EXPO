@@ -37,7 +37,7 @@ class Activity_rutinafuerza : AppCompatActivity() {
         //Nos manda a la pantalla cardiovascular (Saltos continuos)
         val button = findViewById<Button>(R.id.btn_rtsFuerza)
         button.setOnClickListener {
-            val intent = Intent(this, activity_tiempovascular::class.java)
+            val intent = Intent(this, activity_fuerza1::class.java)
             startActivity(intent)
         }
     }

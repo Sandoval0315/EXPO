@@ -16,5 +16,8 @@ class activity_tiempovascular26 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        supportActionBar?.hide()
+
     }
 }

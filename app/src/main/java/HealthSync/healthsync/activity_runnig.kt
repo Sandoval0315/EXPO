@@ -36,7 +36,7 @@ class activity_runnig : AppCompatActivity() {
         //Nos manda a la pantalla de ritmo lento (Caminar con ritmo lento)
         val button = findViewById<Button>(R.id.btn_runnigrts)
         button.setOnClickListener {
-            val intent = Intent(this, activity_ritmolento::class.java)
+            val intent = Intent(this, activity_runnig1::class.java)
             startActivity(intent)
         }
     }

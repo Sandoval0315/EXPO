@@ -36,6 +36,8 @@ class activity_pausas : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
 
 
 

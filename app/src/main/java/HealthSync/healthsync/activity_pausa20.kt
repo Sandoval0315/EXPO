@@ -31,6 +31,8 @@ class activity_pausa20 : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+        supportActionBar?.hide()
+
 
         val regresar = findViewById<ImageButton>(R.id.imgbtn_regresoPausa20)
 

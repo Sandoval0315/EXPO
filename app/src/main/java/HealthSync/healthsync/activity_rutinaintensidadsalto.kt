@@ -28,6 +28,9 @@ class activity_rutinaintensidadsalto : AppCompatActivity() {
             insets
         }
 
+        //ocultar barra de arriba
+        supportActionBar?.hide()
+
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segRA)
