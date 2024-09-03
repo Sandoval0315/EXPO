@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/fondomaspequenoclaro"/>
 
     <ImageButton
-        android:id="@+id/imageButton111"
+        android:id="@+id/img1minrunnig13"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView273"
@@ -79,4 +79,16 @@
         app:layout_constraintStart_toStartOf="@+id/imageView271"
         app:layout_constraintTop_toTopOf="@+id/imageView271"
         app:layout_constraintVertical_bias="0.886"/>
+
+    <TextView
+        android:id="@+id/txt1minrunnig13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="01:00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView273"
+        app:layout_constraintTop_toTopOf="@+id/imageView273"
+        app:layout_constraintVertical_bias="0.477"
+        tools:layout_editor_absoluteX="151dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
