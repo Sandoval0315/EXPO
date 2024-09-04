@@ -31,6 +31,14 @@ class activity_runnig3 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnregresararunnig3)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_runnig::class.java)
+            startActivity(intent)
+        }
+
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt1minrunnig3)
         pauseButton = findViewById(R.id.img1minrunnig3)

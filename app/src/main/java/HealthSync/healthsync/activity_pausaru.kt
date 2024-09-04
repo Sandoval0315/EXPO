@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
@@ -19,6 +20,7 @@ class activity_pausaru : AppCompatActivity() {
     private var isPaused: Boolean = false
 
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -31,6 +33,14 @@ class activity_pausaru : AppCompatActivity() {
 
         //ocultar barra de arriba
         supportActionBar?.hide()
+
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnregresarpausaru)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_runnig::class.java)
+            startActivity(intent)
+        }
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segrunnig)

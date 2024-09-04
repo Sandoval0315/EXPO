@@ -8,7 +8,7 @@
     tools:context=".activity_pausaru">
 
     <ImageButton
-        android:id="@+id/imageButton98"
+        android:id="@+id/btnregresarpausaru"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
