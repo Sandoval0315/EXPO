@@ -31,7 +31,7 @@
         app:layout_constraintTop_toTopOf="@+id/imageView140" />
 
     <ImageButton
-        android:id="@+id/imageButton24"
+        android:id="@+id/btnimgyoga10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -68,7 +68,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.109"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton24"
+        app:layout_constraintTop_toBottomOf="@+id/btnimgyoga10"
         app:layout_constraintVertical_bias="0.762"
         app:srcCompat="@drawable/back" />
 </androidx.constraintlayout.widget.ConstraintLayout>

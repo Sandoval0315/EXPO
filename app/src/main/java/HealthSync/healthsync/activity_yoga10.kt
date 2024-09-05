@@ -3,6 +3,7 @@ package HealthSync.healthsync
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -23,6 +24,13 @@ class activity_yoga10 : AppCompatActivity() {
         }
 
         supportActionBar?.hide()
+
+        val regresaraInicio = findViewById<ImageView>(R.id.btnimgyoga10)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent)
+        }
 
         val btnYoga10 = findViewById<Button>(R.id.btnyogasiguiente)
 
