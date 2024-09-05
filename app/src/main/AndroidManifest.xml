@@ -242,9 +242,7 @@
         <activity
             android:name=".activity_yoga1"
             android:exported="false" />
-        <activity
-            android:name=".editarPerfil"
-            android:exported="false" />
+
         <activity
             android:name=".cambiodeclave"
             android:exported="true" />
@@ -408,6 +406,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"
