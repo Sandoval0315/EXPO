@@ -76,4 +76,9 @@ class activity_tiempovascular6 : AppCompatActivity() {
         }
 
     }
+    //para pausar el tiempo automatico cuando sin cambia de pantalla
+    override fun onPause() {
+        super.onPause()
+        countDownTimer?.cancel()
+    }
 }
