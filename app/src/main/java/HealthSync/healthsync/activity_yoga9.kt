@@ -69,10 +69,15 @@ class activity_yoga9 : AppCompatActivity() {
                 txtTimer.text = "00:00"
                 val intent = Intent(this@activity_yoga9, activity_yoga10::class.java)
                 startActivity(intent)
-                finish() // Finaliza la actividad actual
+                finish()
             }
         }
 
+    }
+    //para pausar el tiempo automatico cuando sin cambia de pantalla
+    override fun onPause() {
+        super.onPause()
+        countDownTimer?.cancel()
     }
 
 }
