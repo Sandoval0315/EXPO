@@ -28,6 +28,13 @@ class activity_yoga2 : AppCompatActivity() {
             insets
         }
         supportActionBar?.hide()
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnimgyoga2)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent)
+        }
 
 
         // Referencias a los elementos en el layout

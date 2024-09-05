@@ -31,7 +31,7 @@
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/btnimgyoga3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -30,6 +30,12 @@ class activity_yoga6 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
+        val regresaraInicio = findViewById<ImageView>(R.id.btnimgyoga6)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent)
+        }
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segY6)

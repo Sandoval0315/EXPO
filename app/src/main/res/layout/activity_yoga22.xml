@@ -8,7 +8,7 @@
     tools:context=".activity_yoga22">
 
     <ImageButton
-        android:id="@+id/imageButton49"
+        android:id="@+id/btnimgyoga22"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

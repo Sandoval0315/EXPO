@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageButton
-        android:id="@+id/imageButton37"
+        android:id="@+id/btnimgyoga16"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
