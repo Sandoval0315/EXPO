@@ -3,6 +3,7 @@ package HealthSync.healthsync
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -32,7 +33,7 @@ class activity_intensisdad1 : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val regresarIntensidad = findViewById<ImageView>(R.id.btnregresarIntensidad)
+        val regresarIntensidad = findViewById<ImageButton>(R.id.btnregresarIntensidad)
 
         regresarIntensidad.setOnClickListener{
             val intent = Intent(this, activity_altaintensidad::class.java)

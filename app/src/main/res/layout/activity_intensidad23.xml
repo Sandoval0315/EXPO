@@ -10,7 +10,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton138"
+        android:id="@+id/btnimgintensidad23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
