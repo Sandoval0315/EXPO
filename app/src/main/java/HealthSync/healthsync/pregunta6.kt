@@ -1,5 +1,4 @@
 package HealthSync.healthsync
-
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -22,9 +21,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.math.pow
-
 class pregunta6 : AppCompatActivity() {
-
     companion object {
         lateinit var experienciaSeleccionada: String
         lateinit var IMCtotal: String
@@ -74,7 +71,7 @@ class pregunta6 : AppCompatActivity() {
 
                 // Obtener el último idExperiencia insertado
                 val obtenerIdExperiencia = objConexion?.prepareStatement("SELECT MAX(idExperiencia) FROM Experiencia")
-                val resultSetExperiencia = obtenerIdExperiencia?.executeQuery()
+                    val resultSetExperiencia = obtenerIdExperiencia?.executeQuery()
                 var idExperiencia: Int = -1
                 if (resultSetExperiencia?.next() == true) {
                     idExperiencia = resultSetExperiencia.getInt(1)
@@ -82,7 +79,7 @@ class pregunta6 : AppCompatActivity() {
 
                 // Obtener el último idUsuario a partir del correo más reciente
                 val obtenerIdUsuario = objConexion?.prepareStatement("SELECT idUsuario FROM Usuarios WHERE correo = (SELECT MAX(correo) FROM Usuarios)")
-                val resultSetUsuario = obtenerIdUsuario?.executeQuery()
+                    val resultSetUsuario = obtenerIdUsuario?.executeQuery()
                 var idUsuario: Int = -1
                 if (resultSetUsuario?.next() == true) {
                     idUsuario = resultSetUsuario.getInt(1)
@@ -96,23 +93,23 @@ class pregunta6 : AppCompatActivity() {
 
                 // Insertar en la tabla Cliente
                 val insertarCliente = objConexion?.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, idExperiencia, idUsuario) VALUES (?, ?, ?, ?, ?, ?, ?)")
-                insertarCliente?.setString(1, edadSeleccionada)
-                insertarCliente?.setString(2, estaturaSeleccionada)
-                insertarCliente?.setString(3, pesoSeleccionado)
-                insertarCliente?.setString(4, IMCtotal)
+                insertarCliente?.setInt(1, edadSeleccionada.toInt())
+                insertarCliente?.setFloat(2, estaturaSeleccionada.toFloat())
+                insertarCliente?.setFloat(3, pesoSeleccionado.toFloat())
+                insertarCliente?.setFloat(4, IMCtotal.toFloat())
                 insertarCliente?.setString(5, enfermedadSeleccionada)
                 insertarCliente?.setInt(6, idExperiencia)
                 insertarCliente?.setInt(7, idUsuario)
                 insertarCliente?.executeUpdate()
 
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@pregunta6, "Bienvenido a HealthSync", Toast.LENGTH_SHORT).show()
+                    Toast.makeText(this@pregunta6, "Bienvenido a HealthSync",
+                        Toast.LENGTH_SHORT).show()
                     val intent = Intent(this@pregunta6, navigatioPrincipal::class.java)
                     startActivity(intent)
                 }
             }
         }
-
         btnAtras.setOnClickListener {
             val intent = Intent(this, pregunta5::class.java)
             startActivity(intent)
