@@ -8,7 +8,7 @@
     tools:context=".activity_tiempovascular26">
 
     <ImageButton
-        android:id="@+id/imageButton70"
+        android:id="@+id/btnimgvascular26"
         app:srcCompat="@drawable/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

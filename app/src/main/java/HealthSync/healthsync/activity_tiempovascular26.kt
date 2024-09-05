@@ -3,6 +3,7 @@ package HealthSync.healthsync
 import android.content.Intent
 import android.os.Bundle
 import android.os.CountDownTimer
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -29,6 +30,15 @@ class activity_tiempovascular26 : AppCompatActivity() {
         }
 
         supportActionBar?.hide()
+
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageButton>(R.id.btnimgvascular26)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent)
+        }
+
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segT26)

@@ -30,7 +30,7 @@
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/imageButton58"
+        android:id="@+id/btnimgvascular15"
         app:srcCompat="@drawable/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -3,6 +3,7 @@ package HealthSync.healthsync
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,6 +21,15 @@ class activity_tiempovascular19 : AppCompatActivity() {
         }
 
         supportActionBar?.hide()
+
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnimgvascular19)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent)
+        }
+
 
         val btnT19 = findViewById<Button>(R.id.btnT19)
 

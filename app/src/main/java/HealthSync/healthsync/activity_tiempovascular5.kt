@@ -28,6 +28,14 @@ class activity_tiempovascular5 : AppCompatActivity() {
             insets
         }
 
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnimgvascular5)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent)
+        }
+
         supportActionBar?.hide()
         //Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segT5)

@@ -73,7 +73,7 @@
         app:srcCompat="@drawable/back"  />
 
     <ImageButton
-        android:id="@+id/imageButton65"
+        android:id="@+id/btnimgvascular19"
         app:srcCompat="@drawable/back"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
