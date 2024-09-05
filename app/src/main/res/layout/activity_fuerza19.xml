@@ -8,7 +8,7 @@
     tools:context=".activity_fuerza19">
 
     <ImageView
-        android:id="@+id/imageView241"
+        android:id="@+id/btnimgregrezarfuerza19"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"

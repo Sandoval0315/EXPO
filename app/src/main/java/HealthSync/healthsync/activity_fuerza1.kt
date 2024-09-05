@@ -32,9 +32,10 @@ class activity_fuerza1 : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val regresaraFuerzaprincipal = findViewById<ImageView>(R.id.btnregresarFuerza)
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnregresarFuerza)
 
-        regresaraFuerzaprincipal.setOnClickListener{
+        regresaraInicio.setOnClickListener{
             val intent = Intent(this, Activity_rutinafuerza::class.java)
             startActivity(intent)
         }

@@ -29,6 +29,14 @@ class activity_fuerza17 : AppCompatActivity() {
         }
         supportActionBar?.hide()
 
+        //Nos manda al inicio de la rutina (Boton para atras)
+        val regresaraInicio = findViewById<ImageView>(R.id.btnimgregrezarfuerza17)
+
+        regresaraInicio.setOnClickListener{
+            val intent = Intent(this, Activity_rutinafuerza::class.java)
+            startActivity(intent)
+        }
+
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segF17)
         pauseButton = findViewById(R.id.img30segF17)

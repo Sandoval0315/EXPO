@@ -8,7 +8,7 @@
     tools:context=".activity_fuerza23">
 
     <ImageButton
-        android:id="@+id/imageButton94"
+        android:id="@+id/btnimgregrezarfuerza23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
