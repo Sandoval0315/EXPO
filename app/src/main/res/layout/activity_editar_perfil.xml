@@ -30,8 +30,8 @@
     <Button
         android:id="@+id/btnActualizarPerfil"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="211dp"
-        android:layout_height="78dp"
+        android:layout_width="207dp"
+        android:layout_height="68dp"
         android:text="Aceptar"
         android:textColor="#FEFFFF"
         android:textSize="16sp"
@@ -167,5 +167,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.604"
         app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <ImageView
+        android:id="@+id/imageView150"
+        android:layout_width="409dp"
+        android:layout_height="404dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView57"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgVolveralPerfil"
+        app:srcCompat="@drawable/_46fd9f4_6714_4816_9573_0d809cda4199" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

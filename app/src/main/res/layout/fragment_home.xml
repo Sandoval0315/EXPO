@@ -65,9 +65,10 @@
                 android:orientation="vertical"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.538"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.192">
+                app:layout_constraintVertical_bias="0.0">
 
                 <Button
                     android:id="@+id/btncontadordepaso"
@@ -83,14 +84,6 @@
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/hidratacion"
                     android:text="Salud, Hidratacion y Alimentacion"
-                    app:cornerRadius="35dp" />
-
-                <Button
-                    android:id="@+id/btnMapaGym"
-                    android:layout_width="331dp"
-                    android:layout_height="123dp"
-                    android:drawableRight="@drawable/entrenamiento"
-                    android:text="Entrenamiento y rutinas extras"
                     app:cornerRadius="35dp" />
 
                 <Button
