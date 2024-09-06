@@ -1,7 +1,6 @@
 package HealthSync.healthsync
 
 import android.app.Activity
-import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -19,38 +18,12 @@ import kotlin.math.pow
 import Modelo.ClaseConexion
 import android.widget.ImageView
 
-class editarPerfil : AppCompatActivity() {
+class EditarPerfil : AppCompatActivity() {
     private lateinit var txtEdad: EditText
     private lateinit var txtAltura: EditText
     private lateinit var txtPeso: EditText
     private lateinit var txtEnfermedades: EditText
     private lateinit var btnAgregar: Button
-
-    companion object {
-        const val REQUEST_CODE_ACTUALIZAR_PERFIL = 100 // Se agregó esta línea
-
-        lateinit var edadPerfilActu: String
-            private set
-
-        lateinit var pesoPerfilActu: String
-            private set
-
-        lateinit var alturaPerfilActu: String
-            private set
-
-        lateinit var enfermedadesPerfilActu: String
-            private set
-
-        lateinit var txtIMCactu: String
-            private set
-
-        // Funciones de verificación para comprobar si se han inicializado
-        fun isEdadPerfilActuInitialized() = ::edadPerfilActu.isInitialized
-        fun isPesoPerfilActuInitialized() = ::pesoPerfilActu.isInitialized
-        fun isAlturaPerfilActuInitialized() = ::alturaPerfilActu.isInitialized
-        fun isTxtIMCactuInitialized() = ::txtIMCactu.isInitialized
-        fun isEnfermedadesPerfilActuInitialized() = ::enfermedadesPerfilActu.isInitialized
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -76,10 +49,8 @@ class editarPerfil : AppCompatActivity() {
         txtEnfermedades = findViewById(R.id.txtEnfermedadesPerfil)
         btnAgregar = findViewById(R.id.btnActualizarPerfil)
 
-        // Inicialmente oculta el botón
         btnAgregar.visibility = Button.INVISIBLE
 
-        // Añade listeners para mostrar el botón si todos los campos tienen texto
         val textFields = arrayOf(txtEdad, txtAltura, txtPeso, txtEnfermedades)
         for (field in textFields) {
             field.addTextChangedListener(object : android.text.TextWatcher {
@@ -104,16 +75,11 @@ class editarPerfil : AppCompatActivity() {
     }
 
     private fun updateData() {
-        edadPerfilActu = txtEdad.text.toString()
-        alturaPerfilActu = txtAltura.text.toString()
-        pesoPerfilActu = txtPeso.text.toString()
-        enfermedadesPerfilActu = txtEnfermedades.text.toString()
-
-        // Calcular el IMC
-        val peso = pesoPerfilActu.toFloat()
-        val estatura = alturaPerfilActu.toFloat() / 100 // Convertir cm a m
-        val imc = peso / (estatura.pow(2))
-        txtIMCactu = String.format("%.2f", imc)
+        val edad = txtEdad.text.toString().toInt()
+        val altura = txtAltura.text.toString().toDouble()
+        val peso = txtPeso.text.toString().toDouble()
+        val padecimiento = txtEnfermedades.text.toString()
+        val imc = peso / (altura / 100).pow(2)
 
         val idCliente = 1 // Reemplaza con el ID del cliente correspondiente
 
@@ -122,35 +88,35 @@ class editarPerfil : AppCompatActivity() {
             var preparedStatement: PreparedStatement? = null
 
             try {
-                // Obtener la conexión usando la clase ClaseConexion
                 val claseConexion = ClaseConexion()
                 connection = claseConexion.CadenaConexion()
 
                 if (connection != null) {
                     val updateSQL = "UPDATE Cliente SET edad = ?, altura = ?, peso = ?, imc = ?, padecimiento = ? WHERE idCliente = ?"
                     preparedStatement = connection.prepareStatement(updateSQL)
-                    preparedStatement.setInt(1, edadPerfilActu.toInt())
-                    preparedStatement.setDouble(2, alturaPerfilActu.toDouble())
-                    preparedStatement.setDouble(3, pesoPerfilActu.toDouble())
-                    preparedStatement.setDouble(4, txtIMCactu.toDouble())
-                    preparedStatement.setString(5, enfermedadesPerfilActu)
+                    preparedStatement.setInt(1, edad)
+                    preparedStatement.setDouble(2, altura)
+                    preparedStatement.setDouble(3, peso)
+                    preparedStatement.setDouble(4, imc)
+                    preparedStatement.setString(5, padecimiento)
                     preparedStatement.setInt(6, idCliente)
 
                     preparedStatement.executeUpdate()
 
-                    // Commit de la transacción
                     val commitStatement = connection.prepareStatement("COMMIT")
                     commitStatement.executeUpdate()
 
-                    // Actualización exitosa
                     runOnUiThread {
-                        Toast.makeText(this@editarPerfil, "Datos actualizados", Toast.LENGTH_SHORT).show()
+                        Toast.makeText(this@EditarPerfil, "Datos actualizados", Toast.LENGTH_SHORT).show()
                         clearFields()
                         setResult(Activity.RESULT_OK)
                     }
                 }
             } catch (e: Exception) {
                 e.printStackTrace()
+                runOnUiThread {
+                    Toast.makeText(this@EditarPerfil, "Error al actualizar los datos", Toast.LENGTH_SHORT).show()
+                }
             } finally {
                 preparedStatement?.close()
                 connection?.close()

@@ -15,7 +15,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.231"
+        app:layout_constraintVertical_bias="0.247"
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageView
@@ -25,24 +25,24 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView133"
-        app:layout_constraintVertical_bias="0.37"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/btnimgyoga2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/imageView133"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.126"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.471"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintVertical_bias="0.046"
         app:srcCompat="@drawable/back" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/img30segY2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/imageView134"
@@ -64,4 +64,16 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView133"
         app:layout_constraintStart_toStartOf="@+id/imageView133"
         app:layout_constraintTop_toTopOf="@+id/imageView133" />
+
+    <TextView
+        android:id="@+id/txt30segY2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:30"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView134"
+        app:layout_constraintEnd_toEndOf="@+id/imageView134"
+        app:layout_constraintStart_toStartOf="@+id/imageView134"
+        app:layout_constraintTop_toTopOf="@+id/imageView134" />
 </androidx.constraintlayout.widget.ConstraintLayout>

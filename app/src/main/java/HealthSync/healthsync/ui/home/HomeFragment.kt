@@ -38,7 +38,7 @@ class HomeFragment : Fragment() {
 
         val btncontadordepaso = root.findViewById<Button>(R.id.btncontadordepaso)
         val btnaliyhidra = root.findViewById<Button>(R.id.btn_ali_y_hidra)
-        val btnMapaGym = root.findViewById<Button>(R.id.btnMapaGym)
+        val btnMapaGym = root.findViewById<Button>(R.id.btnmapa)
         val btnproductividad = root.findViewById<Button>(R.id.btnproductividad)
         val btnmotivacion = root.findViewById<Button>(R.id.btnmotivacion)
         val btnmapa = root.findViewById<Button>(R.id.btnmapa)

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_runnig1">
+
+    <ImageButton
+        android:id="@+id/btnregresararunnig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/back"
+        tools:layout_editor_absoluteY="70dp" />
+
+    <ImageView
+        android:id="@+id/imageView251"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/fondoclaropequeno"  />
+
+    <ImageView
+        android:id="@+id/imageView252"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView251"
+        app:layout_constraintEnd_toEndOf="@+id/imageView251"
+        app:layout_constraintStart_toStartOf="@+id/imageView251"
+        app:layout_constraintTop_toTopOf="@+id/imageView251"
+        app:layout_constraintVertical_bias="0.12"
+        app:srcCompat="@drawable/ritmolento"  />
+
+    <TextView
+        android:id="@+id/textView164"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="CAMINA A RITMO NEUTRO"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView251"
+        app:layout_constraintEnd_toEndOf="@+id/imageView251"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="@+id/imageView251"
+        app:layout_constraintTop_toTopOf="@+id/imageView251"
+        app:layout_constraintVertical_bias="0.886"  />
+
+    <ImageView
+        android:id="@+id/imageView253"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/fondomaspequenoclaro" />
+
+    <ImageButton
+        android:id="@+id/img1minrunnig1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView253"
+        app:layout_constraintEnd_toEndOf="@+id/imageView253"
+        app:layout_constraintStart_toStartOf="@+id/imageView253"
+        app:layout_constraintTop_toTopOf="@+id/imageView253"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintVertical_bias="0.899"
+        app:srcCompat="@drawable/pausa_png"/>
+
+    <TextView
+        android:id="@+id/txt1minrunnig1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="01:00"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView253"
+        app:layout_constraintEnd_toEndOf="@+id/imageView253"
+        app:layout_constraintStart_toStartOf="@+id/imageView253"
+        app:layout_constraintTop_toTopOf="@+id/imageView253" />
+</androidx.constraintlayout.widget.ConstraintLayout>

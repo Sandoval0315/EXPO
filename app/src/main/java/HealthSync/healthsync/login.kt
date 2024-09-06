@@ -1,5 +1,4 @@
 package HealthSync.healthsync
-
 import Modelo.ClaseConexion
 import android.content.Intent
 import android.os.Bundle
@@ -13,11 +12,11 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.*
-
 import java.security.MessageDigest
-
 class login : AppCompatActivity() {
-
+    companion object {
+        lateinit var userEmail: String
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -52,6 +51,9 @@ class login : AppCompatActivity() {
             if (txtCorreo.isEmpty() || txtContraseña.isEmpty()) {
                 Toast.makeText(this, "Campos incompletos", Toast.LENGTH_SHORT).show()
             } else {
+                // Store the email in the companion object
+                userEmail = txtCorreo
+
                 GlobalScope.launch(Dispatchers.IO) {
                     val objConexion = ClaseConexion().CadenaConexion()
 
@@ -85,7 +87,8 @@ class login : AppCompatActivity() {
                     } else {
                         // Credenciales incorrectas
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@login, "La contraseña o el correo son incorrectos", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@login, "La contraseña o el correo son incorrectos",
+                                Toast.LENGTH_SHORT).show()
                         }
                     }
                 }

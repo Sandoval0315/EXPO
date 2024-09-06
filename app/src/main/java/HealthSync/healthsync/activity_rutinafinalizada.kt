@@ -20,10 +20,13 @@ class activity_rutinafinalizada : AppCompatActivity() {
             insets
         }
 
-        val regresar = findViewById<Button>(R.id.btnFinal)
+        supportActionBar?.hide()
 
-        regresar.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+        val btnFinCardio = findViewById<Button>(R.id.btnFinalCardiovascular)
+
+        btnFinCardio.setOnClickListener{
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
     }

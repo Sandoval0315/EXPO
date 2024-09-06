@@ -32,7 +32,7 @@ class activity_yoga : AppCompatActivity() {
         }
 
         siguiente.setOnClickListener{
-            val intent = Intent(this, activity_tiempovascular::class.java)
+            val intent = Intent(this, activity_yoga1::class.java)
             startActivity(intent)
         }
 

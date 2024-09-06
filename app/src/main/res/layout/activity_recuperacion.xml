@@ -22,7 +22,7 @@
     <EditText
         android:id="@+id/txtCorreoR"
         android:layout_width="332dp"
-        android:layout_height="51dp"
+        android:layout_height="55dp"
         android:layout_marginStart="58dp"
         android:layout_marginTop="235dp"
         android:layout_marginEnd="30dp"

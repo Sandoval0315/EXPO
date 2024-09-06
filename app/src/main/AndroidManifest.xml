@@ -7,8 +7,13 @@
     <uses-permission android:name="android. permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-    <uses-feature android:name="android.hardware.sensor.step_counter" android:required="true"/>
-    <uses-feature android:name="android.hardware.sensor.stepdetector" android:required="true"/>
+
+    <uses-feature
+        android:name="android.hardware.sensor.step_counter"
+        android:required="true" />
+    <uses-feature
+        android:name="android.hardware.sensor.stepdetector"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -21,6 +26,211 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".activity_intensidad23"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad21"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad19"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad17"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad13"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad9"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad7"
+            android:exported="false" />
+        <activity
+            android:name=".ativity_intensidad5"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensidad3"
+            android:exported="false" />
+        <activity
+            android:name=".activiti_pausai"
+            android:exported="false" />
+        <activity
+            android:name=".activity_intensisdad1"
+            android:exported="false" />
+        <activity
+            android:name=".activity_runnig15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_runnig13"
+            android:exported="false" />
+        <activity
+            android:name=".activity_runnig11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_running9"
+            android:exported="false" />
+        <activity
+            android:name=".ctivity2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_runnig5"
+            android:exported="false" />
+        <activity
+            android:name=".activity_runnig3"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pausaru"
+            android:exported="false" />
+        <activity
+            android:name=".activity_runnig1"
+            android:exported="false"/>
+
+        <activity
+            android:name=".activity_fuerza23"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza21"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza19"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza17"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza13"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza9"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza7"
+            android:exported="false" />
+        <activity
+            android:name=".activityfuerza5"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza3"
+            android:exported="false" />
+        <activity
+            android:name=".activity_pausaf"
+            android:exported="false" />
+        <activity
+            android:name=".activity_fuerza1"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular26"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular24"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular21"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular19"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular17"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_timepovascular13"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular8"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular6"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tiempovascular5"
+            android:exported="false" />
+        <activity
+            android:name=".activity_tomadescaso2"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga9"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga8"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga7"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga6"
+            android:exported="false" />
+        <activity
+            android:name=".activity_finalyoga"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga23"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga22"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga21"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga20"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga19"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga18"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga17"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga16"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga15"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga14"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga13"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga12"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga11"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga10"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga5"
+            android:exported="false" />
+        <activity
+            android:name=".activity_yoga4"
+            android:exported="false" />
+        <activity
             android:name=".activity_stepCounter"
             android:exported="false" />
         <activity
@@ -32,9 +242,7 @@
         <activity
             android:name=".activity_yoga1"
             android:exported="false" />
-        <activity
-            android:name=".editarPerfil"
-            android:exported="false" />
+
         <activity
             android:name=".cambiodeclave"
             android:exported="true" />
@@ -65,7 +273,8 @@
         <activity
             android:name=".activity_runnig"
             android:exported="false"
-            android:theme="@style/Theme.HealthSync" />
+            android:theme="@style/Theme.HealthSync">
+        </activity>
         <activity
             android:name=".activity_pararunnig"
             android:exported="false" />
@@ -159,7 +368,8 @@
             android:exported="false" />
         <activity
             android:name=".Activity_rutinafuerza"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
             android:name=".activity_hidratacion"
             android:exported="false" />
@@ -196,6 +406,10 @@
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

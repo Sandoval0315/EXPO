@@ -68,5 +68,29 @@
         app:layout_constraintVertical_bias="0.79"
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
+    <TextView
+        android:id="@+id/txt30seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:30"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView93"
+        app:layout_constraintEnd_toEndOf="@+id/imageView93"
+        app:layout_constraintStart_toStartOf="@+id/imageView93"
+        app:layout_constraintTop_toBottomOf="@+id/imageView89"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <ImageView
+        android:id="@+id/imgpausa30seg"
+        android:layout_width="53dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView93"
+        app:layout_constraintEnd_toEndOf="@+id/imageView93"
+        app:layout_constraintTop_toBottomOf="@+id/imageView89"
+        app:layout_constraintVertical_bias="0.957"
+        app:srcCompat="@drawable/pausa_png" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

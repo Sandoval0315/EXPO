@@ -19,7 +19,7 @@ class activity_estiramientodinamico : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 60000 // 1 minuto en milisegundos
+    private var timeRemaining: Long = 10000 // 1 minuto en milisegundos
     private var isPaused: Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +31,9 @@ class activity_estiramientodinamico : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
+        supportActionBar?.hide()
+
 
         val regresarpausa = findViewById<ImageButton>(R.id.imgbuttonregresarpausa)
 
@@ -55,12 +58,10 @@ class activity_estiramientodinamico : AppCompatActivity() {
                 countDownTimer = createCountDownTimer(timeRemaining)
                 countDownTimer?.start()
                 isPaused = false
-                pauseButton.setImageResource(R.drawable.pausa_png) // Cambia la imagen al ícono de pausa
             } else {
                 // Pausar el temporizador
                 countDownTimer?.cancel()
                 isPaused = true
-                pauseButton.setImageResource(R.drawable.imgplay1) // Cambia la imagen al ícono de reproducir
             }
         }
     }
@@ -75,12 +76,19 @@ class activity_estiramientodinamico : AppCompatActivity() {
 
             override fun onFinish() {
                 txtTimer.text = "00:00"
+
+                val intent = Intent(this@activity_estiramientodinamico, activity_tomadescaso2::class.java)
+                intent.putExtra("identificador", "tiempo2")
+                startActivity(intent)
+                finish()
             }
-        // Cambiar de pantalla cuando el temporizador termine
-             //   val intent = Intent(this@activity_estiramientodinamico, otra pantalla::class.java)
-           ///    startActivity(intent)
-            //finish() // Finaliza la actividad actual
-            }
+
+        }
+    }
+    //para pausar el tiempo automatico cuando sin cambia de pantalla
+    override fun onPause() {
+        super.onPause()
+        countDownTimer?.cancel()
     }
 
 }

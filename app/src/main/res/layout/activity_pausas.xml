@@ -53,4 +53,27 @@
         app:layout_constraintEnd_toEndOf="@+id/imageView70"
         app:layout_constraintStart_toStartOf="@+id/imageView70"
         app:layout_constraintTop_toTopOf="@+id/imageView70" />
+
+    <ImageView
+        android:id="@+id/imgpausa15seg"
+        android:layout_width="53dp"
+        android:layout_height="51dp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_siguientePantalla"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70"
+        app:layout_constraintVertical_bias="0.848"
+        app:srcCompat="@drawable/pausa_png"
+        tools:layout_editor_absoluteX="311dp" />
+
+    <TextView
+        android:id="@+id/txt15seg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:15"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/img_siguientePantalla"
+        app:layout_constraintEnd_toEndOf="@+id/img_siguientePantalla"
+        app:layout_constraintStart_toStartOf="@+id/img_siguientePantalla"
+        app:layout_constraintTop_toBottomOf="@+id/imageView70"
+        app:layout_constraintVertical_bias="0.483" />
 </androidx.constraintlayout.widget.ConstraintLayout>

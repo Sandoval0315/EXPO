@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_intensidad11">
+
+
+
+    <ImageButton
+        android:id="@+id/btnimgintensidad11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.046"
+        app:srcCompat="@drawable/back"/>
+
+    <ImageView
+        android:id="@+id/imageView292"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/fondoclaropequeno"/>
+
+    <ImageView
+        android:id="@+id/imageView295"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView292"
+        app:layout_constraintEnd_toEndOf="@+id/imageView292"
+        app:layout_constraintStart_toStartOf="@+id/imageView292"
+        app:layout_constraintTop_toTopOf="@+id/imageView292"
+        app:layout_constraintVertical_bias="0.458"
+        app:srcCompat="@drawable/sentadillassalto"/>
+
+    <ImageView
+        android:id="@+id/imageView296"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/fondomaspequenoclaro" />
+
+    <ImageButton
+        android:id="@+id/img30segIn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView296"
+        app:layout_constraintEnd_toEndOf="@+id/imageView296"
+        app:layout_constraintStart_toStartOf="@+id/imageView296"
+        app:layout_constraintTop_toTopOf="@+id/imageView296"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintVertical_bias="0.899"
+        app:srcCompat="@drawable/pausa_png" />
+
+    <TextView
+        android:id="@+id/textView179"
+        android:layout_width="300dp"
+        android:layout_height="46dp"
+        android:fontFamily="@font/lexend_black"
+        android:text="REALIZA SENTADILLAS CON SALTO"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView292"
+        app:layout_constraintEnd_toEndOf="@+id/imageView292"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView292"
+        app:layout_constraintTop_toTopOf="@+id/imageView292"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <TextView
+        android:id="@+id/txt30segIn11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:30"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView296"
+        app:layout_constraintEnd_toEndOf="@+id/imageView296"
+        app:layout_constraintStart_toStartOf="@+id/imageView296"
+        app:layout_constraintTop_toTopOf="@+id/imageView296"
+        app:layout_constraintVertical_bias="0.4" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

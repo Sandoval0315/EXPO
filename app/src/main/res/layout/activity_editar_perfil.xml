@@ -19,36 +19,30 @@
         app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/back" />
 
-    <EditText
-        android:id="@+id/txtPesoPerfil"
-        android:layout_width="122dp"
-        android:layout_height="101dp"
-        android:backgroundTint="#7663F2"
-        android:ems="10"
-        android:fontFamily="@font/lexend_semibold"
-        android:hint="Peso"
-        android:inputType="number"
-        android:textAlignment="center"
-        android:textColor="#7663F2"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.178" />
-
     <ImageView
-        android:id="@+id/imgEditarPerfil4"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
+        android:id="@+id/imageView57"
+        android:layout_width="520dp"
+        android:layout_height="810dp"
+        app:srcCompat="@drawable/_301c9fe_56ee_4963_a948_857920d1bebb"
+        tools:layout_editor_absoluteX="-36dp"
+        tools:layout_editor_absoluteY="452dp" />
+
+    <Button
+        android:id="@+id/btnActualizarPerfil"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        android:layout_width="207dp"
+        android:layout_height="68dp"
+        android:text="Aceptar"
+        android:textColor="#FEFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="#7663F2"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.262"
-        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+        app:layout_constraintVertical_bias="0.902" />
 
     <EditText
         android:id="@+id/txtEnfermedadesPerfil"
@@ -64,22 +58,10 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.889"
+        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
-
-    <ImageView
-        android:id="@+id/imgEditarPerfil3"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.895"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.444"
-        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+        app:layout_constraintVertical_bias="0.736" />
 
     <ImageView
         android:id="@+id/imgEditarPerfil"
@@ -87,10 +69,10 @@
         android:layout_height="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.09"
+        app:layout_constraintHorizontal_bias="0.095"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.447"
+        app:layout_constraintVertical_bias="0.775"
         app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
 
     <EditText
@@ -107,21 +89,52 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.089"
+        app:layout_constraintHorizontal_bias="0.088"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.179" />
+        app:layout_constraintVertical_bias="0.55" />
 
     <ImageView
-        android:id="@+id/imgEditarPerfil2"
+        android:id="@+id/imgEditarPerfil3"
         android:layout_width="124dp"
         android:layout_height="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.276"
+        app:layout_constraintVertical_bias="0.772"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
+
+    <EditText
+        android:id="@+id/txtPesoPerfil"
+        android:layout_width="122dp"
+        android:layout_height="101dp"
+        android:backgroundTint="#7663F2"
+        android:ems="10"
+        android:fontFamily="@font/lexend_semibold"
+        android:hint="Peso"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:textColor="#7663F2"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.895"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil4"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.901"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.601"
         app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
 
     <EditText
@@ -138,26 +151,34 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.736" />
+
+    <ImageView
+        android:id="@+id/imgEditarPerfil2"
+        android:layout_width="124dp"
+        android:layout_height="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.089"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.371" />
+        app:layout_constraintVertical_bias="0.604"
+        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
 
-    <Button
-        android:id="@+id/btnActualizarPerfil"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="211dp"
-        android:layout_height="82dp"
-        android:text="Aceptar"
-        android:textColor="#FEFFFF"
-        android:textSize="16sp"
-        app:backgroundTint="#7663F2"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+    <ImageView
+        android:id="@+id/imageView150"
+        android:layout_width="409dp"
+        android:layout_height="404dp"
+        android:layout_marginStart="23dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="22dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView57"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.646" />
+        app:layout_constraintTop_toBottomOf="@+id/imgVolveralPerfil"
+        app:srcCompat="@drawable/_46fd9f4_6714_4816_9573_0d809cda4199" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
