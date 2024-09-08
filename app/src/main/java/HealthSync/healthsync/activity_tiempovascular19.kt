@@ -23,7 +23,7 @@ class activity_tiempovascular19 : AppCompatActivity() {
         supportActionBar?.hide()
 
         //Nos manda al inicio de la rutina (Boton para atras)
-        val regresaraInicio = findViewById<ImageView>(R.id.btnimgvascular19)
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBack)
 
         regresaraInicio.setOnClickListener{
             val intent = Intent(this, activity_rutina_cardiovascular::class.java)

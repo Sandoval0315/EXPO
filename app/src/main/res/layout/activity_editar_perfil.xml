@@ -8,15 +8,17 @@
     tools:context=".editarPerfil">
 
     <ImageView
-        android:id="@+id/imgVolveralPerfil"
-        android:layout_width="43dp"
-        android:layout_height="52dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="390dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.023"
         app:srcCompat="@drawable/back" />
 
     <ImageView
@@ -31,7 +33,7 @@
         android:id="@+id/btnActualizarPerfil"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="207dp"
-        android:layout_height="68dp"
+        android:layout_height="60dp"
         android:text="Aceptar"
         android:textColor="#FEFFFF"
         android:textSize="16sp"
@@ -173,12 +175,10 @@
         android:layout_width="409dp"
         android:layout_height="404dp"
         android:layout_marginStart="23dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="22dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView57"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imgVolveralPerfil"
         app:srcCompat="@drawable/_46fd9f4_6714_4816_9573_0d809cda4199" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -346,7 +346,13 @@
             android:exported="false" />
         <activity
             android:name=".pregunta5"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".pregunta4"
             android:exported="false" />
@@ -393,13 +399,8 @@
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true"/>
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".LoadingActivity"
             android:exported="false" />

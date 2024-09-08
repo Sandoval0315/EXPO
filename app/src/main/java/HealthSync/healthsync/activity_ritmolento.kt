@@ -34,7 +34,7 @@ class activity_ritmolento : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val regresar = findViewById<ImageButton>(R.id.imgbtnregresarRtprincipal2)
+        val regresar = findViewById<ImageButton>(R.id.imgBack)
         val descanso = findViewById<ImageView>(R.id.imgdescanso)
 
         regresar.setOnClickListener{

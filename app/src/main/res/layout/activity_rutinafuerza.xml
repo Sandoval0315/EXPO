@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".Activity_rutinafuerza">
 
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="964dp"
+        android:layout_height="1216dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/fondo" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -14,6 +24,20 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="390dp"
+                android:layout_marginBottom="139dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
 
             <Button
                 android:id="@+id/btn_rtsFuerza"
@@ -29,25 +53,13 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="1.0" />
 
-            <ImageView
-                android:id="@+id/imageView20"
-                android:layout_width="409dp"
-                android:layout_height="842dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.505"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.721"
-                app:srcCompat="@drawable/moradoo" />
-
 
             <TextView
                 android:id="@+id/lbRutinaFuerza"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lexend_black"
-                android:text="RUTINAS"
+                android:text="RUTINA"
                 android:textAlignment="viewStart"
                 android:textColor="#454545"
                 android:textSize="48sp"
@@ -273,18 +285,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.567" />
-
-            <ImageView
-                android:id="@+id/imgregresarRFuerza"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.047"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.015"
-                app:srcCompat="@drawable/back" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

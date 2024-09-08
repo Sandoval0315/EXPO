@@ -34,7 +34,7 @@ class activity_pausa20 : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val regresar = findViewById<ImageButton>(R.id.imgbtn_regresoPausa20)
+        val regresar = findViewById<ImageButton>(R.id.imgBack)
 
         regresar.setOnClickListener{
             val intent = Intent(this, activity_pausa20::class.java)

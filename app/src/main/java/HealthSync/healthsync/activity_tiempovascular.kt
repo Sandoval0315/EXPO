@@ -34,7 +34,7 @@ class activity_tiempovascular : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val regresar = findViewById<ImageButton>(R.id.imgbtnregresarRtprincipal)
+        val regresar = findViewById<ImageButton>(R.id.imgBack)
 
         regresar.setOnClickListener{
             val intent = Intent(this, activity_rutina_cardiovascular::class.java)

@@ -24,7 +24,7 @@ class activity_Hidra_y_Alimen : AppCompatActivity() {
 
         val btn_hidratacion = findViewById<Button>(R.id.btnhidratacion)
         val btn_alimen = findViewById<Button>(R.id.btnalimentacion)
-        val btn_regresar = findViewById<ImageButton>(R.id.btnsalir)
+        val btn_regresar = findViewById<ImageButton>(R.id.imgBack)
 
         btn_hidratacion.setOnClickListener {
             val intent = Intent(this, activity_hidratacion::class.java)

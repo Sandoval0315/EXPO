@@ -8,6 +8,20 @@
     tools:context=".activity_yoga15">
 
     <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="390dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView148"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,18 +44,6 @@
         app:srcCompat="@drawable/fondoclaropequeno" />
 
     <ImageButton
-        android:id="@+id/btnimgyoga15"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/back" />
-
-    <ImageButton
         android:id="@+id/img15segY15"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,10 +57,11 @@
 
     <TextView
         android:id="@+id/textView122"
-        android:layout_width="260dp"
-        android:layout_height="85dp"
+        android:layout_width="258dp"
+        android:layout_height="66dp"
         android:fontFamily="@font/lexend_black"
         android:text="SIENTATE CON LAS PIERNAS CRUZADAS"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView152"
         app:layout_constraintEnd_toEndOf="@+id/imageView152"

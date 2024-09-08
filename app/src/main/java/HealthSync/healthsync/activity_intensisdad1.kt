@@ -33,7 +33,7 @@ class activity_intensisdad1 : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val regresarIntensidad = findViewById<ImageButton>(R.id.btnregresarIntensidad)
+        val regresarIntensidad = findViewById<ImageButton>(R.id.imgBack)
 
         regresarIntensidad.setOnClickListener{
             val intent = Intent(this, activity_altaintensidad::class.java)

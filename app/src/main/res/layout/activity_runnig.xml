@@ -44,6 +44,20 @@
                 app:srcCompat="@drawable/fondoclaro" />
 
             <ImageView
+                android:id="@+id/imgBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="390dp"
+                android:layout_marginBottom="139dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView19"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back" />
+
+            <ImageView
                 android:id="@+id/imageView59"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -88,18 +102,6 @@
                 app:layout_constraintVertical_bias="0.108" />
 
             <ImageView
-                android:id="@+id/imgregresarRRunning"
-                android:layout_width="48dp"
-                android:layout_height="53dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.025"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.038"
-                app:srcCompat="@drawable/back" />
-
-            <ImageView
                 android:id="@+id/imageView61"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -108,7 +110,7 @@
                 app:layout_constraintHorizontal_bias="0.219"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.212"
+                app:layout_constraintVertical_bias="0.22"
                 app:srcCompat="@drawable/caminar" />
 
             <ImageView
@@ -154,10 +156,9 @@
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.239"
+                app:layout_constraintHorizontal_bias="0.219"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.489"
                 app:srcCompat="@drawable/brazosypiernas" />
 
             <TextView
@@ -168,10 +169,10 @@
                 android:text="Camina en el lugar durante 1 minuto para bajar la frecuencia cardiaca."
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.711"
+                app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.216" />
+                app:layout_constraintVertical_bias="0.22" />
 
             <TextView
                 android:id="@+id/textView43"
@@ -181,10 +182,10 @@
                 android:text="Continúa con 1 minuto de trote ligero, aumentando el ritmo gradualmente."
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.647"
+                app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.295" />
+                app:layout_constraintVertical_bias="0.299" />
 
             <TextView
                 android:id="@+id/textView44"
@@ -197,7 +198,7 @@
                 app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.345" />
+                app:layout_constraintVertical_bias="0.366" />
 
             <TextView
                 android:id="@+id/textView45"
@@ -210,7 +211,7 @@
                 app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.406" />
+                app:layout_constraintVertical_bias="0.441" />
 
             <TextView
                 android:layout_width="221dp"
@@ -219,10 +220,9 @@
                 android:text="Dedica los últimos 30 segundos a estirar los músculos principales"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.746"
+                app:layout_constraintHorizontal_bias="0.68"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.481" />
+                app:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>

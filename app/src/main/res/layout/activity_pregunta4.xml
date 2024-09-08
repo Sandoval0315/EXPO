@@ -127,15 +127,4 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.454" />
 
-    <ImageView
-        android:id="@+id/imgEditarHidra"
-        android:layout_width="124dp"
-        android:layout_height="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.501"
-        app:srcCompat="@drawable/_1865907_dac4_489c_bec3_1c6d6753db60" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -59,6 +59,7 @@
         android:layout_height="92dp"
         android:fontFamily="@font/lexend_black"
         android:text="ACUESTATE EN POSTURA DE CADAVER"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView166"
         app:layout_constraintEnd_toEndOf="@+id/imageView166"

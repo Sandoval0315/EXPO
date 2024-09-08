@@ -9,6 +9,20 @@
     tools:context=".activity_Hidra_y_Alimen">
 
     <ImageView
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="390dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView9"
         android:layout_width="374dp"
         android:layout_height="385dp"
@@ -19,23 +33,10 @@
         app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@drawable/hidra_y_alimen" />
 
-    <ImageButton
-        android:id="@+id/btnsalir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#D2CBEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.002"
-        app:srcCompat="@drawable/back" />
-
     <Button
         android:id="@+id/btnalimentacion"
-        android:layout_width="331dp"
-        android:layout_height="123dp"
+        android:layout_width="351dp"
+        android:layout_height="130dp"
         android:drawableRight="@drawable/alimentacion"
         android:fontFamily="@font/lexend"
         android:text="Alimementacion"
@@ -49,8 +50,8 @@
 
     <Button
         android:id="@+id/btnhidratacion"
-        android:layout_width="331dp"
-        android:layout_height="123dp"
+        android:layout_width="351dp"
+        android:layout_height="130dp"
         android:drawableRight="@drawable/hidratacion"
         android:fontFamily="@font/lexend"
         android:text="Hidratacion"

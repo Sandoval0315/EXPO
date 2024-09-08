@@ -31,7 +31,7 @@ class activity_runnig1 : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val regresaraInicio = findViewById<ImageView>(R.id.btnregresararunnig)
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBack)
 
         regresaraInicio.setOnClickListener{
             val intent = Intent(this, activity_runnig::class.java)

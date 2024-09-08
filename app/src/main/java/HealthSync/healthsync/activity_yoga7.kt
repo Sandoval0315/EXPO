@@ -30,7 +30,7 @@ class activity_yoga7 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val regresaraInicio = findViewById<ImageView>(R.id.btnimgyoga7)
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBack)
 
         regresaraInicio.setOnClickListener{
             val intent = Intent(this, activity_rutina_cardiovascular::class.java)

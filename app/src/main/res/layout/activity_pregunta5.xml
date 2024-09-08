@@ -98,6 +98,7 @@
         android:layout_height="65dp"
         android:background="@drawable/edittext_background"
         android:ems="10"
+        android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"

@@ -18,18 +18,6 @@
         app:layout_constraintVertical_bias="0.336"
         app:srcCompat="@drawable/fondoclaropequeno" />
 
-    <ImageButton
-        android:id="@+id/imageButton12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/back"  />
-
     <Button
         android:id="@+id/button10"
         style="@style/Widget.MaterialComponents.Button.TextButton"
@@ -73,15 +61,17 @@
         app:layout_constraintVertical_bias="0.899" />
 
     <ImageView
-        android:id="@+id/imageView135"
-        android:layout_width="47dp"
-        android:layout_height="37dp"
-        android:layout_marginTop="167dp"
-        android:layout_marginBottom="188dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button10"
-        app:layout_constraintHorizontal_bias="0.719"
+        android:id="@+id/imgBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="390dp"
+        android:layout_marginBottom="139dp"
+        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView19"
-        app:srcCompat="@drawable/volver__1_" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

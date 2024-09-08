@@ -24,7 +24,7 @@ class activity_rutina_cardiovascular : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val imgregresarRCardiovascular = findViewById<ImageView>(R.id.imgregresarRCardiovascular)
+        val imgregresarRCardiovascular = findViewById<ImageView>(R.id.imgBack)
         val btnempezarRC = findViewById<Button>(R.id.btnempezarRC)
 
 

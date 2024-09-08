@@ -25,7 +25,7 @@ class activity_runnig : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val imgregresarRRunning = findViewById<ImageView>(R.id.imgregresarRRunning)
+        val imgregresarRRunning = findViewById<ImageView>(R.id.imgBack)
 
         imgregresarRRunning.setOnClickListener{
             val intent = Intent(this, navigatioPrincipal::class.java)
