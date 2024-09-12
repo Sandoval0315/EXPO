@@ -319,15 +319,11 @@
             android:name=".activity_tiempovascular"
             android:exported="false" />
         <activity
-            android:name=".activity_contador_pasos"
-            android:exported="false" />
-        <activity
             android:name=".activity_mapa_principal"
             android:exported="false" />
         <activity
             android:name=".activity_yoga"
             android:exported="false" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDximuRbNYkzRBbt-GK5lkp3G-nvJqk1JA" />
@@ -336,9 +332,6 @@
             android:name=".Recuperacion"
             android:exported="true" />
         <activity
-            android:name=".ConfirmarPreguntas"
-            android:exported="false" />
-        <activity
             android:name=".activity_altaintensidad"
             android:exported="false" />
         <activity
@@ -346,13 +339,8 @@
             android:exported="false" />
         <activity
             android:name=".pregunta5"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".pregunta4"
             android:exported="false" />
@@ -361,10 +349,17 @@
             android:exported="true" />
         <activity
             android:name=".pregunta2"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".pregunta1"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".navigatioPrincipal"
             android:exported="false"
@@ -400,10 +395,10 @@
         <activity
             android:name=".Bienvenida"
             android:exported="true"/>
-
         <activity
             android:name=".LoadingActivity"
-            android:exported="false" />
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />

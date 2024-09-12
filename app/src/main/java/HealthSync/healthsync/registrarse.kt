@@ -35,6 +35,8 @@ class registrarse : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_registrarse)
+        window.statusBarColor = resources.getColor(R.color.colorPrimary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -49,8 +51,7 @@ class registrarse : AppCompatActivity() {
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
         val txtConfirmarContrasena = findViewById<EditText>(R.id.txtConfirmarContraseña)
         val btnCrearCuenta = findViewById<Button>(R.id.btnRegistrarse)
-        val btnIrAlLogin = findViewById<Button>(R.id.btnIrAlLogin)
-        val imgBack = findViewById<ImageView>(R.id.imgVolveralPerfil)
+        val imgBack = findViewById<ImageView>(R.id.imgBack)
         val imgVerContrasena = findViewById<ImageView>(R.id.imgVerContraseña)
         val imgVerConfirmarContrasena = findViewById<ImageView>(R.id.imgVerConfirmarContraseña)
         val tvSuccessMessage = findViewById<TextView>(R.id.tvSuccessMessage)
@@ -60,14 +61,9 @@ class registrarse : AppCompatActivity() {
             startActivity(intent)
         }
 
-        btnIrAlLogin.setOnClickListener {
-            val intent = Intent(this, login::class.java)
-            startActivity(intent)
-        }
-
         fun showCreateAccountButton() {
             btnCrearCuenta.visibility = View.VISIBLE
-            btnIrAlLogin.visibility = View.GONE
+            imgBack.visibility = View.GONE
         }
 
         val textWatcher = object : View.OnFocusChangeListener, View.OnClickListener {
@@ -168,7 +164,7 @@ class registrarse : AppCompatActivity() {
                         txtContraseña.setText("")
                         txtConfirmarContrasena.setText("")
                         btnCrearCuenta.visibility = View.GONE
-                        btnIrAlLogin.visibility = View.VISIBLE
+                        imgBack.visibility = View.VISIBLE
 
                         // Mostrar mensaje de éxito con animación
                         val fadeInOut = AnimationUtils.loadAnimation(this@registrarse, R.anim.fade_in_out)
