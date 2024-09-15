@@ -35,7 +35,7 @@ class activity_estiramientodinamico : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val regresarpausa = findViewById<ImageButton>(R.id.imgBack)
+        val regresarpausa = findViewById<ImageButton>(R.id.imgBackk)
 
         regresarpausa.setOnClickListener{
             val intent = Intent(this, activity_pausas::class.java)

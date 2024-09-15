@@ -42,7 +42,7 @@ class activity_pausas : AppCompatActivity() {
 
 
 
-        val regresar = findViewById<ImageButton>(R.id.imgBack)
+        val regresar = findViewById<ImageButton>(R.id.imgBackk)
         val siguientePantalla = findViewById<ImageView>(R.id.img_siguientePantalla)
 
         regresar.setOnClickListener{

@@ -32,7 +32,7 @@ class activity_runnig3 : AppCompatActivity() {
         supportActionBar?.hide()
 
         //Nos manda al inicio de la rutina (Boton para atras)
-        val regresaraInicio = findViewById<ImageView>(R.id.imgBack)
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
         regresaraInicio.setOnClickListener{
             val intent = Intent(this, activity_runnig::class.java)

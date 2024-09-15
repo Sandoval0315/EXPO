@@ -51,7 +51,7 @@ class registrarse : AppCompatActivity() {
         val txtContraseña = findViewById<EditText>(R.id.txtContraseña)
         val txtConfirmarContrasena = findViewById<EditText>(R.id.txtConfirmarContraseña)
         val btnCrearCuenta = findViewById<Button>(R.id.btnRegistrarse)
-        val imgBack = findViewById<ImageView>(R.id.imgBack)
+        val imgBack = findViewById<ImageView>(R.id.imgBackk)
         val imgVerContrasena = findViewById<ImageView>(R.id.imgVerContraseña)
         val imgVerConfirmarContrasena = findViewById<ImageView>(R.id.imgVerConfirmarContraseña)
         val tvSuccessMessage = findViewById<TextView>(R.id.tvSuccessMessage)

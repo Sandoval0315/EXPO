@@ -50,7 +50,7 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val btnBack = findViewById<ImageButton>(R.id.imgBack)
+        val btnBack = findViewById<ImageButton>(R.id.imgBackk)
 
 
 

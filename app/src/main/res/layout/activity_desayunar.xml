@@ -16,18 +16,16 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <ImageButton
-                android:id="@+id/imageButton14"
-                android:layout_width="63dp"
-                android:layout_height="65dp"
-                android:layout_marginBottom="1983dp"
-                android:backgroundTint="#D2CBEC"
+            <ImageView
+                android:id="@+id/imgBackk"
+                android:layout_width="22dp"
+                android:layout_height="21dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.041"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.012"
+                app:layout_constraintVertical_bias="0.017"
                 app:srcCompat="@drawable/back" />
 
             <TextView
@@ -83,10 +81,11 @@
 
             <ImageView
                 android:id="@+id/imageView14"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="374dp"
+                android:layout_height="497dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
                 app:srcCompat="@drawable/btn_hidra_y_ali"
-                tools:layout_editor_absoluteX="16dp"
                 tools:layout_editor_absoluteY="232dp" />
 
             <TextView
@@ -122,9 +121,9 @@
                 android:text="° 1/2 taza de yogur natural (puede usar"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.42"
+                app:layout_constraintHorizontal_bias="0.415"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="352dp" />
+                tools:layout_editor_absoluteY="276dp" />
 
             <TextView
                 android:id="@+id/textView66"
@@ -136,7 +135,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.333"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="385dp" />
+                tools:layout_editor_absoluteY="332dp" />
 
             <TextView
                 android:id="@+id/textView67"
@@ -146,9 +145,9 @@
                 android:text="mas cremosa)"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.461"
+                app:layout_constraintHorizontal_bias="0.454"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="405dp" />
+                tools:layout_editor_absoluteY="356dp" />
 
             <TextView
                 android:id="@+id/textView68"
@@ -158,9 +157,8 @@
                 android:text="° 1/2 de tasa de frutas fresca en trozos"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.439"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="478dp" />
+                tools:layout_editor_absoluteY="409dp" />
 
             <TextView
                 android:id="@+id/textView69"
@@ -171,7 +169,7 @@
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="502dp" />
+                tools:layout_editor_absoluteY="433dp" />
 
             <TextView
                 android:id="@+id/textView70"
@@ -181,20 +179,21 @@
                 android:text="fruta de tu preferencia)"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.497"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="526dp" />
+                tools:layout_editor_absoluteY="457dp" />
 
             <TextView
                 android:id="@+id/textView71"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="350dp"
+                android:layout_height="29dp"
                 android:fontFamily="@font/lexend"
                 android:text="° 2 cucharadas de granola azúcar añadido"
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintHorizontal_bias="0.491"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="590dp" />
+                tools:layout_editor_absoluteY="520dp" />
 
             <TextView
                 android:id="@+id/textView72"
@@ -204,9 +203,9 @@
                 android:text="° Opcional: 1 cucharadita de miel o sirope "
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.468"
+                app:layout_constraintHorizontal_bias="0.488"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="684dp" />
+                tools:layout_editor_absoluteY="549dp" />
 
             <TextView
                 android:id="@+id/textView73"
@@ -216,14 +215,13 @@
                 android:text="de agave para endulzar."
                 android:textSize="18dp"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.459"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="708dp" />
+                tools:layout_editor_absoluteY="586dp" />
 
             <ImageView
                 android:id="@+id/imageView87"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="394dp"
+                android:layout_height="497dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.421"
                 app:layout_constraintStart_toStartOf="parent"
@@ -366,8 +364,8 @@
 
             <ImageView
                 android:id="@+id/imageView88"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="394dp"
+                android:layout_height="497dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.342"
                 app:layout_constraintStart_toStartOf="parent"

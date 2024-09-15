@@ -349,13 +349,8 @@
             android:exported="true" />
         <activity
             android:name=".pregunta2"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
         <activity
             android:name=".pregunta1"
             android:exported="true" />
@@ -366,7 +361,8 @@
             android:label="@string/title_activity_navigatio_principal" />
         <activity
             android:name=".activity_alimentacion"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".Activity_rutinafuerza"
             android:exported="false"/>
@@ -382,7 +378,8 @@
             android:exported="false" />
         <activity
             android:name=".activity_Hidra_y_Alimen"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".LoadingActivity2"
             android:exported="false" />
@@ -394,7 +391,14 @@
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
-            android:exported="true"/>
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
         <activity
             android:name=".LoadingActivity"
             android:exported="true"/>

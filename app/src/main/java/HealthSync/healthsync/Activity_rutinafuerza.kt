@@ -26,7 +26,7 @@ class Activity_rutinafuerza : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val imgregresarRFuerza = findViewById<ImageView>(R.id.imgBack)
+        val imgregresarRFuerza = findViewById<ImageView>(R.id.imgBackk)
         val btnfuerza = findViewById<Button>(R.id.btn_rtsFuerza)
 
         imgregresarRFuerza.setOnClickListener{

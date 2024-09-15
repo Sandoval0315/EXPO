@@ -33,7 +33,7 @@ class login : AppCompatActivity() {
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtClave = findViewById<EditText>(R.id.txtClave)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)
-        val imgBack = findViewById<ImageView>(R.id.imgBack)
+        val imgBack = findViewById<ImageView>(R.id.imgBackk)
         val lbRecuperarC = findViewById<TextView>(R.id.lbRecuperarC)
 
 

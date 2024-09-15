@@ -27,7 +27,7 @@ class activity_hidratacion : AppCompatActivity() {
         // ocultar barra de arriba
         supportActionBar?.hide()
 
-        val btnsalirdehidra = findViewById<ImageButton>(R.id.imgBack)
+        val btnsalirdehidra = findViewById<ImageButton>(R.id.imgBackk)
         val imgEditar = findViewById<ImageView>(R.id.imgEditarHidra)
         val txtVasos = findViewById<TextView>(R.id.txtMetaDiaria)
 

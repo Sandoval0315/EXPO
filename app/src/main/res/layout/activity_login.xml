@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/_f910cec_c32c_4358_b6ea_84992884f255" />
 
     <ImageView
-        android:id="@+id/imgBack"
+        android:id="@+id/imgBackk"
         android:layout_width="22dp"
         android:layout_height="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -30,18 +30,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.017"
         app:srcCompat="@drawable/back" />
-
-    <ImageView
-        android:id="@+id/imgVer1"
-        android:layout_width="31dp"
-        android:layout_height="23dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.829"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676"
-        app:srcCompat="@drawable/ver" />
 
 
     <TextView
@@ -72,7 +60,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.529" />
@@ -87,9 +75,10 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.571"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.39" />
+        app:layout_constraintVertical_bias="0.408" />
 
     <EditText
         android:id="@+id/txtClave"
@@ -158,6 +147,18 @@
         app:layout_constraintTop_toTopOf="@+id/btnInicioSesionGoogle"
         app:layout_constraintVertical_bias="0.013"
         app:srcCompat="@drawable/google" />
+
+    <ImageView
+        android:id="@+id/imgVer1"
+        android:layout_width="31dp"
+        android:layout_height="23dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.818"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665"
+        app:srcCompat="@drawable/ver" />
 
     <Button
         android:id="@+id/btnAcceder"

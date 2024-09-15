@@ -87,13 +87,13 @@
 
             <ImageView
                 android:id="@+id/imageView34"
-                android:layout_width="424dp"
-                android:layout_height="943dp"
+                android:layout_width="378dp"
+                android:layout_height="818dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.39"
+                app:layout_constraintVertical_bias="0.429"
                 app:srcCompat="@drawable/moradoo" />
 
             <TextView
@@ -199,19 +199,6 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.495" />
 
-            <TextView
-                android:id="@+id/textView32"
-                android:layout_width="222dp"
-                android:layout_height="33dp"
-                android:fontFamily="@font/lexend"
-                android:text="Dedica los últimos 30 segundos a estirar los músculos principales"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.653"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.769" />
-
             <ImageView
                 android:id="@+id/imageView35"
                 android:layout_width="wrap_content"
@@ -302,24 +289,11 @@
                 android:id="@+id/imageView42"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="24dp"
-                app:layout_constraintBottom_toTopOf="@+id/imageView43"
                 app:layout_constraintEnd_toStartOf="@+id/textView29"
                 app:layout_constraintHorizontal_bias="0.616"
                 app:layout_constraintStart_toStartOf="parent"
-                app:srcCompat="@drawable/caminar" />
-
-            <ImageView
-                android:id="@+id/imageView43"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.17"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.766"
-                app:srcCompat="@drawable/brazosypiernas" />
+                app:srcCompat="@drawable/caminar"
+                tools:layout_editor_absoluteY="900dp" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
