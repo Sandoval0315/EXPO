@@ -10,6 +10,18 @@
     tools:context=".registrarse">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="517dp"
         android:layout_height="651dp"
@@ -183,9 +195,9 @@
         android:layout_height="55dp"
         android:fontFamily="@font/lexend"
         android:text="Registrarme"
-        android:textColor="#454545"
+        android:textColor="#7663F2"
         android:textSize="15.6sp"
-        app:backgroundTint="#7663F2"
+        app:backgroundTint="#D2CBEC"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -254,18 +266,6 @@
         app:layout_constraintStart_toStartOf="@+id/imageView4"
         app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView2"
         app:layout_constraintVertical_bias="0.003" />
-
-    <ImageView
-        android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017"
-        app:srcCompat="@drawable/back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

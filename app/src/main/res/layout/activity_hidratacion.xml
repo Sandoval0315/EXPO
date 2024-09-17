@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imageView315"
-        android:layout_width="464dp"
-        android:layout_height="998dp"
+        android:layout_width="423dp"
+        android:layout_height="968dp"
         android:layout_marginTop="-100dp"
         android:layout_marginBottom="103dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,16 +34,14 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="390dp"
-        android:layout_marginBottom="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
         app:srcCompat="@drawable/back" />
 
     <TextView
@@ -164,14 +162,14 @@
 
     <ImageView
         android:id="@+id/imgEditarHidra"
-        android:layout_width="43dp"
-        android:layout_height="39dp"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.96"
+        app:layout_constraintHorizontal_bias="0.955"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.031"
+        app:layout_constraintVertical_bias="0.017"
         app:srcCompat="@drawable/configuracion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

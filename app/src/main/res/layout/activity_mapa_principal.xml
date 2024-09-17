@@ -11,47 +11,46 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="390dp"
-        android:layout_marginBottom="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView19"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
         app:srcCompat="@drawable/back" />
+
 
     <TextView
         android:id="@+id/textView34"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
+        android:fontFamily="@font/lexend_extrabold"
         android:text="CLIKEA EN EL MAPA"
         android:textColor="#454545"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.103"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.247" />
 
     <TextView
         android:id="@+id/textView33"
         android:layout_width="279dp"
         android:layout_height="63dp"
-        android:fontFamily="@font/lexend_semibold"
+        android:fontFamily="@font/lexend_extrabold"
         android:text="BUSCA TU GIMNASIO MAS CERCANO "
         android:textColor="#FFFFFF"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.177"
+        app:layout_constraintHorizontal_bias="0.189"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.186" />
 
     <TextView
         android:id="@+id/textView31"
@@ -63,16 +62,15 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.096"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.141" />
-
+        app:layout_constraintVertical_bias="0.112" />
 
     <ImageView
         android:id="@+id/imgregresarRYoga"
-        android:layout_width="396dp"
-        android:layout_height="408dp"
+        android:layout_width="377dp"
+        android:layout_height="384dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.519"
@@ -83,8 +81,8 @@
 
     <ImageView
         android:id="@+id/img_IrMap"
-        android:layout_width="377dp"
-        android:layout_height="390dp"
+        android:layout_width="341dp"
+        android:layout_height="349dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.507"

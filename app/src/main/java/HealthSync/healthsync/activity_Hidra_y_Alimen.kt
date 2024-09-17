@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -14,6 +15,7 @@ class activity_Hidra_y_Alimen : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_hidra_yalimen)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -24,7 +26,7 @@ class activity_Hidra_y_Alimen : AppCompatActivity() {
 
         val btn_hidratacion = findViewById<Button>(R.id.btnhidratacion)
         val btn_alimen = findViewById<Button>(R.id.btnalimentacion)
-        val btn_regresar = findViewById<ImageButton>(R.id.imgBackk)
+        val btn_regresar = findViewById<ImageView>(R.id.imgBackk)
 
         btn_hidratacion.setOnClickListener {
             val intent = Intent(this, activity_hidratacion::class.java)
