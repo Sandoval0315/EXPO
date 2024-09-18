@@ -8,6 +8,18 @@
     android:background="#D2CBEC"
     tools:context=".activity_stepCounter">
 
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
     <TextView
         android:id="@+id/lbRutinaFuerza"
         android:layout_width="wrap_content"
@@ -41,20 +53,6 @@
         app:layout_constraintVertical_bias="0.116" />
 
     <ImageView
-        android:id="@+id/imgBackk"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="390dp"
-        android:layout_marginBottom="139dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView19"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/back" />
-
-    <ImageView
         android:id="@+id/imgTimeStep"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -72,11 +70,12 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.068"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549"
+        app:layout_constraintVertical_bias="0.551"
         app:srcCompat="@drawable/diatnciaconta" />
+
 
     <ImageView
         android:id="@+id/imgStep"
@@ -84,12 +83,11 @@
         android:layout_height="38dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintHorizontal_bias="0.066"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.442"
+        app:layout_constraintVertical_bias="0.441"
         app:srcCompat="@drawable/pasosconta" />
-
 
     <ProgressBar
         android:id="@+id/ProgressBar"
@@ -108,29 +106,19 @@
         app:layout_constraintVertical_bias="0.237"
         tools:ignore="MissingConstraints" />
 
-    <ImageView
-        android:id="@+id/imageView54"
-        android:layout_width="240dp"
-        android:layout_height="720dp"
-        android:layout_marginStart="204dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397"
-        app:srcCompat="@drawable/caminando" />
-
     <Button
         android:id="@+id/btnPausaContador"
         android:layout_width="144dp"
         android:layout_height="48dp"
-        android:text="Detener"
         android:onClick="onPaueseButtonClicked"
+        android:text="Detener"
+        app:cornerRadius="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintHorizontal_bias="0.104"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.859" />
+        app:layout_constraintVertical_bias="0.781" />
 
     <TextView
         android:id="@+id/txtDistanciaConta"
@@ -144,7 +132,7 @@
         app:layout_constraintHorizontal_bias="0.239"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.551" />
 
     <TextView
         android:id="@+id/txtTiempoConta"
@@ -162,17 +150,17 @@
 
     <TextView
         android:id="@+id/txtMetaPasosConta"
-        android:layout_width="242dp"
-        android:layout_height="34dp"
+        android:layout_width="188dp"
+        android:layout_height="24dp"
         android:text="Meta de pasos: 12,000"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.928"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.874" />
+        app:layout_constraintVertical_bias="0.842" />
 
     <TextView
         android:id="@+id/txtPasosConta"
