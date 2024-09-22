@@ -37,7 +37,7 @@ class Recuperacion : AppCompatActivity() {
         supportActionBar?.hide()
 
         val btnRecuperar = findViewById<Button>(R.id.btnRecuperarC)
-        val imgBack = findViewById<ImageView>(R.id.imgVolveralPerfil)
+        val imgBack = findViewById<ImageView>(R.id.imgBackk)
         val txtCorreoR = findViewById<EditText>(R.id.txtCorreoR)
 
         imgBack.setOnClickListener {

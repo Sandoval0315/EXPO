@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2CBEC"
+    android:background="#FFFFFF"
     tools:context=".activity_desayunar">
 
     <ImageView
@@ -41,10 +41,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.571"
+                app:layout_constraintHorizontal_bias="0.433"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.025" />
+                app:layout_constraintVertical_bias="0.03" />
 
             <TextView
                 android:id="@+id/textView61"
@@ -59,10 +59,10 @@
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.386"
+                app:layout_constraintHorizontal_bias="0.286"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.034" />
+                app:layout_constraintVertical_bias="0.037" />
 
             <TextView
                 android:id="@+id/textView62"
@@ -74,10 +74,10 @@
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.169"
+                app:layout_constraintHorizontal_bias="0.289"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.064" />
+                app:layout_constraintVertical_bias="0.068" />
 
             <ImageView
                 android:id="@+id/imageView14"
@@ -94,14 +94,14 @@
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/lexend_black"
                 android:text="Ingredientes"
-                android:textSize="20dp"
+                android:textSize="16sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.13"
+                app:layout_constraintHorizontal_bias="0.115"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.084" />
+                app:layout_constraintVertical_bias="0.083" />
 
             <TextView
                 android:id="@+id/textView64"

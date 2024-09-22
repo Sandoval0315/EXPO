@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2CBEC"
+    android:background="#FFFFFF"
     tools:context=".activity_mapa_principal">
 
 
@@ -43,7 +43,7 @@
         android:layout_height="63dp"
         android:fontFamily="@font/lexend_extrabold"
         android:text="BUSCA TU GIMNASIO MAS CERCANO "
-        android:textColor="#FFFFFF"
+        android:textColor="#7663F2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

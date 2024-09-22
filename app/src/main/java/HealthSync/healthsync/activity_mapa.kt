@@ -6,6 +6,7 @@ import android.content.pm.PackageManager
 import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +42,8 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_mapa)
+        window.statusBarColor = resources.getColor(R.color.colorSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -50,7 +53,7 @@ class activity_mapa : AppCompatActivity(), OnMapReadyCallback {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val btnBack = findViewById<ImageButton>(R.id.imgBackk)
+        val btnBack = findViewById<ImageView>(R.id.imgBackk)
 
 
 

@@ -24,6 +24,8 @@ class activity_intensisdad1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_intensisdad1)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -33,7 +35,7 @@ class activity_intensisdad1 : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val regresarIntensidad = findViewById<ImageButton>(R.id.imgBackk)
+        val regresarIntensidad = findViewById<ImageView>(R.id.imgBackk)
 
         regresarIntensidad.setOnClickListener{
             val intent = Intent(this, activity_altaintensidad::class.java)

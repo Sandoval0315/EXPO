@@ -24,6 +24,8 @@ class activity_pararunnig : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pararunnig)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -33,7 +35,7 @@ class activity_pararunnig : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val regresar = findViewById<ImageButton>(R.id.imgBackk)
+        val regresar = findViewById<ImageView>(R.id.imgBackk)
         regresar.setOnClickListener{
            // val intent = Intent(this, activity_pausas::class.java) poner la pantalla a la que va
            // startActivity(intent)

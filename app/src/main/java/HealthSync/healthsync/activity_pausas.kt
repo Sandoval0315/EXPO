@@ -30,6 +30,8 @@ class activity_pausas : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pausas)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -42,7 +44,7 @@ class activity_pausas : AppCompatActivity() {
 
 
 
-        val regresar = findViewById<ImageButton>(R.id.imgBackk)
+        val regresar = findViewById<ImageView>(R.id.imgBackk)
         val siguientePantalla = findViewById<ImageView>(R.id.img_siguientePantalla)
 
         regresar.setOnClickListener{
