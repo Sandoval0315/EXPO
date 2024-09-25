@@ -21,6 +21,18 @@
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/_ce3e764_5cbc_42a8_9c15_c6e51d918f9b" />
 
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
     <EditText
         android:id="@+id/txtcode1"
         android:layout_width="59dp"
@@ -136,7 +148,7 @@
         android:layout_height="706dp"
         android:layout_marginTop="-150dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/emails_amico" />
@@ -151,8 +163,9 @@
         android:layout_marginBottom="249dp"
         android:fontFamily="@font/lexend_extrabold"
         android:text="INGRESA EL CODIGO DE VERIFICACION"
+        android:textAlignment="center"
         android:textColor="#454545"
-        android:textSize="34sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView52"
         app:layout_constraintEnd_toEndOf="@+id/imageView52"
         app:layout_constraintStart_toStartOf="@+id/imageView52"

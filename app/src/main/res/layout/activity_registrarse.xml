@@ -10,29 +10,46 @@
     tools:context=".registrarse">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView4"
         android:layout_width="517dp"
         android:layout_height="651dp"
-        android:layout_marginTop="352dp"
+        android:layout_marginTop="312dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.405"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_575a196_3b0d_4d62_aa9d_59fec22b5f1c" />
 
-    <TextView
-        android:id="@+id/txtContrasena"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
-        android:text="CONTRASEÑA"
+        android:imeOptions="actionDone"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:singleLine="true"
         android:textColor="#454545"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.727" />
+        app:layout_constraintVertical_bias="0.516" />
 
     <TextView
         android:id="@+id/txtConfirmarContrasena"
@@ -41,13 +58,63 @@
         android:fontFamily="@font/lexend"
         android:text="CONFIRMAR CONTRASEÑA"
         android:textColor="#454545"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.131"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.782" />
+
+    <TextView
+        android:id="@+id/txtContrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="CONTRASEÑA"
+        android:textColor="#454545"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.677" />
+
+    <EditText
+        android:id="@+id/txtCorreo"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/lexend"
+        android:imeOptions="actionDone"
+        android:inputType="textEmailAddress"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="#454545"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.831" />
+        app:layout_constraintVertical_bias="0.619" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend"
+        android:text="CORREO"
+        android:textColor="#454545"
+        android:textSize="13sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.569" />
 
     <TextView
         android:id="@+id/textView4"
@@ -57,90 +124,18 @@
         android:text="NOMBRE"
         android:textAlignment="viewStart"
         android:textColor="#454545"
-        android:textSize="16sp"
+        android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.114"
+        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.523" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
-        android:text="CORREO"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.113"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.621" />
-
-    <EditText
-        android:id="@+id/txtNombre"
-        android:layout_width="332dp"
-        android:layout_height="51dp"
-        android:background="@drawable/edittext_background"
-        android:fontFamily="@font/lexend"
-        android:imeOptions="actionDone"
-        android:maxLength="50"
-        android:padding="12dp"
-        android:singleLine="true"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.572" />
-
-    <EditText
-        android:id="@+id/txtCorreo"
-        android:layout_width="332dp"
-        android:layout_height="51dp"
-        android:background="@drawable/edittext_background"
-        android:fontFamily="@font/lexend"
-        android:imeOptions="actionDone"
-        android:inputType="textEmailAddress"
-        android:padding="12dp"
-        android:maxLength="50"
-        android:singleLine="true"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.676" />
-
-    <EditText
-        android:id="@+id/txtContraseña"
-        android:layout_width="332dp"
-        android:layout_height="51dp"
-        android:background="@drawable/edittext_background"
-        android:fontFamily="@font/lexend"
-        android:maxLength="50"
-    android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:padding="12dp"
-        android:singleLine="true"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.785" />
-
+        app:layout_constraintVertical_bias="0.468" />
 
     <EditText
         android:id="@+id/txtConfirmarContraseña"
         android:layout_width="332dp"
-        android:layout_height="51dp"
+        android:layout_height="50dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
         android:imeOptions="actionDone"
@@ -155,34 +150,54 @@
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.885" />
+        app:layout_constraintVertical_bias="0.845" />
 
-    <Button
-        android:id="@+id/btnIrAlLogin"
-        style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="202dp"
-        android:layout_height="58dp"
-
-        android:text="Iniciar Sesion"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:backgroundTint="#7663F2"
-        app:cornerRadius="20dp"
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnimationView2"
+        android:layout_width="462dp"
+        android:layout_height="347dp"
+        android:layout_marginTop="-150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.954" />
+        app:layout_constraintVertical_bias="0.16"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/registrarr" />
+
+
+    <EditText
+        android:id="@+id/txtContraseña"
+        android:layout_width="332dp"
+        android:layout_height="50dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/lexend"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:maxLength="50"
+        android:padding="12dp"
+        android:singleLine="true"
+        android:textColor="#454545"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733" />
 
     <Button
         android:id="@+id/btnRegistrarse"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="202dp"
-        android:layout_height="58dp"
-        android:text="CREAR CUENTA"
-        android:textColor="#454545"
-        android:textSize="16sp"
-        app:backgroundTint="#7663F2"
+        android:layout_height="55dp"
+        android:fontFamily="@font/lexend"
+        android:text="Registrarme"
+        android:textColor="#7663F2"
+        android:textSize="15.6sp"
+        app:backgroundTint="#D2CBEC"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -209,67 +224,48 @@
         android:id="@+id/imgVerContraseña"
         android:layout_width="31dp"
         android:layout_height="23dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.775"
+        android:layout_marginStart="282dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtContraseña"
+        app:layout_constraintEnd_toEndOf="@+id/txtContraseña"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/txtContraseña"
+        app:layout_constraintTop_toTopOf="@+id/txtContraseña"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ver" />
 
     <ImageView
         android:id="@+id/imgVerConfirmarContraseña"
         android:layout_width="31dp"
         android:layout_height="23dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.842"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.872"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="14dp"
+        app:layout_constraintBottom_toBottomOf="@+id/txtConfirmarContraseña"
+        app:layout_constraintEnd_toEndOf="@+id/txtConfirmarContraseña"
+        app:layout_constraintStart_toStartOf="@+id/txtConfirmarContraseña"
+        app:layout_constraintTop_toTopOf="@+id/txtConfirmarContraseña"
         app:srcCompat="@drawable/ver" />
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="275dp"
-        android:layout_height="44dp"
+        android:layout_width="378dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="72dp"
         android:fontFamily="@font/lexend_black"
-        android:text="REGISTRATE"
+        android:text="¡CREA TU CUENTA!"
         android:textColor="#454545"
-        android:textSize="40sp"
+        android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.248"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.46" />
-
-    <ImageView
-        android:id="@+id/imgVolveralPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="306dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/back" />
-
-    <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="569dp"
-        android:layout_height="530dp"
-        app:layout_constraintBottom_toTopOf="@+id/imageView4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.351"
-        app:lottie_autoPlay="true"
-        app:lottie_loop="true"
-        app:lottie_rawRes="@raw/registrarr" />
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintStart_toStartOf="@+id/imageView4"
+        app:layout_constraintTop_toBottomOf="@+id/lottieAnimationView2"
+        app:layout_constraintVertical_bias="0.003" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

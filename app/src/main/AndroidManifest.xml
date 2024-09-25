@@ -242,9 +242,7 @@
         <activity
             android:name=".activity_yoga1"
             android:exported="false" />
-        <activity
-            android:name=".editarPerfil"
-            android:exported="false" />
+
         <activity
             android:name=".cambiodeclave"
             android:exported="true" />
@@ -327,15 +325,11 @@
             android:name=".activity_tiempovascular"
             android:exported="false" />
         <activity
-            android:name=".activity_contador_pasos"
-            android:exported="false" />
-        <activity
             android:name=".activity_mapa_principal"
             android:exported="false" />
         <activity
             android:name=".activity_yoga"
             android:exported="false" />
-
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyDximuRbNYkzRBbt-GK5lkp3G-nvJqk1JA" />
@@ -344,9 +338,6 @@
             android:name=".Recuperacion"
             android:exported="true" />
         <activity
-            android:name=".ConfirmarPreguntas"
-            android:exported="false" />
-        <activity
             android:name=".activity_altaintensidad"
             android:exported="false" />
         <activity
@@ -354,7 +345,8 @@
             android:exported="false" />
         <activity
             android:name=".pregunta5"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".pregunta4"
             android:exported="false" />
@@ -363,17 +355,20 @@
             android:exported="true" />
         <activity
             android:name=".pregunta2"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".pregunta1"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".navigatioPrincipal"
             android:exported="false"
             android:label="@string/title_activity_navigatio_principal" />
         <activity
             android:name=".activity_alimentacion"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".Activity_rutinafuerza"
             android:exported="false"/>
@@ -389,7 +384,8 @@
             android:exported="false" />
         <activity
             android:name=".activity_Hidra_y_Alimen"
-            android:exported="false" />
+            android:exported="true" />
+
         <activity
             android:name=".LoadingActivity2"
             android:exported="false" />
@@ -404,12 +400,18 @@
             android:exported="false">
 
         </activity>
+
         <activity
             android:name=".LoadingActivity"
-            android:exported="false" />
+            android:exported="true"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="false" />
+        <activity
+            android:name=".EditarPerfil"
+            android:exported="false">
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

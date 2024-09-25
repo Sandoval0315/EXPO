@@ -17,6 +17,8 @@ class activity_runnig : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_runnig)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -25,7 +27,7 @@ class activity_runnig : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val imgregresarRRunning = findViewById<ImageView>(R.id.imgregresarRRunning)
+        val imgregresarRRunning = findViewById<ImageView>(R.id.imgBackk)
 
         imgregresarRRunning.setOnClickListener{
             val intent = Intent(this, navigatioPrincipal::class.java)

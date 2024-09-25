@@ -16,6 +16,8 @@ class activity_rutina_cardiovascular : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_rutina_cardiovascular)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -24,7 +26,7 @@ class activity_rutina_cardiovascular : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val imgregresarRCardiovascular = findViewById<ImageView>(R.id.imgregresarRCardiovascular)
+        val imgregresarRCardiovascular = findViewById<ImageView>(R.id.imgBackk)
         val btnempezarRC = findViewById<Button>(R.id.btnempezarRC)
 
 

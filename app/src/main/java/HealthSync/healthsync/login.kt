@@ -1,5 +1,4 @@
 package HealthSync.healthsync
-
 import Modelo.ClaseConexion
 import android.content.Intent
 import android.os.Bundle
@@ -13,15 +12,17 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.*
-
 import java.security.MessageDigest
-
 class login : AppCompatActivity() {
-
+    companion object {
+        lateinit var userEmail: String
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -32,8 +33,10 @@ class login : AppCompatActivity() {
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtClave = findViewById<EditText>(R.id.txtClave)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)
-        val imgBack = findViewById<ImageView>(R.id.imgBack1)
+        val imgBack = findViewById<ImageView>(R.id.imgBackk)
         val lbRecuperarC = findViewById<TextView>(R.id.lbRecuperarC)
+
+
 
         lbRecuperarC.setOnClickListener {
             val intent = Intent(this, Recuperacion::class.java)
@@ -52,6 +55,9 @@ class login : AppCompatActivity() {
             if (txtCorreo.isEmpty() || txtContraseña.isEmpty()) {
                 Toast.makeText(this, "Campos incompletos", Toast.LENGTH_SHORT).show()
             } else {
+                // Store the email in the companion object
+                userEmail = txtCorreo
+
                 GlobalScope.launch(Dispatchers.IO) {
                     val objConexion = ClaseConexion().CadenaConexion()
 
@@ -85,7 +91,8 @@ class login : AppCompatActivity() {
                     } else {
                         // Credenciales incorrectas
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@login, "La contraseña o el correo son incorrectos", Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@login, "La contraseña o el correo son incorrectos",
+                                Toast.LENGTH_SHORT).show()
                         }
                     }
                 }

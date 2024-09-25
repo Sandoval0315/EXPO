@@ -21,6 +21,7 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
 
+
     // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
@@ -38,7 +39,7 @@ class HomeFragment : Fragment() {
 
         val btncontadordepaso = root.findViewById<Button>(R.id.btncontadordepaso)
         val btnaliyhidra = root.findViewById<Button>(R.id.btn_ali_y_hidra)
-        val btnMapaGym = root.findViewById<Button>(R.id.btnMapaGym)
+        val btnMapaGym = root.findViewById<Button>(R.id.btnmapa)
         val btnproductividad = root.findViewById<Button>(R.id.btnproductividad)
         val btnmotivacion = root.findViewById<Button>(R.id.btnmotivacion)
         val btnmapa = root.findViewById<Button>(R.id.btnmapa)
