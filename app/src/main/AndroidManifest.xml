@@ -244,6 +244,13 @@
         <activity
             android:name=".activity_yoga1"
             android:exported="false" />
+
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+
         <activity
             android:name=".cambiodeclave"
             android:exported="true" />
@@ -394,12 +401,7 @@
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
         </activity>
         <activity
             android:name=".LoadingActivity"

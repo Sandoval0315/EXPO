@@ -35,12 +35,6 @@ class activity_yoga11 : AppCompatActivity() {
 
         val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
-        regresaraInicio.setOnClickListener{
-            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
-            startActivity(intent)
-        }
-
-
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt15segY11)
         pauseButton = findViewById(R.id.img15segY11)
