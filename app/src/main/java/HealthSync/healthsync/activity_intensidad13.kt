@@ -37,7 +37,7 @@ class activity_intensidad13 : AppCompatActivity() {
         val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
         regresaraInicio.setOnClickListener{
-            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            val intent = Intent(this, activity_altaintensidad::class.java)
             startActivity(intent)
         }
 

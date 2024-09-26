@@ -7,6 +7,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -32,13 +33,8 @@ class activity_intensidad15 : AppCompatActivity() {
             insets
         }
         supportActionBar?.hide()
-        //Nos manda al inicio de la rutina (Boton para atras)
-        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
-        regresaraInicio.setOnClickListener{
-            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
-            startActivity(intent)
-        }
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt30segIn15)
@@ -63,6 +59,25 @@ class activity_intensidad15 : AppCompatActivity() {
                 isPaused = true
             }
         }
+        regresaraInicio.setOnClickListener {
+            mostrarDialogoConfirmacion()
+        }
+    }
+
+    private fun mostrarDialogoConfirmacion() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("¿Regresar a la pantalla anterior?")
+        builder.setMessage("Tu tiempo de actividad no se guardará")
+        builder.setPositiveButton("Sí") { dialog, which ->
+            val intent = Intent(this, activity_altaintensidad::class.java)
+            startActivity(intent) // Inicia la actividad deseada
+            finish() // Cierra la actividad actual
+        }
+        builder.setNegativeButton("No") { dialog, which ->
+            dialog.dismiss() // Cierra el diálogo sin realizar acción
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     private fun createCountDownTimer(timeInMillis: Long): CountDownTimer {
