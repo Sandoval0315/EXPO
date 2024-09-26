@@ -55,7 +55,7 @@ class login : AppCompatActivity() {
             if (txtCorreo.isEmpty() || txtContraseña.isEmpty()) {
                 Toast.makeText(this, "Campos incompletos", Toast.LENGTH_SHORT).show()
             } else {
-                // Store the email in the companion object
+                // Aqui se guarda el correo del usuario que inició sesión
                 userEmail = txtCorreo
 
                 GlobalScope.launch(Dispatchers.IO) {
