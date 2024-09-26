@@ -135,7 +135,7 @@
         app:layout_constraintVertical_bias="0.433" />
 
     <TextView
-        android:id="@+id/textView69"
+        android:id="@+id/txt_Desayuno"
         android:layout_width="177dp"
         android:layout_height="46dp"
         android:text="Realiza 10 repeticiones de sentadillas."
