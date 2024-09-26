@@ -390,6 +390,8 @@
         <activity
             android:name=".registrarse"
             android:exported="false" />
+        <activity android:name=".activity_desayunar"
+            android:exported="false" />
         <activity
             android:name=".Bienvenida"
             android:exported="true">
