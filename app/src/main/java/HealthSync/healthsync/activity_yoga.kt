@@ -29,7 +29,6 @@ class activity_yoga : AppCompatActivity() {
 
         imgregresarRYoga.setOnClickListener{
             val intent = Intent(this, navigatioPrincipal::class.java)
-            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
 
