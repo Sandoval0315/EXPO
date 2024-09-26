@@ -37,6 +37,10 @@ class navigatioPrincipal : AppCompatActivity() {
             navController.navigate(R.id.rutinas)
         }
 
+        if (intent.getBooleanExtra("ir_al_home", false)) {
+            navController.navigate(R.id.inicio)
+        }
+
 
     }
 }
