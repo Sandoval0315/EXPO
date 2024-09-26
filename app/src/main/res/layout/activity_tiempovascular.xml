@@ -8,6 +8,18 @@
     tools:context=".activity_tiempovascular">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView66"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,18 +40,6 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView66"
         app:layout_constraintVertical_bias="0.283"
         app:srcCompat="@drawable/fondomaspequenoclaro" />
-
-    <ImageButton
-        android:id="@+id/imgbtnregresarRtprincipal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/imageView68"

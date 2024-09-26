@@ -21,6 +21,8 @@ class login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_login)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -31,8 +33,10 @@ class login : AppCompatActivity() {
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtClave = findViewById<EditText>(R.id.txtClave)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)
-        val imgBack = findViewById<ImageView>(R.id.imgBack1)
+        val imgBack = findViewById<ImageView>(R.id.imgBackk)
         val lbRecuperarC = findViewById<TextView>(R.id.lbRecuperarC)
+
+
 
         lbRecuperarC.setOnClickListener {
             val intent = Intent(this, Recuperacion::class.java)

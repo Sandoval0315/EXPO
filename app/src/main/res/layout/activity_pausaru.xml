@@ -7,17 +7,17 @@
     android:layout_height="match_parent"
     tools:context=".activity_pausaru">
 
-    <ImageButton
-        android:id="@+id/btnregresarpausaru"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
+        app:layout_constraintHorizontal_bias="0.041"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/back"/>
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/imageView254"
