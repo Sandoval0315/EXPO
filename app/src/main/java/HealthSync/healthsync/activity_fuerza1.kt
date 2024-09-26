@@ -6,6 +6,7 @@ import android.os.CountDownTimer
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -15,9 +16,8 @@ class activity_fuerza1 : AppCompatActivity() {
     private lateinit var txtTimer: TextView
     private lateinit var pauseButton: ImageView
     private var countDownTimer: CountDownTimer? = null
-    private var timeRemaining: Long = 60000 // 30 seg en milisegundos
+    private var timeRemaining: Long = 60000 // 1 minuto en milisegundos
     private var isPaused: Boolean = false
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -33,16 +33,8 @@ class activity_fuerza1 : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-
-        //Nos manda al inicio de la rutina (Boton para atras)
-        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
-
-        regresaraInicio.setOnClickListener{
-            val intent = Intent(this, Activity_rutinafuerza::class.java)
-            startActivity(intent)
-        }
-
         // Referencias a los elementos en el layout
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
         txtTimer = findViewById(R.id.txt1minfuerza1)
         pauseButton = findViewById(R.id.img1minfuerza1)
 
@@ -65,7 +57,29 @@ class activity_fuerza1 : AppCompatActivity() {
                 isPaused = true
             }
         }
+
+        // Configurar el botón de regreso
+        regresaraInicio.setOnClickListener {
+            mostrarDialogoConfirmacion()
+        }
     }
+
+    private fun mostrarDialogoConfirmacion() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("¿Regresar a la pantalla anterior?")
+        builder.setMessage("Tu tiempo de actividad no se guardará")
+        builder.setPositiveButton("Sí") { dialog, which ->
+            val intent = Intent(this, Activity_rutinafuerza::class.java)
+            startActivity(intent) // Inicia la actividad deseada
+            finish() // Cierra la actividad actual
+        }
+        builder.setNegativeButton("No") { dialog, which ->
+            dialog.dismiss() // Cierra el diálogo sin realizar acción
+        }
+        val dialog = builder.create()
+        dialog.show()
+    }
+
 
     private fun createCountDownTimer(timeInMillis: Long): CountDownTimer {
         return object : CountDownTimer(timeInMillis, 1000) {
@@ -84,9 +98,9 @@ class activity_fuerza1 : AppCompatActivity() {
                 finish()
             }
         }
-
     }
-    //para pausar el tiempo automatico cuando sin cambia de pantalla
+
+    // Para pausar el tiempo automático cuando se cambia de pantalla
     override fun onPause() {
         super.onPause()
         countDownTimer?.cancel()
