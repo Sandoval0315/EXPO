@@ -33,7 +33,7 @@ class activity_pausaf : AppCompatActivity() {
 
         //Nos manda al inicio de la rutina (Boton para atras)
         val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
-        
+
 
 
         // Referencias a los elementos en el layout
