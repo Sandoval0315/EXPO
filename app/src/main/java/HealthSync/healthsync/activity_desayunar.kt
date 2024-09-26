@@ -1,5 +1,6 @@
 package HealthSync.healthsync
 
+import Modelo.ClaseConexion
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,4 +22,11 @@ class activity_desayunar : AppCompatActivity() {
         supportActionBar?.hide()
 
     }
+
+    
+
+
+
+
+
 }
