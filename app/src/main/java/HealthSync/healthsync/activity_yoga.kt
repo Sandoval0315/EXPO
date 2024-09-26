@@ -15,6 +15,8 @@ class activity_yoga : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_yoga)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -22,7 +24,7 @@ class activity_yoga : AppCompatActivity() {
         }
         supportActionBar?.hide()
 
-        val imgregresarRYoga = findViewById<ImageView>(R.id.imgregresarRYoga)
+        val imgregresarRYoga = findViewById<ImageView>(R.id.imgBackk)
         val siguiente = findViewById<Button>(R.id.btnparamientras)
 
         imgregresarRYoga.setOnClickListener{
@@ -32,7 +34,7 @@ class activity_yoga : AppCompatActivity() {
         }
 
         siguiente.setOnClickListener{
-            val intent = Intent(this, activity_tiempovascular::class.java)
+            val intent = Intent(this, activity_yoga1::class.java)
             startActivity(intent)
         }
 

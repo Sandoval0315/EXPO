@@ -8,13 +8,27 @@
     tools:context=".activity_pantallafinalderitmo">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView105"
         android:layout_width="348dp"
         android:layout_height="818dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
         app:srcCompat="@drawable/fondoclaromediano" />
 
     <TextView
@@ -45,8 +59,8 @@
 
     <ImageView
         android:id="@+id/imageView108"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView105"
         app:layout_constraintEnd_toEndOf="@+id/imageView105"
         app:layout_constraintHorizontal_bias="0.087"
@@ -57,14 +71,14 @@
 
     <ImageView
         android:id="@+id/imageView109"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView105"
         app:layout_constraintEnd_toEndOf="@+id/imageView105"
-        app:layout_constraintHorizontal_bias="0.106"
+        app:layout_constraintHorizontal_bias="0.086"
         app:layout_constraintStart_toStartOf="@+id/imageView105"
         app:layout_constraintTop_toTopOf="@+id/imageView105"
-        app:layout_constraintVertical_bias="0.82"
+        app:layout_constraintVertical_bias="0.793"
         app:srcCompat="@drawable/relojchiquito" />
 
     <TextView
@@ -73,7 +87,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="90"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView105"
         app:layout_constraintEnd_toEndOf="@+id/imageView105"
         app:layout_constraintHorizontal_bias="0.243"
@@ -87,13 +101,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="CALORIAS PERDIDADS"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView105"
         app:layout_constraintEnd_toEndOf="@+id/imageView105"
-        app:layout_constraintHorizontal_bias="0.407"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="@+id/imageView105"
         app:layout_constraintTop_toBottomOf="@+id/imageView107"
-        app:layout_constraintVertical_bias="0.325" />
+        app:layout_constraintVertical_bias="0.326" />
 
     <TextView
         android:id="@+id/textView73"
@@ -101,25 +115,23 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="12m"
-        android:textSize="20dp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView105"
         app:layout_constraintEnd_toEndOf="@+id/imageView105"
-        app:layout_constraintHorizontal_bias="0.329"
+        app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="@+id/imageView105"
         app:layout_constraintTop_toBottomOf="@+id/imageView107"
-        app:layout_constraintVertical_bias="0.55" />
+        app:layout_constraintVertical_bias="0.519" />
 
-    <TextView
-        android:id="@+id/textView74"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/lexend"
-        android:text="100"
-        android:textSize="20dp"
+    <Button
+        android:id="@+id/btnFinalRunnig"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
+        android:text="Siguiente"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView105"
-        app:layout_constraintEnd_toEndOf="@+id/imageView105"
-        app:layout_constraintHorizontal_bias="0.329"
-        app:layout_constraintStart_toStartOf="@+id/imageView105"
-        app:layout_constraintTop_toBottomOf="@+id/imageView107"
-        app:layout_constraintVertical_bias="0.605" />
+        app:layout_constraintTop_toTopOf="@+id/imageView105"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="125dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -5,9 +5,21 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2CBEC"
+    android:background="#454545"
     tools:context=".activity_mapa">
 
+
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/mapView"
@@ -17,19 +29,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/mapa_regresar"
-        android:layout_width="57dp"
-        android:layout_height="53dp"
-        android:background="#00D2CBEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.04"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028"
-        app:srcCompat="@drawable/back" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

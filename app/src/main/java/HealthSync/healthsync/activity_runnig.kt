@@ -17,6 +17,8 @@ class activity_runnig : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_runnig)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -25,7 +27,7 @@ class activity_runnig : AppCompatActivity() {
 
         supportActionBar?.hide()
 
-        val imgregresarRRunning = findViewById<ImageView>(R.id.imgregresarRRunning)
+        val imgregresarRRunning = findViewById<ImageView>(R.id.imgBackk)
 
         imgregresarRRunning.setOnClickListener{
             val intent = Intent(this, navigatioPrincipal::class.java)
@@ -36,7 +38,7 @@ class activity_runnig : AppCompatActivity() {
         //Nos manda a la pantalla de ritmo lento (Caminar con ritmo lento)
         val button = findViewById<Button>(R.id.btn_runnigrts)
         button.setOnClickListener {
-            val intent = Intent(this, activity_ritmolento::class.java)
+            val intent = Intent(this, activity_runnig1::class.java)
             startActivity(intent)
         }
     }

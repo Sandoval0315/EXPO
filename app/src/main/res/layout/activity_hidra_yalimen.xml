@@ -5,8 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2CBEC"
+    android:background="#FFFFFF"
     tools:context=".activity_Hidra_y_Alimen">
+
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/imageView9"
@@ -19,26 +31,14 @@
         app:layout_constraintVertical_bias="0.058"
         app:srcCompat="@drawable/hidra_y_alimen" />
 
-    <ImageButton
-        android:id="@+id/btnsalir"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#D2CBEC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.002"
-        app:srcCompat="@drawable/back" />
-
     <Button
         android:id="@+id/btnalimentacion"
-        android:layout_width="331dp"
-        android:layout_height="123dp"
+        android:layout_width="351dp"
+        android:layout_height="130dp"
         android:drawableRight="@drawable/alimentacion"
         android:fontFamily="@font/lexend"
         android:text="Alimementacion"
+        android:textSize="16sp"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,11 +49,12 @@
 
     <Button
         android:id="@+id/btnhidratacion"
-        android:layout_width="331dp"
-        android:layout_height="123dp"
+        android:layout_width="351dp"
+        android:layout_height="130dp"
         android:drawableRight="@drawable/hidratacion"
         android:fontFamily="@font/lexend"
         android:text="Hidratacion"
+        android:textSize="16sp"
         app:cornerRadius="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

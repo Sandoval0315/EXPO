@@ -5,8 +5,20 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D2CBEC"
+    android:background="#FFFFFF"
     tools:context=".activity_alimentacion">
+
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -29,19 +41,6 @@
                 app:layout_constraintVertical_bias="0.058"
                 app:srcCompat="@drawable/dieta" />
 
-            <ImageButton
-                android:id="@+id/btnsalirdealimen"
-                android:layout_width="54dp"
-                android:layout_height="64dp"
-                android:background="#D2CBEC"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.017"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.016"
-                app:srcCompat="@drawable/back" />
-
             <LinearLayout
                 android:layout_width="434dp"
                 android:layout_height="530dp"
@@ -52,14 +51,6 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.935">
-
-                <TextView
-                    android:id="@+id/textView14"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/lexend"
-                    android:text="Horario de Alimentacion"
-                    android:textSize="30dp" />
 
                 <Button
                     android:id="@+id/btnmenudesayuno"

@@ -2,10 +2,10 @@ package HealthSync.healthsync.ui.home
 
 import HealthSync.healthsync.R
 import HealthSync.healthsync.activity_Hidra_y_Alimen
-import HealthSync.healthsync.activity_contador_pasos
 import HealthSync.healthsync.activity_mapa
 import HealthSync.healthsync.activity_mapa_principal
 import HealthSync.healthsync.activity_rutinas
+import HealthSync.healthsync.activity_stepCounter
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -20,6 +20,7 @@ import android.widget.Button
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -38,13 +39,13 @@ class HomeFragment : Fragment() {
 
         val btncontadordepaso = root.findViewById<Button>(R.id.btncontadordepaso)
         val btnaliyhidra = root.findViewById<Button>(R.id.btn_ali_y_hidra)
-        val btnMapaGym = root.findViewById<Button>(R.id.btnMapaGym)
+        val btnMapaGym = root.findViewById<Button>(R.id.btnmapa)
         val btnproductividad = root.findViewById<Button>(R.id.btnproductividad)
         val btnmotivacion = root.findViewById<Button>(R.id.btnmotivacion)
         val btnmapa = root.findViewById<Button>(R.id.btnmapa)
 
         btncontadordepaso.setOnClickListener {
-            val intent = Intent(requireContext(), activity_contador_pasos::class.java)
+            val intent = Intent(requireContext(), activity_stepCounter::class.java)
             startActivity(intent)
         }
         btnaliyhidra.setOnClickListener {

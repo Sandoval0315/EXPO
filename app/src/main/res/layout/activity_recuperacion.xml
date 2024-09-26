@@ -9,12 +9,23 @@
     tools:context=".Recuperacion">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView32"
-        android:layout_width="449dp"
-        android:layout_height="518dp"
+        android:layout_width="422dp"
+        android:layout_height="513dp"
         android:layout_marginTop="380dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/_393a651_2dc4_4e86_a69c_dbc29d8b0982" />
@@ -22,10 +33,10 @@
     <EditText
         android:id="@+id/txtCorreoR"
         android:layout_width="332dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="58dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="43dp"
         android:layout_marginTop="235dp"
-        android:layout_marginEnd="30dp"
+        android:layout_marginEnd="46dp"
         android:layout_marginBottom="232dp"
         android:background="@drawable/edittext_background"
         android:fontFamily="@font/lexend"
@@ -36,19 +47,19 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView32"
         app:layout_constraintEnd_toEndOf="@+id/imageView32"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/imageView32"
-        app:layout_constraintTop_toTopOf="@+id/imageView32" />
+        app:layout_constraintTop_toTopOf="@+id/imageView32"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/btnRecuperarC"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="150dp"
-        android:layout_height="70dp"
+        android:layout_height="55dp"
 
-        android:layout_marginStart="74dp"
+        android:layout_marginStart="136dp"
         android:layout_marginTop="189dp"
-        android:layout_marginEnd="150dp"
+        android:layout_marginEnd="136dp"
         android:layout_marginBottom="65dp"
         android:text="Recuperar"
         android:textColor="#7663F2"
@@ -56,10 +67,9 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView32"
         app:layout_constraintEnd_toEndOf="@+id/imageView32"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/imageView32"
         app:layout_constraintTop_toTopOf="@+id/imageView32"
-        app:layout_constraintVertical_bias="0.685" />
+        app:layout_constraintVertical_bias="0.705" />
 
     <TextView
         android:id="@+id/textView5"
@@ -78,8 +88,8 @@
 
     <TextView
         android:id="@+id/textView39"
-        android:layout_width="363dp"
-        android:layout_height="102dp"
+        android:layout_width="357dp"
+        android:layout_height="77dp"
         android:layout_marginStart="57dp"
         android:layout_marginTop="23dp"
         android:layout_marginEnd="80dp"
@@ -87,33 +97,24 @@
         android:fontFamily="@font/lexend_extrabold"
         android:text="RECUPERACION&#xA;DE CONTRASEÑA"
         android:textColor="#454545"
-        android:textSize="34sp"
+        android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView32"
         app:layout_constraintEnd_toEndOf="@+id/imageView32"
-        app:layout_constraintHorizontal_bias="0.215"
+        app:layout_constraintHorizontal_bias="0.347"
         app:layout_constraintStart_toStartOf="@+id/imageView32"
         app:layout_constraintTop_toTopOf="@+id/imageView32"
-        app:layout_constraintVertical_bias="0.321" />
-
-    <ImageView
-        android:id="@+id/imgVolveralPerfil"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="306dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.038"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/back" />
+        app:layout_constraintVertical_bias="0.324" />
 
     <com.airbnb.lottie.LottieAnimationView
         android:layout_width="454dp"
         android:layout_height="372dp"
+        android:layout_marginBottom="8dp"
         app:layout_constraintBottom_toTopOf="@+id/imageView32"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
         app:lottie_autoPlay="true"
         app:lottie_loop="true"
         app:lottie_rawRes="@raw/perfil" />

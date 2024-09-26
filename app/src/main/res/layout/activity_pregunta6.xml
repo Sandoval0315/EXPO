@@ -92,8 +92,10 @@
 
     <EditText
         android:id="@+id/txtExperiencia"
-        android:layout_width="274dp"
-        android:layout_height="93dp"
+        android:layout_width="351dp"
+        android:layout_height="65dp"
+
+        android:background="@drawable/edittext_background"
         android:ems="10"
         android:inputType="number"
         app:layout_constraintBottom_toBottomOf="parent"

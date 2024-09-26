@@ -123,7 +123,7 @@
         app:layout_constraintVertical_bias="0.834" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnFinalAltaintensidad"
         style="@style/Widget.MaterialComponents.Button.TextButton"
         android:layout_width="156dp"
         android:layout_height="59dp"

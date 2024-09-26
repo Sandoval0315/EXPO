@@ -14,16 +14,21 @@ class activity_rutinafinalizada : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_rutinafinalizada)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        val regresar = findViewById<Button>(R.id.btnFinal)
+        supportActionBar?.hide()
 
-        regresar.setOnClickListener{
-            val intent = Intent(this, DashboardFragment::class.java)
+        val btnFinCardio = findViewById<Button>(R.id.btnFinalCardiovascular)
+
+        btnFinCardio.setOnClickListener{
+            val intent = Intent(this, navigatioPrincipal::class.java)
+            intent.putExtra("ir_a_agregar_rutinas", true)
             startActivity(intent)
         }
     }

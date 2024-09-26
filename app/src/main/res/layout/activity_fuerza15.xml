@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_fuerza15">
+
+
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
+        android:id="@+id/imageView235"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.247"
+        app:srcCompat="@drawable/fondoclaropequeno"  />
+
+    <ImageView
+        android:id="@+id/imageView236"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/zancadarara"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView235"
+        app:layout_constraintEnd_toEndOf="@+id/imageView235"
+        app:layout_constraintStart_toStartOf="@+id/imageView235"
+        app:layout_constraintTop_toTopOf="@+id/imageView235"
+        app:layout_constraintVertical_bias="0.27"   />
+
+    <TextView
+        android:id="@+id/textView160"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="REALIZA ZANCADAS "
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView235"
+        app:layout_constraintEnd_toEndOf="@+id/imageView235"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/imageView235"
+        app:layout_constraintTop_toTopOf="@+id/imageView235"
+        app:layout_constraintVertical_bias="0.923"  />
+
+    <ImageView
+        android:id="@+id/imageView237"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.789"
+        app:srcCompat="@drawable/fondomaspequenoclaro"/>
+
+    <ImageButton
+        android:id="@+id/img30segF15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView237"
+        app:layout_constraintEnd_toEndOf="@+id/imageView237"
+        app:layout_constraintStart_toStartOf="@+id/imageView237"
+        app:layout_constraintTop_toTopOf="@+id/imageView237"
+        app:layout_constraintHorizontal_bias="0.904"
+        app:layout_constraintVertical_bias="0.899"
+        app:srcCompat="@drawable/pausa_png" />
+
+    <TextView
+        android:id="@+id/txt30segF15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/lexend_black"
+        android:text="00:30"
+        android:textSize="48sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView237"
+        app:layout_constraintEnd_toEndOf="@+id/imageView237"
+        app:layout_constraintStart_toStartOf="@+id/imageView237"
+        app:layout_constraintTop_toTopOf="@+id/imageView237" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
