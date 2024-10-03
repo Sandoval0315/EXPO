@@ -391,7 +391,7 @@
         <activity
             android:name=".registrarse"
             android:exported="false" />
-        <activity android:name=".activity_desayunar"
+        <activity android:name=".comiedasDieta"
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
