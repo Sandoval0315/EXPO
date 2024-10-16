@@ -15,6 +15,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import HealthSync.healthsync.databinding.FragmentHomeBinding
+import HealthSync.healthsync.rutinas_intesas
 import android.content.Intent
 import android.widget.Button
 
@@ -44,6 +45,7 @@ class HomeFragment : Fragment() {
         val btnproductividad = root.findViewById<Button>(R.id.btnproductividad)
         val btnmotivacion = root.findViewById<Button>(R.id.btnmotivacion)
         val btnmapa = root.findViewById<Button>(R.id.btnmapa)
+        val btnrutnasintensas = root.findViewById<Button>(R.id.btnrutnasintensas)
 
         btncontadordepaso.setOnClickListener {
             val intent = Intent(requireContext(), activity_stepCounter::class.java)
@@ -71,6 +73,12 @@ class HomeFragment : Fragment() {
         btnmapa.setOnClickListener {
             val intent = Intent(requireContext(), activity_mapa_principal::class.java)
             startActivity(intent)
+        }
+
+        btnrutnasintensas.setOnClickListener {
+            val intent = Intent(requireContext(), rutinas_intesas::class.java)
+            startActivity(intent)
+
         }
 
         return root

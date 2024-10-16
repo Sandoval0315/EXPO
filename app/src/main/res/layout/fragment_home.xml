@@ -100,6 +100,14 @@
                     app:cornerRadius="35dp" />
 
                 <Button
+                    android:id="@+id/btnrutnasintensas"
+                    android:layout_width="331dp"
+                    android:layout_height="123dp"
+                    android:drawableRight="@drawable/heartrate"
+                    android:text="Rutinas Intensas"
+                    app:cornerRadius="35dp" />
+
+                <Button
                     android:id="@+id/btnmotivacion"
                     android:layout_width="331dp"
                     android:layout_height="123dp"
@@ -125,7 +133,7 @@
                 android:id="@+id/buttonsroll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="890dp"
+                android:layout_marginTop="898dp"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="189dp" />
 

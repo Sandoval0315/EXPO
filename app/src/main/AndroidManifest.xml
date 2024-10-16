@@ -26,6 +26,9 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".rutinas_intesas"
+            android:exported="false" />
+        <activity
             android:name=".Consejos"
             android:exported="false" />
         <activity
@@ -244,7 +247,6 @@
         <activity
             android:name=".activity_yoga1"
             android:exported="false" />
-
         <activity
             android:name=".cambiodeclave"
             android:exported="true" />
@@ -275,17 +277,13 @@
         <activity
             android:name=".activity_runnig"
             android:exported="false"
-            android:theme="@style/Theme.HealthSync">
-
-        </activity>
+            android:theme="@style/Theme.HealthSync"></activity>
         <activity
             android:name=".activity_pararunnig"
             android:exported="false" />
         <activity
             android:name=".activity_rutinafinalizadafuerza"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".activity_plancha"
             android:exported="false" />
@@ -361,9 +359,7 @@
         <activity
             android:name=".navigatioPrincipal"
             android:exported="false"
-            android:label="@string/title_activity_navigatio_principal">
-
-        </activity>
+            android:label="@string/title_activity_navigatio_principal"></activity>
         <activity
             android:name=".activity_alimentacion"
             android:exported="true" />
@@ -391,7 +387,8 @@
         <activity
             android:name=".registrarse"
             android:exported="false" />
-        <activity android:name=".comiedasDieta"
+        <activity
+            android:name=".comiedasDieta"
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
@@ -402,8 +399,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".LoadingActivity"
             android:exported="true" />
@@ -412,9 +407,7 @@
             android:exported="false" />
         <activity
             android:name=".EditarPerfil"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
