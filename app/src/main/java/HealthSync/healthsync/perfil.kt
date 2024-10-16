@@ -37,6 +37,7 @@ class perfil : Fragment() {
         val txtPeso = root.findViewById<TextView>(R.id.txtPeso)
         val txtIMC = root.findViewById<TextView>(R.id.txtIMC)
         val imgEditarPerfil = root.findViewById<ImageView>(R.id.imgEditarPerfil)
+        val imgVolver = root.findViewById<ImageView>(R.id.imgCerrarSesion)
 
         // Obtener el correo del usuario que inició sesión
         val userEmail = login.userEmail
@@ -75,6 +76,11 @@ class perfil : Fragment() {
 
         imgEditarPerfil.setOnClickListener {
             val intent = Intent(requireContext(), EditarPerfil::class.java)
+            startActivity(intent)
+        }
+
+        imgVolver.setOnClickListener {
+            val intent = Intent(requireContext(), login::class.java)
             startActivity(intent)
         }
 

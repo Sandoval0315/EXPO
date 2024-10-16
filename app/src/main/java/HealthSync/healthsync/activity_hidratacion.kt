@@ -19,6 +19,7 @@ class activity_hidratacion : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_hidratacion)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -27,7 +28,7 @@ class activity_hidratacion : AppCompatActivity() {
         // ocultar barra de arriba
         supportActionBar?.hide()
 
-        val btnsalirdehidra = findViewById<ImageButton>(R.id.btnsalirdehidra)
+        val btnsalirdehidra = findViewById<ImageView>(R.id.imgBackk)
         val imgEditar = findViewById<ImageView>(R.id.imgEditarHidra)
         val txtVasos = findViewById<TextView>(R.id.txtMetaDiaria)
 

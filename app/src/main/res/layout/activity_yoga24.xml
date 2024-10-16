@@ -8,6 +8,18 @@
     tools:context=".activity_finalyoga">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView170"
         android:layout_width="348dp"
         android:layout_height="818dp"
@@ -15,7 +27,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/fondoclaromediano"  />
+        app:layout_constraintVertical_bias="0.16000003"
+        app:srcCompat="@drawable/fondoclaromediano" />
 
     <TextView
         android:id="@+id/textView131"
@@ -46,7 +59,7 @@
     <Button
         android:id="@+id/btnFinalYoga"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="156dp"
+        android:layout_width="160dp"
         android:layout_height="59dp"
 
         android:text="SIGUIENTE"
@@ -56,21 +69,22 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView170"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
+        app:layout_constraintHorizontal_bias="0.494"
         app:layout_constraintStart_toStartOf="@+id/imageView170"
         app:layout_constraintTop_toTopOf="@+id/imageView170"
-        app:layout_constraintVertical_bias="0.864" />
+        app:layout_constraintVertical_bias="1.0" />
 
     <ImageView
         android:id="@+id/imageView172"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
         android:src="@drawable/relojchiquito"
         app:layout_constraintBottom_toBottomOf="@+id/imageView170"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
-        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintHorizontal_bias="0.055"
         app:layout_constraintStart_toStartOf="@+id/imageView170"
         app:layout_constraintTop_toTopOf="@+id/imageView170"
-        app:layout_constraintVertical_bias="0.746" />
+        app:layout_constraintVertical_bias="0.78" />
 
     <TextView
         android:id="@+id/textView132"
@@ -78,13 +92,13 @@
         android:layout_height="23dp"
         android:fontFamily="@font/lexend"
         android:text="15M"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalYoga"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toEndOf="@+id/imageView172"
         app:layout_constraintTop_toBottomOf="@+id/imageView171"
-        app:layout_constraintVertical_bias="0.657" />
+        app:layout_constraintVertical_bias="0.526" />
 
     <TextView
         android:id="@+id/textView133"
@@ -92,13 +106,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="DE TIEMPO ESTIMADO"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/btnFinalYoga"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
-        app:layout_constraintHorizontal_bias="0.034"
+        app:layout_constraintHorizontal_bias="0.141"
         app:layout_constraintStart_toEndOf="@+id/imageView172"
         app:layout_constraintTop_toBottomOf="@+id/imageView171"
-        app:layout_constraintVertical_bias="0.781" />
+        app:layout_constraintVertical_bias="0.604" />
 
     <TextView
         android:id="@+id/textView134"
@@ -106,13 +120,14 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="ESPERAMOS QUE TE"
-        android:textSize="13sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView132"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
-        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="@+id/imageView170"
         app:layout_constraintTop_toBottomOf="@+id/imageView171"
-        app:layout_constraintVertical_bias="0.643" />
+        app:layout_constraintVertical_bias="0.423" />
 
     <TextView
         android:id="@+id/textView135"
@@ -120,11 +135,12 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="HAYAS RELAJADO"
-        android:textSize="13sp"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView132"
         app:layout_constraintEnd_toEndOf="@+id/imageView170"
-        app:layout_constraintHorizontal_bias="0.396"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="@+id/imageView170"
         app:layout_constraintTop_toBottomOf="@+id/imageView171"
-        app:layout_constraintVertical_bias="0.821" />
+        app:layout_constraintVertical_bias="0.63" />
 </androidx.constraintlayout.widget.ConstraintLayout>

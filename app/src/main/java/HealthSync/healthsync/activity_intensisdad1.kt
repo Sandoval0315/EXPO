@@ -7,6 +7,7 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -24,6 +25,8 @@ class activity_intensisdad1 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_intensisdad1)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -33,12 +36,9 @@ class activity_intensisdad1 : AppCompatActivity() {
         //ocultar barra de arriba
         supportActionBar?.hide()
 
-        val regresarIntensidad = findViewById<ImageButton>(R.id.btnregresarIntensidad)
+        val regresarIntensidad = findViewById<ImageView>(R.id.imgBackk)
 
-        regresarIntensidad.setOnClickListener{
-            val intent = Intent(this, activity_altaintensidad::class.java)
-            startActivity(intent)
-        }
+
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt1minIntensiad1)
@@ -63,6 +63,25 @@ class activity_intensisdad1 : AppCompatActivity() {
                 isPaused = true
             }
         }
+        regresarIntensidad.setOnClickListener {
+            mostrarDialogoConfirmacion()
+        }
+    }
+
+    private fun mostrarDialogoConfirmacion() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("¿Regresar a la pantalla anterior?")
+        builder.setMessage("Tu tiempo de actividad no se guardará")
+        builder.setPositiveButton("Sí") { dialog, which ->
+            val intent = Intent(this, activity_altaintensidad::class.java)
+            startActivity(intent) // Inicia la actividad deseada
+            finish() // Cierra la actividad actual
+        }
+        builder.setNegativeButton("No") { dialog, which ->
+            dialog.dismiss() // Cierra el diálogo sin realizar acción
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     private fun createCountDownTimer(timeInMillis: Long): CountDownTimer {

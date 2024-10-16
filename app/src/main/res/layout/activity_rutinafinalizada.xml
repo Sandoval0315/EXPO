@@ -8,6 +8,17 @@
     tools:context=".activity_rutinafinalizada">
 
 
+    <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
 
     <ImageView
         android:id="@+id/imageView29"
@@ -15,8 +26,10 @@
         android:layout_height="818dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.166"
         app:srcCompat="@drawable/fondoclaromediano" />
 
     <TextView
@@ -48,14 +61,14 @@
 
     <ImageView
         android:id="@+id/imageView86"
-        android:layout_width="34dp"
-        android:layout_height="35dp"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
         app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="@+id/imageView29"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
-        app:layout_constraintVertical_bias="0.425"
+        app:layout_constraintVertical_bias="0.44"
         app:srcCompat="@drawable/relojchiquito" />
 
     <TextView
@@ -64,13 +77,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="CALORIAS PERDIDAS"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.228"
+        app:layout_constraintHorizontal_bias="0.128"
         app:layout_constraintStart_toEndOf="@+id/imageView67"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
-        app:layout_constraintVertical_bias="0.209" />
+        app:layout_constraintVertical_bias="0.227" />
 
     <TextView
         android:id="@+id/textView57"
@@ -78,13 +91,13 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="130"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.127"
+        app:layout_constraintHorizontal_bias="0.057"
         app:layout_constraintStart_toEndOf="@+id/imageView67"
         app:layout_constraintTop_toBottomOf="@+id/imageView45"
-        app:layout_constraintVertical_bias="0.158" />
+        app:layout_constraintVertical_bias="0.163" />
 
     <TextView
         android:id="@+id/textView58"
@@ -92,10 +105,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="DE TIEMPO ESTIMADO"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.236"
+        app:layout_constraintHorizontal_bias="0.121"
         app:layout_constraintStart_toEndOf="@+id/imageView86"
         app:layout_constraintTop_toBottomOf="@+id/textView59"
         app:layout_constraintVertical_bias="0.0" />
@@ -106,19 +119,19 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:text="10M"
-        android:textSize="13sp"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.054"
         app:layout_constraintStart_toEndOf="@+id/imageView86"
         app:layout_constraintTop_toBottomOf="@+id/textView56"
-        app:layout_constraintVertical_bias="0.2" />
+        app:layout_constraintVertical_bias="0.164" />
 
     <Button
         android:id="@+id/btnFinalCardiovascular"
         style="@style/Widget.MaterialComponents.Button.TextButton"
-        android:layout_width="156dp"
-        android:layout_height="59dp"
+        android:layout_width="160dp"
+        android:layout_height="55dp"
 
         android:text="SIGUIENTE"
         android:textColor="#FFFFFF"
@@ -127,20 +140,20 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.801" />
+        app:layout_constraintVertical_bias="0.897" />
 
     <ImageView
         android:id="@+id/imageView67"
-        android:layout_width="34dp"
-        android:layout_height="34dp"
+        android:layout_width="40sp"
+        android:layout_height="40sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView29"
         app:layout_constraintEnd_toEndOf="@+id/imageView29"
-        app:layout_constraintHorizontal_bias="0.082"
+        app:layout_constraintHorizontal_bias="0.084"
         app:layout_constraintStart_toStartOf="@+id/imageView29"
         app:layout_constraintTop_toTopOf="@+id/imageView29"
-        app:layout_constraintVertical_bias="0.649"
+        app:layout_constraintVertical_bias="0.659"
         app:srcCompat="@drawable/calorias" />
 </androidx.constraintlayout.widget.ConstraintLayout>

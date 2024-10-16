@@ -26,6 +26,9 @@
         android:theme="@style/Theme.HealthSync"
         tools:targetApi="31">
         <activity
+            android:name=".Consejos"
+            android:exported="false" />
+        <activity
             android:name=".activity_intensidad23"
             android:exported="false" />
         <activity
@@ -90,8 +93,7 @@
             android:exported="false" />
         <activity
             android:name=".activity_runnig1"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".activity_fuerza23"
             android:exported="false" />
@@ -274,13 +276,16 @@
             android:name=".activity_runnig"
             android:exported="false"
             android:theme="@style/Theme.HealthSync">
+
         </activity>
         <activity
             android:name=".activity_pararunnig"
             android:exported="false" />
         <activity
             android:name=".activity_rutinafinalizadafuerza"
-            android:exported="false" />
+            android:exported="true">
+
+        </activity>
         <activity
             android:name=".activity_plancha"
             android:exported="false" />
@@ -319,9 +324,6 @@
             android:name=".activity_tiempovascular"
             android:exported="false" />
         <activity
-            android:name=".activity_contador_pasos"
-            android:exported="false" />
-        <activity
             android:name=".activity_mapa_principal"
             android:exported="false" />
         <activity
@@ -336,9 +338,6 @@
             android:name=".Recuperacion"
             android:exported="true" />
         <activity
-            android:name=".ConfirmarPreguntas"
-            android:exported="false" />
-        <activity
             android:name=".activity_altaintensidad"
             android:exported="false" />
         <activity
@@ -346,7 +345,7 @@
             android:exported="false" />
         <activity
             android:name=".pregunta5"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".pregunta4"
             android:exported="false" />
@@ -355,21 +354,22 @@
             android:exported="true" />
         <activity
             android:name=".pregunta2"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".pregunta1"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".navigatioPrincipal"
             android:exported="false"
-            android:label="@string/title_activity_navigatio_principal" />
+            android:label="@string/title_activity_navigatio_principal">
+
+        </activity>
         <activity
             android:name=".activity_alimentacion"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Activity_rutinafuerza"
-            android:exported="false"/>
-
+            android:exported="false" />
         <activity
             android:name=".activity_hidratacion"
             android:exported="false" />
@@ -381,7 +381,7 @@
             android:exported="false" />
         <activity
             android:name=".activity_Hidra_y_Alimen"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".LoadingActivity2"
             android:exported="false" />
@@ -390,6 +390,8 @@
             android:exported="false" />
         <activity
             android:name=".registrarse"
+            android:exported="false" />
+        <activity android:name=".comiedasDieta"
             android:exported="false" />
         <activity
             android:name=".Bienvenida"
@@ -400,15 +402,18 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
         <activity
             android:name=".LoadingActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".EditarPerfil"
             android:exported="false">
+
         </activity>
 
         <meta-data

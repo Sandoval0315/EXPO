@@ -6,6 +6,7 @@ import android.os.CountDownTimer
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -23,6 +24,8 @@ class activity_runnig5 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_runnig5)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -31,12 +34,8 @@ class activity_runnig5 : AppCompatActivity() {
         supportActionBar?.hide()
 
         //Nos manda al inicio de la rutina (Boton para atras)
-        val regresaraInicio = findViewById<ImageView>(R.id.btnregresararunnig5)
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
-        regresaraInicio.setOnClickListener{
-            val intent = Intent(this, activity_runnig::class.java)
-            startActivity(intent)
-        }
 
         // Referencias a los elementos en el layout
         txtTimer = findViewById(R.id.txt45segrunnig5)
@@ -61,6 +60,25 @@ class activity_runnig5 : AppCompatActivity() {
                 isPaused = true
             }
         }
+        regresaraInicio.setOnClickListener {
+            mostrarDialogoConfirmacion()
+        }
+    }
+
+    private fun mostrarDialogoConfirmacion() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("¿Regresar a la pantalla anterior?")
+        builder.setMessage("Tu tiempo de actividad no se guardará")
+        builder.setPositiveButton("Sí") { dialog, which ->
+            val intent = Intent(this, activity_runnig::class.java)
+            startActivity(intent) // Inicia la actividad deseada
+            finish() // Cierra la actividad actual
+        }
+        builder.setNegativeButton("No") { dialog, which ->
+            dialog.dismiss() // Cierra el diálogo sin realizar acción
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     private fun createCountDownTimer(timeInMillis: Long): CountDownTimer {

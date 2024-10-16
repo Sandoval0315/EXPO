@@ -8,6 +8,18 @@
     tools:context=".activity_yoga12">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView143"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,18 +42,6 @@
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/btnimgyoga12"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/back" />
-
-    <ImageButton
         android:id="@+id/img15segY12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -59,6 +59,7 @@
         android:layout_height="68dp"
         android:fontFamily="@font/lexend_black"
         android:text="ARQUEA LA ESPALDA HACIA ABAJO"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView143"
         app:layout_constraintEnd_toEndOf="@+id/imageView143"

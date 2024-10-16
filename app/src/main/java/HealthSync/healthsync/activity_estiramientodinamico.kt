@@ -26,6 +26,7 @@ class activity_estiramientodinamico : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_estiramientodinamico)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -35,7 +36,7 @@ class activity_estiramientodinamico : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val regresarpausa = findViewById<ImageButton>(R.id.imgbuttonregresarpausa)
+        val regresarpausa = findViewById<ImageButton>(R.id.imgBackk)
 
         regresarpausa.setOnClickListener{
             val intent = Intent(this, activity_pausas::class.java)

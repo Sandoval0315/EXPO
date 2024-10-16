@@ -1,5 +1,6 @@
 package HealthSync.healthsync.ui.home
 
+import HealthSync.healthsync.Consejos
 import HealthSync.healthsync.R
 import HealthSync.healthsync.activity_Hidra_y_Alimen
 import HealthSync.healthsync.activity_mapa
@@ -20,6 +21,7 @@ import android.widget.Button
 class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
+
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -61,10 +63,10 @@ class HomeFragment : Fragment() {
             val intent = Intent(requireContext(), ::class.java)
             startActivity(intent)
         }*/
-        //btnmotivacion.setOnClickListener {
-            /*/val intent = Intent(requireContext(), activity_::class.java)
+        btnmotivacion.setOnClickListener {
+            val intent = Intent(requireContext(), Consejos::class.java)
             startActivity(intent)
-        }*/
+        }
 
         btnmapa.setOnClickListener {
             val intent = Intent(requireContext(), activity_mapa_principal::class.java)

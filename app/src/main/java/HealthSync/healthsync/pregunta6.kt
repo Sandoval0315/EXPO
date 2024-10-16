@@ -1,4 +1,5 @@
 package HealthSync.healthsync
+
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -21,6 +22,7 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.math.pow
+
 class pregunta6 : AppCompatActivity() {
     companion object {
         lateinit var experienciaSeleccionada: String
@@ -33,13 +35,14 @@ class pregunta6 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_pregunta6)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
 
-        //ocultar barra de arriba
+        // Ocultar barra de arriba
         supportActionBar?.hide()
 
         btnSiguiente = findViewById(R.id.btnSiguiente)
@@ -49,13 +52,30 @@ class pregunta6 : AppCompatActivity() {
         // Inicialmente ocultar el botón
         btnSiguiente.visibility = View.GONE
 
+        // Agregar un TextWatcher para controlar la entrada de texto
         txtExperiencia.addTextChangedListener(object : TextWatcher {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable?) {
-                experienciaSeleccionada = s.toString()
-                // Mostrar el botón solo si hay texto
-                btnSiguiente.visibility = if (s.isNullOrEmpty()) View.GONE else View.VISIBLE
+                // Convertir el texto a un número entero
+                val experiencia = s.toString().toIntOrNull()
+
+                when {
+                    // Si el campo está vacío, ocultar el botón
+                    s.isNullOrEmpty() -> {
+                        btnSiguiente.visibility = View.GONE
+                    }
+                    // Si el número está entre 1 y 10, mostrar el botón y guardar la experiencia
+                    experiencia in 1..10 -> {
+                        btnSiguiente.visibility = View.VISIBLE
+                        experienciaSeleccionada = experiencia.toString()
+                    }
+                    // Si el número es 0 o mayor que 10, mostrar un mensaje y ocultar el botón
+                    else -> {
+                        Toast.makeText(this@pregunta6, "Ingresa un nivel de experiencia válido", Toast.LENGTH_SHORT).show()
+                        btnSiguiente.visibility = View.GONE
+                    }
+                }
             }
         })
 
@@ -71,7 +91,7 @@ class pregunta6 : AppCompatActivity() {
 
                 // Obtener el último idExperiencia insertado
                 val obtenerIdExperiencia = objConexion?.prepareStatement("SELECT MAX(idExperiencia) FROM Experiencia")
-                    val resultSetExperiencia = obtenerIdExperiencia?.executeQuery()
+                val resultSetExperiencia = obtenerIdExperiencia?.executeQuery()
                 var idExperiencia: Int = -1
                 if (resultSetExperiencia?.next() == true) {
                     idExperiencia = resultSetExperiencia.getInt(1)
@@ -79,7 +99,7 @@ class pregunta6 : AppCompatActivity() {
 
                 // Obtener el último idUsuario a partir del correo más reciente
                 val obtenerIdUsuario = objConexion?.prepareStatement("SELECT idUsuario FROM Usuarios WHERE correo = (SELECT MAX(correo) FROM Usuarios)")
-                    val resultSetUsuario = obtenerIdUsuario?.executeQuery()
+                val resultSetUsuario = obtenerIdUsuario?.executeQuery()
                 var idUsuario: Int = -1
                 if (resultSetUsuario?.next() == true) {
                     idUsuario = resultSetUsuario.getInt(1)
@@ -110,6 +130,7 @@ class pregunta6 : AppCompatActivity() {
                 }
             }
         }
+
         btnAtras.setOnClickListener {
             val intent = Intent(this, pregunta5::class.java)
             startActivity(intent)

@@ -6,6 +6,7 @@ import android.os.CountDownTimer
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -22,6 +23,7 @@ class activity_timepovascular13 : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_timepovascular13)
+        window.statusBarColor = resources.getColor(R.color.colorOnSecondary, theme)
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -29,12 +31,8 @@ class activity_timepovascular13 : AppCompatActivity() {
         }
 
         //Nos manda al inicio de la rutina (Boton para atras)
-        val regresaraInicio = findViewById<ImageView>(R.id.btnimgvascular13)
+        val regresaraInicio = findViewById<ImageView>(R.id.imgBackk)
 
-        regresaraInicio.setOnClickListener{
-            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
-            startActivity(intent)
-        }
 
         supportActionBar?.hide()
         // Referencias a los elementos en el layout
@@ -60,6 +58,26 @@ class activity_timepovascular13 : AppCompatActivity() {
                 isPaused = true
             }
         }
+
+        regresaraInicio.setOnClickListener {
+            mostrarDialogoConfirmacion()
+        }
+    }
+
+    private fun mostrarDialogoConfirmacion() {
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("¿Regresar a la pantalla anterior?")
+        builder.setMessage("Tu tiempo de actividad no se guardará")
+        builder.setPositiveButton("Sí") { dialog, which ->
+            val intent = Intent(this, activity_rutina_cardiovascular::class.java)
+            startActivity(intent) // Inicia la actividad deseada
+            finish() // Cierra la actividad actual
+        }
+        builder.setNegativeButton("No") { dialog, which ->
+            dialog.dismiss() // Cierra el diálogo sin realizar acción
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
 
     private fun createCountDownTimer(timeInMillis: Long): CountDownTimer {

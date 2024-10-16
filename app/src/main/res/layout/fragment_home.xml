@@ -75,6 +75,7 @@
                     android:layout_width="331dp"
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/_5ca4bf7_74b3_47b8_8c29_1c93b5eeaaf4"
+                    android:fontFamily="@font/lexend"
                     android:text="Contador de Pasos Realizados "
                     app:cornerRadius="35dp" />
 
@@ -83,7 +84,9 @@
                     android:layout_width="331dp"
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/hidratacion"
+                    android:fontFamily="@font/lexend"
                     android:text="Salud, Hidratacion y Alimentacion"
+                    android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
                 <Button
@@ -91,7 +94,9 @@
                     android:layout_width="331dp"
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/productividad"
+                    android:fontFamily="@font/lexend"
                     android:text="Tiempo de actividad"
+                    android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
                 <Button
@@ -99,7 +104,9 @@
                     android:layout_width="331dp"
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/motivacion"
+                    android:fontFamily="@font/lexend"
                     android:text="Motivacion y consejos "
+                    android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
                 <Button
@@ -107,7 +114,9 @@
                     android:layout_width="331dp"
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/mapa"
+                    android:fontFamily="@font/lexend"
                     android:text="Mapa gymlocation"
+                    android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
             </LinearLayout>

@@ -17,6 +17,8 @@ class Activity_rutinafuerza : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_rutinafuerza)
+        window.statusBarColor = resources.getColor(R.color.colorPrimaryVariant, theme)
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -26,7 +28,7 @@ class Activity_rutinafuerza : AppCompatActivity() {
         supportActionBar?.hide()
 
 
-        val imgregresarRFuerza = findViewById<ImageView>(R.id.imgregresarRFuerza)
+        val imgregresarRFuerza = findViewById<ImageView>(R.id.imgBackk)
         val btnfuerza = findViewById<Button>(R.id.btn_rtsFuerza)
 
         imgregresarRFuerza.setOnClickListener{

@@ -8,6 +8,18 @@
     tools:context=".activity_yoga17">
 
     <ImageView
+        android:id="@+id/imgBackk"
+        android:layout_width="22dp"
+        android:layout_height="21dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.017"
+        app:srcCompat="@drawable/back" />
+
+    <ImageView
         android:id="@+id/imageView155"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -30,18 +42,6 @@
         app:srcCompat="@drawable/fondomaspequenoclaro" />
 
     <ImageButton
-        android:id="@+id/btnimgyoga17"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintHorizontal_bias="0.083"
-        app:layout_constraintVertical_bias="0.046"
-        app:srcCompat="@drawable/back" />
-
-    <ImageButton
         android:id="@+id/img15segY17"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -55,10 +55,11 @@
 
     <TextView
         android:id="@+id/textView124"
-        android:layout_width="304dp"
-        android:layout_height="90dp"
+        android:layout_width="301dp"
+        android:layout_height="57dp"
         android:fontFamily="@font/lexend_black"
         android:text="ESTIRATE HACIA UN LADO PARA EXHALAR"
+        android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView155"
         app:layout_constraintEnd_toEndOf="@+id/imageView155"
