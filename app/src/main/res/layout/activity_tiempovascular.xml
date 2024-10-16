@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -58,7 +58,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_black"
         android:text="SALTOS CONTINUOS "
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView66"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"

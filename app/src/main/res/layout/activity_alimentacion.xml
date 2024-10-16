@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -26,17 +26,18 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+
             <ImageView
                 android:id="@+id/imageView12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.476"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.058"
+                app:layout_constraintVertical_bias="0.157"
                 app:srcCompat="@drawable/dieta" />
-
 
             <Button
                 android:id="@+id/btnmenudesayuno"
@@ -44,7 +45,7 @@
                 android:layout_height="97dp"
                 android:drawableRight="@drawable/desayuno"
                 android:gravity="center_horizontal|center_vertical"
-                android:text="Menú de desayunos"
+                android:text="Menú de Alimentos"
                 app:cornerRadius="35dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"

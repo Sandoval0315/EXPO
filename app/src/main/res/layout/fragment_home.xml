@@ -85,7 +85,7 @@
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/hidratacion"
                     android:fontFamily="@font/lexend"
-                    android:text="Salud, Hidratacion y Alimentacion"
+                    android:text="Salud, Hidratación y Alimentación"
                     android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
@@ -105,7 +105,7 @@
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/motivacion"
                     android:fontFamily="@font/lexend"
-                    android:text="Motivacion y consejos "
+                    android:text="Motivación y consejos "
                     android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
@@ -115,7 +115,7 @@
                     android:layout_height="123dp"
                     android:drawableRight="@drawable/mapa"
                     android:fontFamily="@font/lexend"
-                    android:text="Mapa gymlocation"
+                    android:text="Mapa de gimnasios"
                     android:textSize="14sp"
                     app:cornerRadius="35dp" />
 
@@ -125,7 +125,7 @@
                 android:id="@+id/buttonsroll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="850dp"
+                android:layout_marginTop="890dp"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:layout_editor_absoluteX="189dp" />
 

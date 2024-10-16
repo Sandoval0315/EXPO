@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="52dp"
+        android:layout_height="48dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -58,7 +58,7 @@
         android:layout_width="289dp"
         android:layout_height="114dp"
         android:fontFamily="@font/lexend_black"
-        android:text="SIÉNTATE EN UNA POSICÍON CÓMODA CON LA ESPALDA RECTA Y LOS HOMBROS RELAJADOS"
+        android:text="SIÉNTATE EN UNA POSICIÓN CÓMODA CON LA ESPALDA RECTA Y LOS HOMBROS RELAJADOS"
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView173"

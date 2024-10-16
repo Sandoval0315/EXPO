@@ -21,8 +21,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="38dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -179,8 +179,8 @@
         app:layout_constraintVertical_bias="0.948" />
 
     <com.airbnb.lottie.LottieAnimationView
-        android:layout_width="626dp"
-        android:layout_height="476dp"
+        android:layout_width="632dp"
+        android:layout_height="472dp"
         android:layout_marginTop="-40dp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -198,7 +198,7 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
         android:lineSpacingExtra="12sp"
-        android:text="OLVIDASTE TU CONTRASEÑA?"
+        android:text="¿OLVIDASTE TU CONTRASEÑA?"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

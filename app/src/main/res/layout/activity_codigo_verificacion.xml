@@ -23,14 +23,14 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="41dp"
+        android:layout_height="39dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.041"
+        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017"
+        app:layout_constraintVertical_bias="0.018"
         app:srcCompat="@drawable/back" />
 
     <EditText
@@ -148,7 +148,7 @@
         android:layout_height="706dp"
         android:layout_marginTop="-150dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/emails_amico" />
@@ -162,7 +162,7 @@
         android:layout_marginEnd="138dp"
         android:layout_marginBottom="249dp"
         android:fontFamily="@font/lexend_extrabold"
-        android:text="INGRESA EL CODIGO DE VERIFICACION"
+        android:text="Ingresa el código de verificación."
         android:textAlignment="center"
         android:textColor="#454545"
         android:textSize="28sp"

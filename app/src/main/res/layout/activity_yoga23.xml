@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="45dp"
+        android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -46,7 +46,7 @@
         android:layout_width="275dp"
         android:layout_height="73dp"
         android:fontFamily="@font/lexend_black"
-        android:text="CIERRA LOS OJOS MIENTRAS TE RESPIRAS PROFUNDAMENTE"
+        android:text="CIERRA LOS OJOS MIENTRAS TE RESPIRAS PROFUNDAMENTE."
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView168"

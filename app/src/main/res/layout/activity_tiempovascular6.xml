@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="42dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -54,17 +54,17 @@
 
     <TextView
         android:id="@+id/textView142"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="283dp"
+        android:layout_height="79dp"
         android:fontFamily="@font/lexend_black"
         android:text="CAMINA A RITMO LENTO"
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView185"
         app:layout_constraintEnd_toEndOf="@+id/imageView185"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="@+id/imageView185"
         app:layout_constraintTop_toTopOf="@+id/imageView185"
-        app:layout_constraintVertical_bias="0.886"  />
+        app:layout_constraintVertical_bias="0.944" />
 
     <ImageButton
         android:id="@+id/img30segT6"

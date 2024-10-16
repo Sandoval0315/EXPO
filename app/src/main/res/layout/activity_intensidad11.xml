@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="52dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -71,7 +71,7 @@
         android:layout_height="66dp"
         android:fontFamily="@font/lexend_black"
         android:text="REALIZA SENTADILLAS CON SALTO"
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView292"
         app:layout_constraintEnd_toEndOf="@+id/imageView292"
         app:layout_constraintHorizontal_bias="0.502"
