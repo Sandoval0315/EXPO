@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="44dp"
+        android:layout_height="45dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -58,7 +58,7 @@
         android:layout_width="282dp"
         android:layout_height="89dp"
         android:fontFamily="@font/lexend_black"
-        android:text="CIERRAS LOS OJOS Y LLEVA TU ATENCION A LA RESPIRACION"
+        android:text="CIERRAS LOS OJOS Y LLEVA TU ATENCIÓN A LA RESPIRACIÓN."
         android:textAlignment="center"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView133"

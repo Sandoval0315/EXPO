@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="53dp"
+        android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -66,12 +66,12 @@
 
     <TextView
         android:id="@+id/textView167"
-        android:layout_width="262dp"
-        android:layout_height="62dp"
+        android:layout_width="296dp"
+        android:layout_height="101dp"
         android:fontFamily="@font/lexend_black"
         android:text="CORRE RAPIDAMENTE UN TU ESPACIO"
         android:textAlignment="center"
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView259"
         app:layout_constraintEnd_toEndOf="@+id/imageView259"
         app:layout_constraintStart_toStartOf="@+id/imageView259"

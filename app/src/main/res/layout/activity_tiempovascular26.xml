@@ -9,8 +9,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="51dp"
+        android:layout_height="50dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -43,17 +43,17 @@
 
     <TextView
         android:id="@+id/textView151"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="298dp"
+        android:layout_height="78dp"
         android:fontFamily="@font/lexend_black"
         android:text="ESTIRAMIENTO DINAMICO"
-        android:textSize="20sp"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView209"
         app:layout_constraintEnd_toEndOf="@+id/imageView209"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.44"
         app:layout_constraintStart_toStartOf="@+id/imageView209"
         app:layout_constraintTop_toTopOf="@+id/imageView209"
-        app:layout_constraintVertical_bias="0.886" />
+        app:layout_constraintVertical_bias="0.935" />
 
     <ImageView
         android:id="@+id/imageView211"

@@ -11,7 +11,7 @@
         android:id="@+id/imageView8"
         android:layout_width="1282dp"
         android:layout_height="1126dp"
-        android:layout_marginBottom="172dp"
+        android:layout_marginBottom="148dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -19,8 +19,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="51dp"
+        android:layout_height="49dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -40,10 +40,10 @@
         android:textSize="32sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.294"
+        app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.141" />
 
     <TextView
         android:id="@+id/lbRutinaFuerza"
@@ -56,10 +56,10 @@
         android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintHorizontal_bias="0.152"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.051" />
+        app:layout_constraintVertical_bias="0.08" />
 
     <TextView
         android:id="@+id/textView14"
@@ -71,17 +71,17 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="174dp" />
+        tools:layout_editor_absoluteY="198dp" />
 
     <ImageView
         android:id="@+id/imageView17"
         android:layout_width="60dp"
         android:layout_height="47dp"
-        android:layout_marginStart="56dp"
+        android:layout_marginStart="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.198"
+        app:layout_constraintVertical_bias="0.228"
         app:srcCompat="@drawable/salto" />
 
     <TextView
@@ -96,14 +96,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="251dp" />
+        tools:layout_editor_absoluteY="271dp" />
 
     <Button
         android:id="@+id/btnempezarRC"
-        android:layout_width="160dp"
-        android:layout_height="55dp"
+        android:layout_width="188dp"
+        android:layout_height="67dp"
         android:layout_marginTop="37dp"
         android:text="Empezar"
+        android:textSize="20dp"
         app:cornerRadius="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,11 +114,11 @@
         android:id="@+id/textView67"
         android:layout_width="219dp"
         android:layout_height="37dp"
-        android:layout_marginTop="320dp"
+        android:layout_marginTop="344dp"
         android:text="Corre en el lugar lo más rápido, durante 30 segundos."
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.656"
+        app:layout_constraintHorizontal_bias="0.645"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -129,10 +130,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintHorizontal_bias="0.704"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.433" />
+        app:layout_constraintVertical_bias="0.468" />
 
     <TextView
         android:id="@+id/txt_Desayuno"
@@ -142,10 +143,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/btnempezarRC"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.604" />
+        app:layout_constraintVertical_bias="0.627" />
 
     <TextView
         android:id="@+id/textView70"
@@ -155,10 +156,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
+        app:layout_constraintVertical_bias="0.614" />
 
     <TextView
         android:id="@+id/textView71"
@@ -171,7 +172,7 @@
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.662" />
+        app:layout_constraintVertical_bias="0.68" />
 
     <TextView
         android:id="@+id/textView72"
@@ -181,40 +182,40 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.649"
+        app:layout_constraintHorizontal_bias="0.639"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.751" />
+        app:layout_constraintVertical_bias="0.777" />
 
     <ImageView
         android:id="@+id/imageView121"
         android:layout_width="64dp"
         android:layout_height="66dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.158"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/brazosypiernas"
-        tools:layout_editor_absoluteY="637dp" />
+        tools:layout_editor_absoluteY="659dp" />
 
     <ImageView
         android:id="@+id/imageView122"
         android:layout_width="55dp"
         android:layout_height="53dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintHorizontal_bias="0.151"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/caminar2"
-        tools:layout_editor_absoluteY="311dp" />
+        tools:layout_editor_absoluteY="329dp" />
 
     <ImageView
         android:id="@+id/imageView123"
         android:layout_width="59dp"
         android:layout_height="61dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/caminar"
-        tools:layout_editor_absoluteY="373dp" />
+        tools:layout_editor_absoluteY="396dp" />
 
     <ImageView
         android:id="@+id/imageView124"
@@ -222,19 +223,19 @@
         android:layout_height="54dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintHorizontal_bias="0.156"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.515"
+        app:layout_constraintVertical_bias="0.543"
         app:srcCompat="@drawable/sentadillas" />
 
     <ImageView
         android:id="@+id/imageView126"
         android:layout_width="60dp"
         android:layout_height="58dp"
-        android:layout_marginTop="508dp"
+        android:layout_marginTop="532dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.156"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/flexiones" />
@@ -243,9 +244,9 @@
         android:id="@+id/imageView127"
         android:layout_width="59dp"
         android:layout_height="64dp"
-        android:layout_marginTop="232dp"
+        android:layout_marginTop="264dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.161"
+        app:layout_constraintHorizontal_bias="0.159"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/brazosypiernas" />
@@ -259,7 +260,7 @@
         app:layout_constraintHorizontal_bias="0.157"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.832"
+        app:layout_constraintVertical_bias="0.855"
         app:srcCompat="@drawable/caminar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

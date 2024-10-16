@@ -106,7 +106,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend"
-        android:text="CORREO"
+        android:text="CORREO ELECTRONICO"
         android:textColor="#454545"
         android:textSize="13sp"
         app:layout_constraintBottom_toBottomOf="parent"

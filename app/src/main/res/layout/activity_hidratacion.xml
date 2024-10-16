@@ -48,8 +48,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="51dp"
+        android:layout_height="52dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -63,7 +63,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_extrabold"
-        android:text="Horario "
+        android:text="Horario de"
         android:textAlignment="center"
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -105,7 +105,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintHorizontal_bias="0.774"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.778" />
@@ -133,7 +133,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="14sp"
         android:fontFamily="@font/lexend"
-        android:text="Proximo vaso"
+        android:text="Próximo vaso"
         android:textColor="#3C3939"
         android:textColorLink="#504949"
         android:textSize="16sp"
@@ -165,7 +165,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_semibold"
-        android:text="Meta Diaria"
+        android:text="Metas Diaria"
         android:textSize="30dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -176,8 +176,8 @@
 
     <ImageView
         android:id="@+id/imgEditarHidra"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
+        android:layout_width="45dp"
+        android:layout_height="53dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.955"
@@ -192,11 +192,10 @@
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_black"
         android:text="TextView"
-        android:textSize="40sp"
+        android:textSize="34sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.468"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="526dp"
-        tools:text="de Hidratacion" />
+        tools:layout_editor_absoluteY="541dp"
+        tools:text="Hidratacion" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

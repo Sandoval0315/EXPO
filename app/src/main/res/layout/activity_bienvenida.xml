@@ -90,7 +90,7 @@
 
         android:layout_marginTop="28dp"
         android:text="Acceder"
-        android:textColor="#FEFFFF"
+        android:textColor="#7663F2"
         app:backgroundTint="#D2CBEC"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="47dp"
+        android:layout_height="43dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -47,14 +47,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/lexend_black"
-        android:text="REALIZA ZANCADAS "
-        android:textSize="20sp"
+        android:text="Realiza Zancadas"
+        android:textSize="28sp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView235"
         app:layout_constraintEnd_toEndOf="@+id/imageView235"
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="@+id/imageView235"
         app:layout_constraintTop_toTopOf="@+id/imageView235"
-        app:layout_constraintVertical_bias="0.923"  />
+        app:layout_constraintVertical_bias="0.923" />
 
     <ImageView
         android:id="@+id/imageView237"

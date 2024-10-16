@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/imgBackk"
-        android:layout_width="22dp"
-        android:layout_height="21dp"
+        android:layout_width="37dp"
+        android:layout_height="43dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.041"
@@ -42,7 +42,7 @@
         android:layout_width="279dp"
         android:layout_height="63dp"
         android:fontFamily="@font/lexend_extrabold"
-        android:text="BUSCA TU GIMNASIO MAS CERCANO "
+        android:text="BUSCA TU GIMNASIO MÁS CERCANO "
         android:textColor="#7663F2"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
