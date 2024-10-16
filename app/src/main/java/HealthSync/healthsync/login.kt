@@ -13,10 +13,12 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import kotlinx.coroutines.*
 import java.security.MessageDigest
+
 class login : AppCompatActivity() {
     companion object {
         lateinit var userEmail: String
     }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,15 +30,13 @@ class login : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-        //ocultar barra de arriba
+
         supportActionBar?.hide()
         val txtCorreo = findViewById<EditText>(R.id.txtCorreo)
         val txtClave = findViewById<EditText>(R.id.txtClave)
         val btnAcceder = findViewById<Button>(R.id.btnAcceder)
         val imgBack = findViewById<ImageView>(R.id.imgBackk)
         val lbRecuperarC = findViewById<TextView>(R.id.lbRecuperarC)
-
-
 
         lbRecuperarC.setOnClickListener {
             val intent = Intent(this, Recuperacion::class.java)
@@ -55,44 +55,44 @@ class login : AppCompatActivity() {
             if (txtCorreo.isEmpty() || txtContraseña.isEmpty()) {
                 Toast.makeText(this, "Campos incompletos", Toast.LENGTH_SHORT).show()
             } else {
-                // Aqui se guarda el correo del usuario que inició sesión
                 userEmail = txtCorreo
 
                 GlobalScope.launch(Dispatchers.IO) {
                     val objConexion = ClaseConexion().CadenaConexion()
 
-                    // Verificar las credenciales en la tabla Usuarios
-                    val queryUsuarios = "SELECT * FROM Usuarios WHERE correo = ? AND clave = ?"
+                    val queryUsuarios = "SELECT u.*, tu.idRol FROM Usuarios u INNER JOIN tipoUsuarios tu ON u.idRol = tu.idRol WHERE u.correo = ? AND u.clave = ?"
                     val stmtUsuarios = objConexion?.prepareStatement(queryUsuarios)
                     stmtUsuarios?.setString(1, txtCorreo)
                     stmtUsuarios?.setString(2, txtContraseña)
                     val resultadoUsuarios = stmtUsuarios?.executeQuery()
 
                     if (resultadoUsuarios?.next() == true) {
-                        // Si las credenciales son correctas, verificar si existe un registro en Cliente
-                        val queryCliente = "SELECT * FROM Cliente WHERE idUsuario = ?"
-                        val stmtCliente = objConexion?.prepareStatement(queryCliente)
-                        stmtCliente?.setInt(1, resultadoUsuarios.getInt("idUsuario"))
-                        val resultadoCliente = stmtCliente?.executeQuery()
+                        val idRol = resultadoUsuarios.getInt("idRol")
+                        if (idRol == 4) {
+                            val queryCliente = "SELECT * FROM Cliente WHERE idUsuario = ?"
+                            val stmtCliente = objConexion?.prepareStatement(queryCliente)
+                            stmtCliente?.setInt(1, resultadoUsuarios.getInt("idUsuario"))
+                            val resultadoCliente = stmtCliente?.executeQuery()
 
-                        if (resultadoCliente?.next() == true) {
-                            // Si existe un registro en Cliente, navegar a NavigationPrincipal
-                            withContext(Dispatchers.Main) {
-                                val intent = Intent(this@login, navigatioPrincipal::class.java)
-                                startActivity(intent)
+                            if (resultadoCliente?.next() == true) {
+                                withContext(Dispatchers.Main) {
+                                    val intent = Intent(this@login, navigatioPrincipal::class.java)
+                                    startActivity(intent)
+                                }
+                            } else {
+                                withContext(Dispatchers.Main) {
+                                    val intent = Intent(this@login, LoadingActivity2::class.java)
+                                    startActivity(intent)
+                                }
                             }
                         } else {
-                            // Si no existe registro en Cliente, continuar con el flujo normal
                             withContext(Dispatchers.Main) {
-                                val intent = Intent(this@login, LoadingActivity2::class.java)
-                                startActivity(intent)
+                                Toast.makeText(this@login, "Credenciales inválidas", Toast.LENGTH_SHORT).show()
                             }
                         }
                     } else {
-                        // Credenciales incorrectas
                         withContext(Dispatchers.Main) {
-                            Toast.makeText(this@login, "La contraseña o el correo son incorrectos",
-                                Toast.LENGTH_SHORT).show()
+                            Toast.makeText(this@login, "La contraseña o el correo son incorrectos", Toast.LENGTH_SHORT).show()
                         }
                     }
                 }
@@ -100,7 +100,6 @@ class login : AppCompatActivity() {
         }
     }
 
-    // Método para hashear la contraseña con SHA-256
     private fun hashPassword(password: String): String {
         val bytes = password.toByteArray()
         val md = MessageDigest.getInstance("SHA-256")
