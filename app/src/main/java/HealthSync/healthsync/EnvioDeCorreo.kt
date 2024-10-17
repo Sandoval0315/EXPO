@@ -18,8 +18,10 @@ suspend fun enviarCorreo(receptor: String, sujeto: String, mensaje: String) = wi
         put("mail.smtp.host", "smtp.gmail.com")
         put("mail.smtp.port", "587") // Puerto TLS estándar
         put("mail.smtp.auth", "true")
-        put("mail.smtp.starttls.enable", "true") // Habilitar STARTTLS
-        put("mail.smtp.ssl.protocols", "TLSv1.2") // Especificar versión de TLS
+        // Habilitar STARTTLS
+        put("mail.smtp.starttls.enable", "true")
+        // Especificar versión de TLS
+        put("mail.smtp.ssl.protocols", "TLSv1.2")
         put("mail.smtp.ssl.trust", "smtp.gmail.com")
     }
 
