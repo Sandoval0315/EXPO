@@ -20,6 +20,8 @@ class rutinas_intesas : AppCompatActivity() {
             insets
         }
 
+        supportActionBar?.hide()
+
          val btnsalirderutina = findViewById<ImageView>(R.id.btnsalirderutina)
 
         btnsalirderutina.setOnClickListener {
