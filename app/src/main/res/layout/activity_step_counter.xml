@@ -111,7 +111,7 @@
         android:layout_width="144dp"
         android:layout_height="48dp"
         android:onClick="onPaueseButtonClicked"
-        android:text="Detener"
+        android:text="Iniciar"
         app:cornerRadius="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

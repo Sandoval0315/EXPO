@@ -1,5 +1,4 @@
 package HealthSync.healthsync;
-
 import android.content.Context;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -21,6 +20,7 @@ import androidx.core.view.WindowInsetsCompat;
 import java.util.Locale;
 
 public class activity_stepCounter extends AppCompatActivity implements  SensorEventListener {
+
 
     private TextView txtPasosConta;
 
