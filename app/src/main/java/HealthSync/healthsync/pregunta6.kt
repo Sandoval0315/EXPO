@@ -57,20 +57,16 @@ class pregunta6 : AppCompatActivity() {
             override fun beforeTextChanged(s: CharSequence?, start: Int, count: Int, after: Int) {}
             override fun onTextChanged(s: CharSequence?, start: Int, before: Int, count: Int) {}
             override fun afterTextChanged(s: Editable?) {
-                // Convertir el texto a un número entero
                 val experiencia = s.toString().toIntOrNull()
 
                 when {
-                    // Si el campo está vacío, ocultar el botón
                     s.isNullOrEmpty() -> {
                         btnSiguiente.visibility = View.GONE
                     }
-                    // Si el número está entre 1 y 10, mostrar el botón y guardar la experiencia
                     experiencia in 1..10 -> {
                         btnSiguiente.visibility = View.VISIBLE
                         experienciaSeleccionada = experiencia.toString()
                     }
-                    // Si el número es 0 o mayor que 10, mostrar un mensaje y ocultar el botón
                     else -> {
                         Toast.makeText(this@pregunta6, "Ingresa un nivel de experiencia válido", Toast.LENGTH_SHORT).show()
                         btnSiguiente.visibility = View.GONE
@@ -84,7 +80,7 @@ class pregunta6 : AppCompatActivity() {
                 val objConexion = ClaseConexion().CadenaConexion()
 
                 // Usar el procedimiento almacenado para insertar la experiencia
-                val nivelExperiencia = experienciaSeleccionada.toIntOrNull() ?: 1 // Valor por defecto si no es un número válido
+                val nivelExperiencia = experienciaSeleccionada.toIntOrNull() ?: 1
                 val callProcedure = objConexion?.prepareCall("{call sp_InsertarExperiencia(?)}")
                 callProcedure?.setInt(1, nivelExperiencia)
                 callProcedure?.execute()
@@ -97,8 +93,11 @@ class pregunta6 : AppCompatActivity() {
                     idExperiencia = resultSetExperiencia.getInt(1)
                 }
 
-                // Obtener el último idUsuario a partir del correo más reciente
-                val obtenerIdUsuario = objConexion?.prepareStatement("SELECT idUsuario FROM Usuarios WHERE correo = (SELECT MAX(correo) FROM Usuarios)")
+                // Obtener el último idUsuario insertado usando ROWNUM
+                // Esta es la consulta corregida que obtiene el último usuario insertado basándose en el ID más alto
+                val obtenerIdUsuario = objConexion?.prepareStatement(
+                    "SELECT idUsuario FROM Usuarios WHERE idUsuario = (SELECT MAX(idUsuario) FROM Usuarios)"
+                )
                 val resultSetUsuario = obtenerIdUsuario?.executeQuery()
                 var idUsuario: Int = -1
                 if (resultSetUsuario?.next() == true) {
@@ -107,12 +106,15 @@ class pregunta6 : AppCompatActivity() {
 
                 // Calcular el IMC
                 val peso = pesoSeleccionado.toFloat()
-                val estatura = estaturaSeleccionada.toFloat() / 100 // Convertir cm a m
+                val estatura = estaturaSeleccionada.toFloat() / 100
                 val imc = peso / (estatura.pow(2))
-                IMCtotal = String.format("%.2f", imc) // Guardar el IMC con 2 decimales
+                IMCtotal = String.format("%.2f", imc)
 
                 // Insertar en la tabla Cliente
-                val insertarCliente = objConexion?.prepareStatement("INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, idExperiencia, idUsuario) VALUES (?, ?, ?, ?, ?, ?, ?)")
+                val insertarCliente = objConexion?.prepareStatement(
+                    "INSERT INTO Cliente (edad, altura, peso, imc, padecimiento, idExperiencia, idUsuario) " +
+                            "VALUES (?, ?, ?, ?, ?, ?, ?)"
+                )
                 insertarCliente?.setInt(1, edadSeleccionada.toInt())
                 insertarCliente?.setFloat(2, estaturaSeleccionada.toFloat())
                 insertarCliente?.setFloat(3, pesoSeleccionado.toFloat())
@@ -123,8 +125,11 @@ class pregunta6 : AppCompatActivity() {
                 insertarCliente?.executeUpdate()
 
                 withContext(Dispatchers.Main) {
-                    Toast.makeText(this@pregunta6, "Bienvenido a HealthSync",
-                        Toast.LENGTH_SHORT).show()
+                    Toast.makeText(
+                        this@pregunta6,
+                        "Bienvenido a HealthSync",
+                        Toast.LENGTH_SHORT
+                    ).show()
                     val intent = Intent(this@pregunta6, navigatioPrincipal::class.java)
                     startActivity(intent)
                 }

@@ -13,33 +13,36 @@ import javax.mail.internet.MimeMessage
 
 suspend fun enviarCorreo(receptor: String, sujeto: String, mensaje: String) = withContext(
     Dispatchers.IO) {
-    // Configuración del servidor SMTP
+    // Configuración del servidor SMTP con TLS actualizado
     val props = Properties().apply {
         put("mail.smtp.host", "smtp.gmail.com")
-        put("mail.smtp.socketFactory.port", "465")
-        put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory")
+        put("mail.smtp.port", "587") // Puerto TLS estándar
         put("mail.smtp.auth", "true")
-        put("mail.smtp.port", "465")
+        put("mail.smtp.starttls.enable", "true") // Habilitar STARTTLS
+        put("mail.smtp.ssl.protocols", "TLSv1.2") // Especificar versión de TLS
+        put("mail.smtp.ssl.trust", "smtp.gmail.com")
     }
 
     val session = Session.getInstance(props, object : javax.mail.Authenticator() {
         override fun getPasswordAuthentication(): PasswordAuthentication {
-            return PasswordAuthentication("somos.healthsync@gmail.com", "f mi w f x k b m u d j b r k g")
+            return PasswordAuthentication("rjmj.007.009@gmail.com", "rtfv czke wvdh ocpu")
         }
     })
 
     try {
         val message = MimeMessage(session).apply {
-            //Con que correo enviaré el mensaje
             setFrom(InternetAddress("somos.healthsync@gmail.com"))
             addRecipient(Message.RecipientType.TO, InternetAddress(receptor))
             subject = sujeto
             setContent(mensaje, "text/html; charset=utf-8")
         }
+
         Transport.send(message)
         println("Correo enviado satisfactoriamente")
     } catch (e: MessagingException) {
         e.printStackTrace()
         println("CORREO NO ENVIADO EXE")
+        // Opcional: Agregar más detalles del error
+        println("Error: ${e.message}")
     }
 }
